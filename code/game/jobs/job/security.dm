@@ -308,8 +308,8 @@
 	department = "Entrance Personnel"
 	selection_color = "#601c1c"
 	department_flag = SEC|ECZ
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	//duties = "<big><b>As the Agent you have more access than a Junior Agent, but do not control them. You are to guard tests and SCP's in the zone you spawned in. If in doubt, ask your Zone or Guard Commander. You also have the duty of guarding the D-Class Cell Blocks. You should not leave your zone under usual SoP.</b></big>"
 	supervisors = "the EZ Supervisor"
 	economic_power = 4
@@ -409,8 +409,8 @@
 	department = "Heavy Containment Personnel"
 	selection_color = "#601c1c"
 	department_flag = SEC|HCZ
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 4
+	spawn_positions = 4
 	//duties = "<big><b>As the Junior Guard you have minimal access. You are to guard tests, SCP's and provide support in the zone you spawned in. If in doubt, ask your Zone or Guard Commander. You should not leave your zone under usual SoP.</b></big>"
 	supervisors = "the HCZ Sergeants and Zone Commander"
 	economic_power = 4
@@ -454,8 +454,8 @@
 	department = "Entrance Personnel"
 	selection_color = "#601c1c"
 	department_flag = SEC|ECZ
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 2
+	spawn_positions = 2
 	//duties = "<big><b>As the Junior Agent you have minimal access. You are to guard tests, SCP's and provide support in the zone you spawned in. If in doubt, ask your Zone or Guard Commander. You should not leave your zone under usual SoP.</b></big>"
 	supervisors = "the EZ Senior Agents and Supervisor"
 	economic_power = 4
