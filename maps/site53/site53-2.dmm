@@ -12175,6 +12175,9 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
 /turf/simulated/floor/tiled/monotile/white,
 /area/site53/ulcz/scp151)
 "aIL" = (
