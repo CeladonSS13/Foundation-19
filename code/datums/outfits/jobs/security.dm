@@ -116,7 +116,7 @@
 	belt = /obj/item/storage/belt/holster/security/fullmk9
 	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
 	mask = /obj/item/clothing/mask/balaclava
-	gloves = gloves = /obj/item/clothing/gloves/latex/nitrile/armored
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
 
 /decl/hierarchy/outfit/job/security/ez_sergeant
 	name = OUTFIT_JOB_NAME("EZ Senior Agent")
