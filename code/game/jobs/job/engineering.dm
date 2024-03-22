@@ -144,6 +144,10 @@
 	economic_power = 5
 	minimal_player_age = 10
 	ideal_character_age = 30
+	alt_titles = list(
+		"Containment Specialist",
+		"Containment Technician"
+		)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/conteng
 	requirements = list("Engineer" = 480, EXP_TYPE_ENGINEERING = 600)
 	class = CLASS_B

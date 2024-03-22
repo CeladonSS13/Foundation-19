@@ -270,7 +270,7 @@
 	supervisors = "the HCZ Zone Commander"
 	economic_power = 4
 	requirements = list("HCZ Guard" = 480)
-	alt_titles = list("HCZ Senior Containment Response Agent", "HCZ Containment Response Sergeant", "HCZ Senior Combat Medic", "HCZ Senior Agent")
+	alt_titles = list("HCZ Senior Containment Response Agent", "HCZ Containment Response Sergeant", "HCZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/hcz_senmedic, "HCZ Senior Agent")
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/hcz_sergeant
@@ -314,7 +314,7 @@
 	supervisors = "the EZ Supervisor"
 	economic_power = 4
 	requirements = list("EZ Agent" = 480)
-	alt_titles = list("Investigation Officer" = /decl/hierarchy/outfit/job/security/ez_sergeant_investigative, "EZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/ez_medic)
+	alt_titles = list("Investigation Officer" = /decl/hierarchy/outfit/job/security/ez_sergeant_investigative, "EZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/ez_senmedic)
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/ez_sergeant
@@ -367,7 +367,7 @@
 	supervisors = "the LCZ Sergeants and Zone Commander"
 	economic_power = 4
 	requirements = list("Class D" = 60)
-	alt_titles = list("LCZ Containment Response Agent", "LCZ Containment Response Guard", "LCZ Combat Medic", "LCZ Riot Control Guard", "LCZ Riot Control Agent", "LCZ Agent")
+	alt_titles = list("LCZ Containment Response Agent", "LCZ Containment Response Guard", "LCZ Combat Medic" = /decl/hierarchy/outfit/job/security/lcz_medic, "LCZ Riot Control Guard", "LCZ Riot Control Agent", "LCZ Agent")
 	minimal_player_age = 0
 	ideal_character_age = 25
 	balance_limited = TRUE
@@ -415,7 +415,7 @@
 	supervisors = "the HCZ Sergeants and Zone Commander"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SECURITY = 120)
-	alt_titles = list("HCZ Containment Response Agent", "HCZ Containment Response Guard", "HCZ Combat Medic", "HCZ Agent")
+	alt_titles = list("HCZ Containment Response Agent", "HCZ Containment Response Guard", "HCZ Combat Medic" = /decl/hierarchy/outfit/job/security/hcz_medic, "HCZ Agent")
 //	minimal_player_age = 0
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/hcz_guard

@@ -540,12 +540,19 @@ GLOBAL_LIST_EMPTY(conversion_cards)
 	item_state = "Sec_ID2"
 	job_access_type = /datum/job/ncoofficerlcz
 
-/obj/item/card/id/seclvl3ez
+/obj/item/card/id/seclvl3senez
 	name = "security ID"
 	desc = "A dark blue ID. Looks important. The person wearing it not so much."
 	icon_state = "securitylvl3"
 	item_state = "Sec_ID3"
 	job_access_type = /datum/job/ncoofficerez
+
+/obj/item/card/id/seclvl3ez
+	name = "security ID"
+	desc = "A dark blue ID. Looks important. The person wearing it not so much."
+	icon_state = "securitylvl3"
+	item_state = "Sec_ID3"
+	job_access_type = /datum/job/enlistedofficerez
 
 /obj/item/card/id/seclvl3raisa
 	name = "security ID"
