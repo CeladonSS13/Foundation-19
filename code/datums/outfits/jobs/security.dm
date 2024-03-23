@@ -85,6 +85,21 @@
 	mask = /obj/item/clothing/mask/balaclava
 	gloves = /obj/item/clothing/gloves/thick/swat/lcz
 
+/decl/hierarchy/outfit/job/security/lcz_senmedic
+	name = OUTFIT_JOB_NAME("LCZ Senior Combat Medic")
+	uniform = /obj/item/clothing/under/rank/warden/lcz
+	glasses = /obj/item/clothing/glasses/sunglasses/sechud/goggles
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/card/id/seclvl3lcz
+	l_ear = /obj/item/device/radio/headset/headset_sec_lcz
+	l_pocket = /obj/item/handcuffs
+	r_pocket = /obj/item/melee/telebaton
+	backpack_contents = list(/obj/item/handcuffs = 1, /obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1, /obj/item/bodybag/cryobag = 1)
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	head = /obj/item/clothing/head/helmet/scp/security
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
 
 /decl/hierarchy/outfit/job/security/hcz_sergeant
 	name = OUTFIT_JOB_NAME("HCZ Sergeant")
@@ -103,7 +118,7 @@
 	gloves = /obj/item/clothing/gloves/tactical/scp
 
 /decl/hierarchy/outfit/job/security/hcz_senmedic
-	name = OUTFIT_JOB_NAME("HCZ Sergeant")
+	name = OUTFIT_JOB_NAME("HCZ Senior Combat Medic")
 	uniform = /obj/item/clothing/under/rank/warden/hcz
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud/goggles
 	suit = /obj/item/clothing/suit/armor/pcarrier/scp/tactical
