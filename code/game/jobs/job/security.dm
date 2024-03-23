@@ -222,7 +222,7 @@
 	supervisors = "the LCZ Zone Commander"
 	economic_power = 4
 	requirements = list("LCZ Guard" = 480)
-	alt_titles = list("LCZ Senior Containment Response Agent", "LCZ Containment Response Sergeant", "LCZ Senior Combat Medic", "LCZ Riot Control Sergeant", "LCZ Senior Riot Control Agent", "LCZ Senior Agent")
+	alt_titles = list("LCZ Senior Containment Response Agent", "LCZ Containment Response Sergeant", "LCZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/lcz_senmedic, "LCZ Riot Control Sergeant", "LCZ Senior Riot Control Agent", "LCZ Senior Agent")
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/lcz_sergeant
