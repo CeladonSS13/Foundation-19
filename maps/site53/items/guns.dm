@@ -45,7 +45,7 @@
 /obj/item/gun/projectile/revolver/mateba
 	name = "mateba"
 	desc = "Standard issue Foundation revolver based on the Mateba Unica. Chambered in .44 Magnum"
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/guns/revolvers.dmi'
 	icon_state = "mateba"
 	caliber = ".44"
 	fire_delay = 6
