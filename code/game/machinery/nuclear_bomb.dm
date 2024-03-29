@@ -457,10 +457,10 @@ var/bomb_set
 
 	var/announced = 0
 	var/time_to_explosion = 0
-	var/self_destruct_cutoff = 60 //Seconds
-	timeleft = 300
-	minTime = 300
-	maxTime = 900
+	var/self_destruct_cutoff = 30 //Seconds 60
+	timeleft = 100 // 300
+	minTime = 100 // 300
+	maxTime = 100 // 900
 
 /obj/machinery/nuclearbomb/station/Initialize()
 	. = ..()
@@ -490,6 +490,9 @@ var/bomb_set
 			to_chat(usr, SPAN_WARNING("An inserter has not been armed or is damaged."))
 			return
 	visible_message(SPAN_WARNING("Warning. The self-destruct sequence override will be disabled [self_destruct_cutoff] seconds before detonation."))
+	var/list/listeners = GLOB.player_list
+	for(var/P in listeners)
+		sound_to(P, 'sounds/music/warhead.ogg')
 	..()
 
 /obj/machinery/nuclearbomb/station/check_cutoff()

@@ -363,7 +363,7 @@
 
 	description = "Опасность неминуемого уничтожения Зоны."
 
-	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sounds/effects/siren.ogg'))
+	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1)
 
 /decl/security_level/code_delta/switching_up_to()
 	security_announcement_delta.Announce("Риск уничтожения объекта критический. Все сотрудники должны подчиняться указаниям административного персонала. Нарушение приказов карается незамедлительным устранением. Это не учебная тревога!", "Внимание! Объявлен код Дельта")

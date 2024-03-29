@@ -4,6 +4,45 @@
 var/global/send_emergency_team = 0 // Used for automagic response teams
 								   // 'admin_emergency_team' for admin-spawned response teams
 
+GLOBAL_VAR(ert_info)
+
+
+/datum/response_team_info
+	var/full_name = "Default" // Full MTF name with prefix
+	var/short_name = "Default" // Short MTF name
+	var/id_tag = "default" // BlastDoor tag
+
+// Temporary location of response team information
+/datum/response_team_info/epsilon11
+	full_name = "Nine-Tailed Fox - Epsilon-11"
+	short_name = "Epsilon-11"
+	id_tag = "epislon11"
+/datum/response_team_info/beta7
+	full_name = "Maz Hatters - Beta-7"
+	short_name = "Beta-7"
+	id_tag = "beta7"
+/datum/response_team_info/eta10
+	full_name = "See No Evil - Eta-10"
+	short_name = "Eta-10"
+	id_tag = "eta10"
+/datum/response_team_info/omega1
+	full_name = "Law's Left Hand - Omega-1"
+	short_name = "Omega-1"
+	id_tag = "omega1"
+/datum/response_team_info/alpha1
+	full_name = "Red Right Hand - Alpha-1"
+	short_name = "Alpha-1"
+	id_tag = "alpha1"
+/datum/response_team_info/epsilon9
+	full_name = "Fire eaters - Epsilon-9"
+	short_name = "Epsilon-9"
+	id_tag = "epislon9"
+/datum/response_team_info/nu7
+	full_name = "Hammer Down - Nu-7"
+	short_name = "Nu-7"
+	id_tag = "Nu-7"
+
+
 /client/proc/response_team()
 	set name = "Dispatch MTF"
 	set category = "Fun"
@@ -21,6 +60,21 @@ var/global/send_emergency_team = 0 // Used for automagic response teams
 	if(alert("Do you want to dispatch an MTF?",,"Yes","No") != "Yes")
 		return
 
+	var/datum/response_team_info/team_type = input("What type of MTF?", "MTF list") as null|anything in subtypesof(/datum/response_team_info)
+	if(!team_type)
+		return
+	var/ert_count = input("How many people are in the squad?", "MTF count") as null|num
+	if(!ert_count && ert_count > 0)
+		return
+
+	GLOB.ert.hard_cap = ert_count
+	GLOB.ert_info = team_type
+
+	// Opens the doors to the mtf armory
+	for (var/obj/machinery/door/blast/shutters/B in SSmachines.machinery)
+		if(team_type.id_tag == B.id_tag)
+			B.open()
+
 	var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
 	if(security_state.current_security_level_is_lower_than(security_state.severe_security_level)) // Allow admins to reconsider if the alert level is below High
 		switch(alert("Current security level lower than [security_state.severe_security_level.name]. Do you still want to dispatch a response team?",,"Yes","No"))
@@ -37,9 +91,9 @@ var/global/send_emergency_team = 0 // Used for automagic response teams
 		return
 
 	if(reason)
-		message_staff("[key_name_admin(usr)] is dispatching an MTF squad for the reason: [reason]", 1)
+		message_staff("[key_name_admin(usr)] is dispatching an MTF [team_type.full_name] squad with [ert_count] members for the reason: [reason]", 1)
 	else
-		message_staff("[key_name_admin(usr)] is dispatching an MTF squad.", 1)
+		message_staff("[key_name_admin(usr)] is dispatching an MTF [team_type.full_name] squad with [ert_count] members.", 1)
 
 	log_admin("[key_name(usr)] used Dispatch MTF.")
 	trigger_armed_response_team(reason)
@@ -76,6 +130,11 @@ var/global/send_emergency_team = 0 // Used for automagic response teams
 	GLOB.ert.reason = reason //Set it even if it's blank to clear a reason from a previous ERT
 
 	send_emergency_team = 1
+
+	for (var/mob/observer/ghost/M in SSmobs.mob_list)
+		if(alert(M, "Join MTF squad?",,"Yes","No") != "Yes")
+			continue
+		M.client.JoinResponseTeam()
 
 	sleep(600 * 5)
 	send_emergency_team = 0 // Can no longer join the ERT.
