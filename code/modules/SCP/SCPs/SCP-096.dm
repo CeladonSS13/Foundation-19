@@ -12,11 +12,17 @@
 	health = 2000
 	maxHealth = 2000
 
+	// Block pull
+	mob_size = MOB_LARGE
+
 	can_be_buckled = FALSE
 
 	available_maneuvers = list(/decl/maneuver/leap)
 
 	//Config
+
+	// Target radar
+	var/target_radar = 1
 
 	///View probability when idle
 	var/idle_view_prob = 20
@@ -72,7 +78,8 @@
 	leapHandler.stamina_cost = 0
 	scramble_desc = "A pale, emanciated figure. It looks almost human, but its limbs are long and skinny, its face is [SPAN_INFO("censored with several flashing squares.")]"
 	desc = "A pale white figure, with lengthy arms. You slowly scan the creature bottom up, from its skinny atrophied legs to its...face. Its face. Oh god [SPAN_DANGER("its horrible [SPAN_BOLD("face")]!")]"
-
+	set_see_in_dark(8)
+	set_see_invisible(SEE_INVISIBLE_NOLIGHTING)
 	LAZYINITLIST(targets)
 	LAZYINITLIST(oldViewers)
 	LAZYINITLIST(current_path)
@@ -168,6 +175,8 @@
 
 ///Handles 096 AI
 /mob/living/scp096/proc/handle_AI()
+	if(src.client) // Cancel if there is a player
+		return
 	switch(current_state)
 		if(STATE_096_IDLE)
 			if(prob(45) && ((world.time - emote_cooldown_track) > emote_cooldown))
@@ -269,6 +278,7 @@
 
 	adjustBruteLoss(-10)
 	handle_AI()
+	handle_Player()
 
 /mob/living/scp096/examine(mob/user, distance, infix, suffix)
 	if(user in GLOB.scramble_hud_users)
@@ -292,15 +302,33 @@
 	return scp096_leap_range
 
 /mob/living/scp096/UnarmedAttack(atom/A as obj|mob|turf)
-	if(A == src)
+	if(A in GLOB.SCP_list)
 		return
 
+	if(A == src || current_state != STATE_096_CHASING)
+		return
 	else if(isobj(A) || istype(A, /turf/simulated/wall))
 		if(istype(A, /obj/machinery/door))
 			OpenDoor(A)
 			return
 		else if (istype(A, /turf/simulated/wall))
+			if(!do_after(src, 1.5, A)) // Wait time
+				return
+			visible_message(SPAN_DANGER("[src] destroy [A] trying to get at [target]!"))
+			playsound(src, SFX_EXPLOSION, 45)
 			A.melt()
+		else if (ismachinery(A))
+			if(!do_after(src, 0.5, A))
+				return
+			visible_message(SPAN_DANGER("[src] destroy [A] trying to get at [target]!"))
+			playsound(src, SFX_EXPLOSION, 45)
+			A.Destroy()
+		else if (isstructure(A))
+			if(!do_after(src, 1.0, A))
+				return
+			visible_message(SPAN_DANGER("[src] destroy [A] trying to get at [target]!"))
+			playsound(src, SFX_EXPLOSION, 45)
+			A.Destroy()
 		else
 			A.attack_generic(src, rand(120,350), "smashes")
 	else if(ismob(A) && (A != target))
@@ -312,6 +340,7 @@
 
 		target.loc = loc
 		target.anchored = TRUE //Only humans can use grab so we have to do this ugly shit
+		target.stun_effect_act(30, 5, 2)
 		visible_message(SPAN_DANGER("[src] grabs [target] and starts trying to pull [target.p_them()] apart!"))
 
 		playsound(src, 'sounds/scp/096/096-kill.ogg', 100)
@@ -364,7 +393,59 @@
 			current_state = STATE_096_STAGGERED
 
 /mob/living/scp096/movement_delay()
-	return -2
+	if(current_state == STATE_096_CHASING)
+		return -2
+	else
+		return 10
+
+/mob/living/scp096/proc/handle_Player()
+	if(!src.client)
+		return
+	switch(current_state)
+		if(STATE_096_CHASING)
+			var/target_dist = get_dist(src, targets[1])
+			for(var/mob/living/carbon/human/Ptarget in targets)
+				if (get_dist(src, Ptarget) <= target_dist)
+					target = Ptarget
+			if(!LAZYLEN(targets))
+				current_state = STATE_096_IDLE
+				icon_state = "scp"
+				target = null
+				update_icon()
+				return
+		if(STATE_096_STAGGERED)
+			if(world.time > stagger_counter)
+				current_state = STATE_096_CHASING
+
+
+
+/mob/living/scp096/verb/cry()
+	set name = "CRY"
+	set category = "SCP"
+	set desc = "Just crying."
+	if((world.time - emote_cooldown_track) > emote_cooldown)
+		audible_message(pick("[src] cries.", "[src] sobs.", "[src] wails."))
+		playsound(src, 'sounds/scp/096/096-idle.ogg', 80, ignore_walls = TRUE)
+		emote_cooldown_track = world.time
+
+/mob/living/scp096/verb/flair()
+	set name = "Set Flair"
+	set category = "SCP"
+	set desc = "Use your flair."
+	target_radar = ~target_radar
+
+/mob/living/scp096/verb/calmdown()
+	set name = "Calm Down"
+	set category = "SCP"
+	set desc = "Don't worry."
+	current_state = STATE_096_IDLE
+	src.update_icon()
+	targets = list()
+	target = null
+	icon_state = "scp"
+	visible_message(SPAN_DANGER("[src] calms down!"))
+
+
 
 #undef STATE_096_IDLE
 #undef STATE_096_SCREAMING
