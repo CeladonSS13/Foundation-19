@@ -1,0 +1,3 @@
+#include "_scp096fix.dm"
+
+#include "code/scp096fix.dm"
