@@ -13,8 +13,8 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/agent
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Agent")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/helmet/ballistic
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFlight
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp
@@ -31,8 +31,8 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/breacher
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Breacher")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/helmet/ballistic
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFlight
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp
@@ -49,7 +49,7 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/leader
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Team Leader")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFmedium
 	head = /obj/item/clothing/head/beret/mtf
 	mask = /obj/item/clothing/mask/balaclava
 	glasses = /obj/item/clothing/glasses/night
@@ -67,8 +67,8 @@
 /decl/hierarchy/outfit/mtf/epsilon_11/medic
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Medic")
 	uniform = /obj/item/clothing/under/ert/epsilon11
-	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
-	head = /obj/item/clothing/head/helmet/ballistic
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/MTFlight
+	head = /obj/item/clothing/head/helmet/scp/lwh_helmet
 	mask = /obj/item/clothing/mask/balaclava
 	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/tactical/scp

@@ -144,3 +144,15 @@
 	permeability_coefficient = 0.5
 	armor = list(melee = 90, bullet = 70, laser = 40, energy = 25, bomb = 50, bio = 90, rad = 90)
 	acid_resistance = 5
+
+
+/obj/item/clothing/head/helmet/scp/lwh_helmet
+	name = "Tactical Helmet"
+	desc = "An ordinary tactical helmet."
+	icon_state = "lwh_black"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
+	cold_protection = HEAD|FACE|EYES
+	permeability_coefficient = 0.5
+	armor = list(melee = 80, bullet = 83, laser = 50,energy = 25, bomb = 50, bio = 100, rad = 60)
+	acid_resistance = 1.5
