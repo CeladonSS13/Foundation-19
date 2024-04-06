@@ -3538,3 +3538,8 @@
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
 // END_INCLUDE
+
+
+// CELADON
+
+#include "mod_celadon\mod_celadon.dme"
