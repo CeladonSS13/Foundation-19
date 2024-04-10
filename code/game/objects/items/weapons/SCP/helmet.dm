@@ -151,8 +151,8 @@
 	desc = "An ordinary tactical helmet."
 	icon_state = "lwh_black"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EYES
-	cold_protection = HEAD|FACE|EYES
+	body_parts_covered = HEAD|EYES
+	cold_protection = HEAD|EYES
 	permeability_coefficient = 0.5
 	armor = list(melee = 80, bullet = 83, laser = 50,energy = 25, bomb = 50, bio = 100, rad = 60)
 	acid_resistance = 1.5
