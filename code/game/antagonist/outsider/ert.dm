@@ -46,10 +46,7 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	player.add_language(LANGUAGE_ENGLISH)
 	player.equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/ert(src), slot_l_ear)
 	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/ert(src), slot_w_uniform)
-	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/swat(src), slot_shoes)
-	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/gloves/thick/swat(src), slot_gloves)
-	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/mtftactical(player), slot_head)
-	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/mtftactical(player), slot_wear_suit)
+	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots(src), slot_shoes)
 
 	create_id(role_text, player)
 	return 1
