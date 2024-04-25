@@ -7,7 +7,7 @@
 	spawn_positions = 10
 	supervisors = "the Senior Researchers and Research Director"
 	economic_power = 4
-	alt_titles = list("Junior Xenobiologist", "Junior Xenoarcheologist", "Junior Xenobotanist", "Assistant Researcher", "Research Assistant", "Research Intern", "Junior Researcher")
+	alt_titles = list("Junior Biologist", "Junior Xenoarcheologist", "Junior Botanist", "Assistant Researcher", "Research Assistant", "Research Intern", "Junior Researcher")
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/science/juniorscientist
 	class = CLASS_C
@@ -82,7 +82,7 @@
 	supervisors = "the Senior Researchers and Research Director"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SCIENCE = 60)
-	alt_titles = list("Xenobiologist", "Xenoarcheologist", "Xenobotanist", "Junior Mentalist")
+	alt_titles = list("Biologist", "Xenoarcheologist", "Botanist", "Junior Mentalist", "Chemist", "Physicist", "Psychologist", "Memetologist", "Xenogeneticist", "Zoologist", "Microbiologist", "")
 	minimal_player_age = 3
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
@@ -164,7 +164,7 @@
 	supervisors = "the Research Director"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SCIENCE = 480)
-	alt_titles = list("Senior Xenobiologist", "Senior Xenoarcheologist", "Senior Xenobotanist", "Mentalist")
+	alt_titles = list("Senior Biologist", "Senior Xenoarcheologist", "Senior Botanist", "Mentalist", "Senior Memetologist", "Senior Physicist")
 	minimal_player_age = 7
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/science/seniorscientist
