@@ -6,3 +6,5 @@
 #include "code/security_state.dm"
 #include "code/mob_helpers.dm"
 #include "code/cards_ids.dm"
+#include "code/copse.dm"
+#include "code/ert.dm"

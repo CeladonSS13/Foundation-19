@@ -177,6 +177,10 @@
 /obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"aX" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "aY" = (
 /obj/structure/table/marble,
 /obj/machinery/cooker/candy,
@@ -305,6 +309,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/lino,
 /area/site53/surface/surface/away/hall)
+"bH" = (
+/obj/structure/bed,
+/obj/item/bedsheet/purple,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "bI" = (
 /obj/structure/bed/chair/shuttle/black{
 	dir = 1
@@ -369,6 +381,10 @@
 /obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/tiled/kafel_full,
 /area/site53/surface/surface/away/bar)
+"ce" = (
+/obj/structure/closet/crate/bin,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "cf" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -440,6 +456,34 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed,
 /turf/simulated/floor/wood,
+/area/shuttle/syndicate_elite/station)
+"cy" = (
+/obj/structure/table/rack,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/suit/armor/pcarrier/scp/tactical,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 31
+	},
+/obj/effect/floor_decal/corner/black/full,
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
 "cz" = (
 /obj/effect/decal/cleanable/blood,
@@ -627,6 +671,14 @@
 /obj/structure/fitness/punchingbag,
 /turf/simulated/floor/tiled/dark,
 /area/site53/surface/surface/away/hotel)
+"dp" = (
+/turf/unsimulated/wall{
+	desc = "A secure airlock. Doesn't look like you can get through easily.";
+	icon = 'icons/obj/doors/station/door.dmi';
+	icon_state = "closed";
+	name = "Door"
+	},
+/area/shuttle/syndicate_elite/station)
 "dq" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/wood,
@@ -876,6 +928,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/hall)
+"ev" = (
+/obj/effect/landmark/corpse/engineering/eng,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "ex" = (
 /obj/structure/coatrack,
 /turf/simulated/floor/tiled/dark,
@@ -1028,6 +1084,12 @@
 /obj/item/gun/projectile/heavysniper/ant,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"fq" = (
+/obj/machinery/vending/hotfood{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "fr" = (
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/pistol/used,
@@ -1407,6 +1469,10 @@
 	icon = 'icons/turf/flooring/tiles.dmi';
 	icon_state = "monotiledark"
 	},
+/area/shuttle/syndicate_elite/station)
+"hv" = (
+/obj/item/pickaxe/drill,
+/turf/simulated/floor/exoplanet/barren,
 /area/shuttle/syndicate_elite/station)
 "hw" = (
 /obj/structure/closet/secure_closet{
@@ -1795,6 +1861,9 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"jz" = (
+/turf/unsimulated/mineral,
+/area/space)
 "jL" = (
 /obj/structure/closet/hydrant{
 	pixel_y = 29
@@ -1805,10 +1874,29 @@
 /obj/item/toy/figure/scp/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"jS" = (
+/obj/item/paper/crumpled/bloody{
+	info = "THOSE COCKSUCKERS! THEY PUT A NON-WORKING WARHEAD BITCH! NOW WE'RE ALL GOING TO FUCKING DIE HERE AND WE WON'T EVEN BE ABLE TO TAKE THEM WITH US!"
+	},
+/turf/unsimulated/mineral,
+/area/site53/surface/surface/away)
 "jZ" = (
 /obj/structure/bed/chair/pew,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away)
+"kf" = (
+/obj/structure/closet/secure_closet/guard/riotshotguns,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"kl" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/landmark/corpse/security/hcz_guard,
+/obj/item/ammo_casing/rifle/used,
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "kn" = (
 /obj/effect/landmark/costume/sexyclown,
 /turf/simulated/floor/carpet/magenta,
@@ -1816,6 +1904,17 @@
 "ku" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
+/area/shuttle/syndicate_elite/station)
+"kA" = (
+/obj/effect/decal/cleanable/vomit,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"kE" = (
+/obj/structure/closet/secure_closet/engineering_chief,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "kF" = (
 /obj/item/gun/projectile/silenced,
@@ -1831,16 +1930,67 @@
 "kK" = (
 /turf/simulated/wall/r_wall/hull,
 /area/shuttle/syndicate_elite/station)
+"kM" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/ammo_casing/pistol/used,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"kR" = (
+/turf/simulated/floor/exoplanet/grass,
+/area/space)
+"kS" = (
+/obj/structure/virology/cryogenics_occupied,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"la" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/item/paper_bin,
+/obj/item/pen/multi,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"lg" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"lk" = (
+/obj/structure/table/woodentable_reinforced,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "lr" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/carpet/purple,
 /area/site53/surface/surface/away)
+"ls" = (
+/obj/item/taperoll/engineering,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "lu" = (
 /obj/machinery/vending/snack{
 	dir = 8;
 	pixel_x = 9
 	},
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"lw" = (
+/obj/structure/sign/directions/science{
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/obj/effect/floor_decal/sign/or2{
+	pixel_x = 6
+	},
+/obj/effect/floor_decal/sign/a{
+	pixel_x = -3
+	},
+/turf/simulated/wall/r_wall/hull,
 /area/shuttle/syndicate_elite/station)
 "lx" = (
 /obj/structure/table/gamblingtable,
@@ -1858,6 +2008,10 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"lG" = (
+/obj/machinery/cryopod/ascent_spawn,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "lT" = (
 /obj/effect/floor_decal/corner/paleblue/bordercorner,
 /turf/unsimulated/floor{
@@ -1869,6 +2023,11 @@
 /obj/structure/barricade,
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/surface/surface/away)
+"lX" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "ma" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood,
@@ -1900,9 +2059,24 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"mA" = (
+/turf/simulated/floor/tiled/dark/monotile,
+/area/space)
 "na" = (
 /obj/item/clothing/suit/storage/toggle/labcoat/science,
 /turf/simulated/floor/exoplanet/desert,
+/area/shuttle/syndicate_elite/station)
+"nb" = (
+/obj/item/ammo_casing/rifle/used,
+/obj/item/ammo_casing/rifle/used,
+/obj/item/ammo_casing/pistol/used,
+/obj/item/ammo_casing/pistol/used,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"ni" = (
+/obj/structure/table/steel_reinforced,
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "nv" = (
 /mob/living/simple_animal/hostile/syndicate/chaos/heavy{
@@ -1916,6 +2090,10 @@
 "ny" = (
 /obj/machinery/door/window/brigdoor/westright,
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"nz" = (
+/obj/structure/closet/secure_closet/guard/hcz,
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
 "nB" = (
 /mob/living/simple_animal/hostile/meat/strippedhuman{
@@ -1955,6 +2133,10 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"ol" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "oC" = (
 /obj/item/modular_computer/console/preset/medical{
 	dir = 8
@@ -1964,11 +2146,29 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"oL" = (
+/obj/structure/bed,
+/obj/item/bedsheet/purple,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "pc" = (
 /obj/machinery/cryopod{
 	dir = 2
 	},
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"pe" = (
+/obj/structure/virology/centrifuge_broken,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"pj" = (
+/turf/unsimulated/wall/lobby_background,
+/area/space)
+"pp" = (
+/obj/effect/decal/cleanable/flour,
+/obj/effect/paint_stripe/red,
+/turf/simulated/wall/r_wall/hull,
 /area/shuttle/syndicate_elite/station)
 "pD" = (
 /obj/machinery/door/blast/regular/open,
@@ -1982,6 +2182,20 @@
 /obj/item/gun/projectile/automatic/bullpup_rifle,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"pG" = (
+/obj/structure/bed,
+/obj/item/bedsheet/purple,
+/obj/effect/landmark/corpse/science/scientist,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"pJ" = (
+/obj/effect/decal/cleanable/cobweb2,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "pN" = (
 /obj/structure/bed/chair/padded{
 	dir = 4
@@ -2044,6 +2258,20 @@
 /obj/item/trash/cigbutt/cigarbutt,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"qD" = (
+/obj/effect/floor_decal/sign{
+	pixel_x = 6
+	},
+/obj/effect/floor_decal/sign/c{
+	pixel_x = -3
+	},
+/obj/structure/sign/directions/engineering{
+	pixel_y = 12;
+	pixel_x = 1;
+	dir = 1
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "qF" = (
 /obj/item/ammo_magazine/box/a357,
 /turf/unsimulated/floor{
@@ -2082,6 +2310,10 @@
 	},
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/site53/surface/surface/away)
+"ru" = (
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "rx" = (
 /obj/structure/bed/chair/comfy{
 	dir = 1
@@ -2123,6 +2355,23 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"rM" = (
+/obj/effect/floor_decal/corner/black/full,
+/obj/structure/closet,
+/obj/item/gun/projectile/automatic/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/box/buckshot,
+/obj/item/ammo_magazine/box/buckshot,
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"rT" = (
+/obj/structure/closet/secure_closet/scientist_torch,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "sd" = (
 /obj/structure/table/woodentable,
 /obj/item/paper/crumpled{
@@ -2145,6 +2394,10 @@
 /obj/structure/broken_cryo,
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"su" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "sv" = (
 /obj/item/material/shard/shrapnel,
@@ -2169,6 +2422,17 @@
 /obj/machinery/door/window/brigdoor/westright,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"sO" = (
+/obj/structure/bed,
+/obj/item/bedsheet/purple,
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"sY" = (
+/obj/structure/closet/crate/uranium,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "sZ" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "sindy entrance 2";
@@ -2176,9 +2440,20 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"tb" = (
+/obj/structure/bed/chair/padded/beige{
+	dir = 1
+	},
+/obj/effect/landmark/corpse/security/hcz_guard,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "tc" = (
 /turf/simulated/floor/exoplanet/flesh,
 /area/site53/surface/surface/away)
+"th" = (
+/obj/structure/closet/secure_closet/engineering_personal,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "tl" = (
 /obj/structure/bed,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2207,6 +2482,9 @@
 /obj/item/material/shard/shrapnel,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"tI" = (
+/turf/simulated/floor/tiled/dark/small,
+/area/shuttle/syndicate_elite/station)
 "tS" = (
 /obj/item/flamethrower/full/loaded,
 /obj/effect/floor_decal/corner/paleblue/border{
@@ -2217,10 +2495,18 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"ud" = (
+/obj/structure/closet/secure_closet/scientist,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "ue" = (
 /obj/machinery/light/small/red{
 	dir = 4
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"uf" = (
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "ug" = (
@@ -2246,6 +2532,10 @@
 	health_max = 999999
 	},
 /area/site53/surface/surface/away/house1)
+"um" = (
+/obj/structure/virology/console_broken,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "us" = (
 /obj/item/grenade/frag/high_yield,
 /turf/simulated/floor/carpet/purple,
@@ -2265,6 +2555,10 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"uF" = (
+/obj/machinery/chemical_dispenser/full,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "uK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall/wood{
@@ -2276,6 +2570,11 @@
 /obj/machinery/papershredder,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"uT" = (
+/obj/structure/table/gamblingtable,
+/obj/random/contraband,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "uX" = (
 /mob/living/simple_animal/hostile/meat/strippedhuman{
 	faction = "Shaft"
@@ -2322,6 +2621,29 @@
 /obj/effect/decal/cleanable/ash,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"vg" = (
+/obj/machinery/door/blast/shutters{
+	id_tag = "eng_c1_1"
+	},
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"vh" = (
+/obj/machinery/door/airlock,
+/obj/machinery/door/blast/regular{
+	name = "Exis Gate";
+	id_tag = "ubercringe"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"vj" = (
+/obj/machinery/fabricator,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"vt" = (
+/obj/item/taperoll/engineering,
+/turf/simulated/floor/exoplanet/barren,
+/area/shuttle/syndicate_elite/station)
 "vu" = (
 /obj/effect/floor_decal/corner/paleblue/bordercorner,
 /obj/effect/floor_decal/corner/paleblue/bordercorner{
@@ -2359,13 +2681,46 @@
 	},
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"wL" = (
+/obj/item/ammo_casing/rifle/used,
+/obj/item/ammo_casing/pistol/used,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "wM" = (
 /obj/machinery/power/apc/alien,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"wU" = (
+/obj/structure/bed,
+/obj/item/bedsheet/brown,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"xf" = (
+/obj/effect/floor_decal/corner/black/full,
+/obj/structure/closet,
+/obj/item/gun/projectile/automatic/scp/p90,
+/obj/item/ammo_magazine/box/a57,
+/obj/item/ammo_magazine/box/a57,
+/obj/item/ammo_magazine/scp/p90_mag,
+/obj/item/ammo_magazine/scp/p90_mag,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"xj" = (
+/obj/structure/closet/secure_closet/personal/empty,
+/obj/item/device/taperecorder,
+/obj/item/device/tape,
+/obj/random/clipboard,
+/obj/item/device/camera,
+/obj/item/device/radio,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "xq" = (
 /turf/unsimulated/wall,
 /area/site53/surface/surface/away)
+"xy" = (
+/obj/structure/virology/cryogenics,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "xA" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space{
 	name = "Commando";
@@ -2400,6 +2755,30 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"xY" = (
+/obj/item/taperoll/engineering/applied,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yb" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/door/window/brigdoor/westright,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yc" = (
+/obj/structure/closet/crate/secure/biohazard,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yp" = (
+/obj/structure/table/woodentable_reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"yu" = (
+/obj/effect/landmark/corpse/science/scientist,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "yw" = (
 /obj/structure/barricade/spike{
 	dir = 8
@@ -2411,8 +2790,22 @@
 /obj/item/clothing/under/ert/nu7,
 /turf/simulated/floor/exoplanet/barren,
 /area/site53/surface/surface/away)
+"yA" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yL" = (
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "yT" = (
 /obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yV" = (
+/obj/item/usedcryobag,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "yX" = (
@@ -2422,6 +2815,13 @@
 "za" = (
 /turf/simulated/wall/wood,
 /area/site53/surface/surface/away/hall)
+"zc" = (
+/obj/structure/closet/crate/uranium,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "zh" = (
 /obj/effect/floor_decal/corner/paleblue/bordercorner{
 	dir = 1
@@ -2431,6 +2831,15 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"zn" = (
+/obj/machinery/reagentgrinder,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"zs" = (
+/obj/effect/paint_stripe/red,
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "zt" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 4
@@ -2465,6 +2874,20 @@
 /obj/item/clothing/mask/gas,
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/surface/surface/away)
+"zL" = (
+/obj/structure/bed,
+/obj/item/bedsheet/orange,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"zR" = (
+/obj/item/ammo_casing/pistol/used,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"zX" = (
+/obj/structure/closet/crate/secure/phoron,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "zZ" = (
 /obj/effect/decal/cleanable/cobweb2,
 /obj/machinery/light/small/red{
@@ -2475,6 +2898,23 @@
 "Af" = (
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/hotel)
+"Ag" = (
+/obj/machinery/r_n_d/destructive_analyzer,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Al" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 2
+	},
+/obj/machinery/door/blast/shutters/open{
+	id_tag = "eng_c1"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Am" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/wood,
@@ -2483,14 +2923,50 @@
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood,
 /area/shuttle/syndicate_elite/station)
+"Ap" = (
+/obj/effect/decal/cleanable/liquid_fuel,
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "At" = (
 /obj/machinery/door/unpowered/simple/wood{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/hall)
+"Au" = (
+/obj/effect/landmark/corpse/engineering/eng,
+/obj/structure/boulder,
+/turf/simulated/floor/exoplanet/barren,
+/area/shuttle/syndicate_elite/station)
+"AB" = (
+/obj/structure/table/rack,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 31
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/obj/effect/floor_decal/corner/black/full,
+/obj/item/ammo_magazine/box/mk9,
+/obj/item/ammo_magazine/box/mk9,
+/obj/item/ammo_magazine/box/mk9,
+/obj/item/ammo_magazine/box/mk9,
+/obj/item/gun/projectile/pistol/mk9,
+/obj/item/gun/projectile/pistol/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "AG" = (
 /obj/machinery/light/small/red,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"AM" = (
+/obj/structure/closet/crate/secure/biohazard,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "AN" = (
@@ -2514,6 +2990,12 @@
 "Br" = (
 /turf/simulated/floor/beach/water/ocean,
 /area/shuttle/syndicate_elite/station)
+"Bw" = (
+/obj/structure/wall_frame/titanium,
+/obj/structure/window/phoronreinforced/full,
+/obj/structure/grille,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "Bz" = (
 /obj/machinery/nuclearbomb/station,
 /turf/unsimulated/floor{
@@ -2530,6 +3012,19 @@
 /obj/item/clothing/glasses/sunglasses/sechud/toggle,
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/surface/surface/away)
+"BN" = (
+/obj/structure/door_assembly,
+/turf/simulated/floor/tiled/dark/small,
+/area/shuttle/syndicate_elite/station)
+"BU" = (
+/obj/structure/wall_frame/titanium,
+/obj/structure/window/phoronreinforced/full,
+/obj/structure/grille,
+/obj/machinery/door/blast/shutters{
+	id_tag = "eng_c1"
+	},
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "BV" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/silenced,
@@ -2560,6 +3055,17 @@
 /obj/item/storage/lunchbox/picnic/filled,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"Ct" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Cu" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "CL" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/cobweb,
@@ -2579,6 +3085,9 @@
 /obj/structure/hygiene/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/site53/surface/surface/away/hotel)
+"Db" = (
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Dq" = (
 /obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2592,6 +3101,13 @@
 /obj/machinery/button/alternate/door{
 	id_tag = "sindy entrance 3"
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"DJ" = (
+/obj/structure/bed/chair/comfy/yellow{
+	dir = 4
+	},
+/obj/effect/landmark/corpse/engineering/eng,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "DO" = (
@@ -2622,6 +3138,16 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"Ez" = (
+/obj/item/taperoll/engineering/applied,
+/turf/simulated/floor/exoplanet/barren,
+/area/shuttle/syndicate_elite/station)
+"EP" = (
+/obj/structure/bed,
+/obj/item/bedsheet/orange,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "EX" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2630,6 +3156,14 @@
 /obj/structure/boulder,
 /turf/simulated/floor/exoplanet/snow,
 /area/site53/surface/surface/away)
+"Fr" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/aluminium/ten,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/plastic/ten,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Fw" = (
 /mob/living/simple_animal/hostile/syndicate/chaos/officer{
 	name = "Team Leader"
@@ -2703,10 +3237,26 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"FS" = (
+/obj/effect/paint_stripe/mauve,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "FV" = (
 /obj/item/toy/figure/scp/sen_scientist,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Ga" = (
+/obj/structure/table/woodentable_reinforced,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
+"Gd" = (
+/obj/structure/bed,
+/obj/item/bedsheet/hos,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Gz" = (
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/bar)
@@ -2715,11 +3265,26 @@
 /obj/item/gun/projectile/rocket_launcher,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"GR" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "GU" = (
 /mob/living/simple_animal/hostile/meat/abomination{
 	faction = "Shaft"
 	},
 /turf/simulated/floor/exoplanet/desert,
+/area/shuttle/syndicate_elite/station)
+"GW" = (
+/obj/structure/closet/secure_closet/scientist,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"GX" = (
+/obj/structure/closet/crate/radiation_gear,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "GZ" = (
 /obj/structure/table/steel_reinforced,
@@ -2728,6 +3293,14 @@
 	name = "cargo gate"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Ha" = (
+/obj/effect/paint_stripe/yellow,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
+"Hf" = (
+/obj/machinery/light/small/red,
+/turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
 "Hk" = (
 /obj/item/toy/scpj,
@@ -2742,23 +3315,58 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Ht" = (
+/obj/structure/table/steel_reinforced,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Hv" = (
 /mob/living/carbon/human/scp347{
 	health = 0
 	},
 /turf/simulated/floor/exoplanet/water,
 /area/site53/surface/surface/away)
+"Hx" = (
+/obj/item/taperoll/engineering/applied,
+/obj/item/pickaxe/drill,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "HD" = (
 /obj/structure/table/rack,
 /obj/item/gun/projectile/revolver/military/heavy,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"HQ" = (
+/obj/item/usedcryobag,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "HS" = (
 /obj/item/toy/figure/scp/d_class,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"HW" = (
+/obj/structure/table/steel_reinforced,
+/obj/random/contraband,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "HX" = (
 /obj/item/trash/cigbutt/cigarbutt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"HY" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"HZ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/ammo_casing/pistol/used,
+/obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Ib" = (
@@ -2772,8 +3380,20 @@
 /obj/structure/broken_cryo,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Ij" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Ik" = (
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Ir" = (
+/obj/machinery/power/port_gen/pacman/super/potato{
+	sheet_name = "Phoron Sheets";
+	sheet_path = /obj/item/stack/material/phoron;
+	name = "phoron reactor"
+	},
+/turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "IF" = (
 /obj/effect/floor_decal/corner/paleblue/border{
@@ -2787,6 +3407,10 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"IS" = (
+/obj/machinery/vending/phoronresearch,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "IV" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
@@ -2798,11 +3422,21 @@
 /obj/structure/sign/warning/lethal_turrets,
 /turf/simulated/wall/r_wall/hull,
 /area/shuttle/syndicate_elite/station)
+"Ji" = (
+/obj/structure/closet/crate/radiation,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Jn" = (
 /turf/simulated/floor/tiled/freezer,
 /area/site53/surface/surface/away/hotel)
 "Jt" = (
 /obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Jx" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/button/blast_door,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Jy" = (
@@ -2821,6 +3455,10 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/bar)
+"Ka" = (
+/obj/machinery/power/port_gen/pacman/super/potato,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "Kc" = (
 /obj/effect/floor_decal/corner/paleblue/border{
 	dir = 1
@@ -2833,6 +3471,13 @@
 /area/shuttle/syndicate_elite/station)
 "Kq" = (
 /turf/unsimulated/map/edge,
+/area/shuttle/syndicate_elite/station)
+"Kt" = (
+/obj/effect/decal/cleanable/generic,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Ku" = (
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2874,8 +3519,30 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"Mc" = (
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Mf" = (
 /obj/structure/undies_wardrobe,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Mk" = (
+/obj/structure/bed,
+/obj/item/bedsheet/ce,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Mn" = (
+/obj/effect/paint_stripe/mauve,
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
+"Mu" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Mv" = (
@@ -2911,9 +3578,17 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Ne" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Ng" = (
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"Nh" = (
+/obj/effect/paint_stripe/red,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "Nj" = (
 /turf/unsimulated/floor{
 	icon = 'icons/turf/flooring/tiles.dmi';
@@ -3030,6 +3705,13 @@
 	},
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"OQ" = (
+/obj/machinery/r_n_d/circuit_imprinter,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "OZ" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/folder/blue,
@@ -3042,6 +3724,10 @@
 /obj/item/gun/magnetic/railgun/tcc,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Pf" = (
+/obj/structure/virology/cryogenics_on,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Pg" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/button/blast_door{
@@ -3055,6 +3741,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/carpet/red,
 /area/site53/surface/surface/away)
+"Pk" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled/dark/small,
+/area/shuttle/syndicate_elite/station)
 "Pz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -3072,11 +3762,21 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"PH" = (
+/obj/structure/bed,
+/obj/item/bedsheet/orange,
+/obj/effect/landmark/corpse/engineering/eng,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "PR" = (
 /obj/infestation_structure/pike_burrow,
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/exoplanet/flesh,
 /area/site53/surface/surface/away)
+"PY" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Qa" = (
 /obj/effect/floor_decal/corner/paleblue/border,
 /obj/machinery/light/small/red,
@@ -3097,6 +3797,14 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"Qw" = (
+/obj/structure/table/woodentable_reinforced,
+/obj/machinery/button/blast_door{
+	id_tag = "ubercringe";
+	name = "Exit Gate"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "QA" = (
 /obj/structure/bed/chair/comfy{
 	dir = 8
@@ -3161,6 +3869,14 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"Rf" = (
+/obj/structure/bed,
+/obj/item/bedsheet/orange,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Ri" = (
+/turf/simulated/wall/r_wall/hull,
+/area/space)
 "Rv" = (
 /turf/simulated/wall/r_wall,
 /area/site53/surface/surface/away/hotel)
@@ -3169,6 +3885,15 @@
 /obj/machinery/button/blast_door{
 	id_tag = "Syndi one"
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"RB" = (
+/obj/machinery/chem_master,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"RK" = (
+/obj/effect/landmark/corpse/science/scientist,
+/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "RM" = (
@@ -3181,6 +3906,10 @@
 	icon = 'icons/turf/flooring/tiles.dmi';
 	icon_state = "monotiledark"
 	},
+/area/shuttle/syndicate_elite/station)
+"RU" = (
+/obj/machinery/r_n_d/protolathe,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "RX" = (
 /obj/item/clothing/under/ert/beta7,
@@ -3198,6 +3927,16 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/carpet/magenta,
 /area/site53/surface/surface/away)
+"Sf" = (
+/obj/effect/floor_decal/corner/black/full,
+/obj/structure/closet,
+/obj/item/gun/projectile/automatic/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/scp/saiga12/buckshot,
+/obj/item/ammo_magazine/box/buckshot,
+/obj/item/ammo_magazine/box/buckshot,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Si" = (
 /obj/effect/landmark/corpse,
 /turf/simulated/floor/carpet/purple,
@@ -3218,17 +3957,69 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Sr" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Sy" = (
 /mob/living/simple_animal/hostile/infestation,
 /turf/simulated/floor/exoplanet/flesh,
 /area/site53/surface/surface/away)
+"SI" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/button/blast_door{
+	id_tag = "eng_c1_1";
+	name = "chekpoint gate"
+	},
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"SP" = (
+/obj/structure/closet/secure_closet/atmos_personal,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Tb" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/button/blast_door{
+	id_tag = "eng_c1";
+	name = "checkpoint shutters"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Te" = (
+/obj/machinery/computer/rdconsole/core,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Tl" = (
+/obj/effect/paint_stripe/yellow,
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "Tm" = (
 /obj/item/toy/figure/scp/security2,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Tq" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Tu" = (
 /turf/simulated/floor/lino,
 /area/site53/surface/surface/away/hall)
+"Tv" = (
+/obj/effect/landmark/corpse/engineering/seneng,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Tw" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Tz" = (
 /obj/effect/decal/remains,
 /turf/simulated/floor/exoplanet/grass,
@@ -3240,9 +4031,30 @@
 "TG" = (
 /turf/simulated/floor/exoplanet/grass,
 /area/shuttle/syndicate_elite/station)
+"TK" = (
+/obj/structure/table/rack,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/item/material/knife/combat,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 31
+	},
+/obj/effect/floor_decal/corner/black/full,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "TM" = (
 /obj/item/paper/crumpled/bloody{
-	info = "THOSE COCKSUCKERS! THEY PUT A NON-WORKING WARHEAD BITCH! NOW WE'RE ALL GOING TO FUCKING DIE HERE AND WE WON'T EVEN BE ABLE TO TAKE THEM WITH US!"
+	info = "We will die"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/flooring/tiles.dmi';
@@ -3259,6 +4071,15 @@
 /obj/structure/sign/goldenplaque/security{
 	pixel_y = 30
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Ud" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/dark/small,
+/area/shuttle/syndicate_elite/station)
+"Ue" = (
+/obj/structure/bed,
+/obj/item/bedsheet/rd,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Uh" = (
@@ -3279,12 +4100,36 @@
 /obj/item/gun/magnetic/railgun/mmi,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"Uz" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/button/blast_door,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"UK" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "UX" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
 /obj/item/paper,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Vo" = (
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
+"Vy" = (
+/obj/structure/table/standard,
+/obj/item/stack/material/phoron,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"VL" = (
+/obj/structure/bed/chair/padded/beige{
+	dir = 4
+	},
+/obj/effect/landmark/corpse/security/hcz_sergeant,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "VS" = (
@@ -3295,6 +4140,10 @@
 	health_max = 999999
 	},
 /area/shuttle/syndicate_elite/station)
+"Wb" = (
+/obj/structure/closet/secure_closet/guard/hcz/sergeant,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "Wc" = (
 /obj/item/clothing/suit/armor/vest/scp/medarmor/beta,
 /obj/effect/decal/remains,
@@ -3304,6 +4153,11 @@
 	icon = 'icons/turf/flooring/tiles.dmi';
 	icon_state = "monotiledark"
 	},
+/area/shuttle/syndicate_elite/station)
+"Wo" = (
+/obj/item/taperoll/engineering,
+/obj/item/pickaxe/drill,
+/turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "Wy" = (
 /obj/item/ironingiron,
@@ -3316,6 +4170,26 @@
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/freezer,
 /area/site53/surface/surface/away/hotel)
+"WG" = (
+/obj/machinery/power/port_gen/pacman/super/potato{
+	sheet_name = "Phoron Sheets";
+	sheet_path = /obj/item/stack/material/phoron;
+	name = "phoron reactor"
+	},
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
+"WJ" = (
+/obj/machinery/vending/mredispenser{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"WO" = (
+/obj/machinery/power/port_gen/pacman/super/potato,
+/obj/effect/decal/cleanable/greenglow,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
 "WR" = (
 /turf/simulated/mineral/random,
 /area/site53/surface/surface/away)
@@ -3338,6 +4212,12 @@
 	},
 /obj/effect/decal/cleanable/greenglow,
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"XB" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "XC" = (
 /obj/machinery/door/airlock/vault{
@@ -3384,13 +4264,28 @@
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Ya" = (
+/obj/effect/landmark/corpse/science/seniorscientist,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Yb" = (
 /obj/structure/bed/chair/pew/left,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away)
+"Yp" = (
+/obj/structure/closet/secure_closet/scientist,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Yq" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light/small/red,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Yt" = (
+/obj/machinery/vending/snack{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Yu" = (
@@ -3431,6 +4326,21 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Zt" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Zy" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"ZH" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/exoplanet/barren,
+/area/shuttle/syndicate_elite/station)
+"ZL" = (
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
@@ -13550,7 +14460,7 @@ jc
 jc
 kK
 Ik
-kK
+Ik
 jc
 jc
 jc
@@ -15129,7 +16039,7 @@ eh
 Mv
 Mv
 eh
-ca
+jS
 ca
 ca
 ca
@@ -21002,6 +21912,13 @@ cc
 jc
 ac
 jc
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
 fI
 fI
 fI
@@ -21047,6 +21964,9 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
@@ -21054,27 +21974,17 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+FS
+Mn
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+FS
 fI
 fI
 fI
@@ -21154,6 +22064,13 @@ cc
 jc
 cc
 jc
+Ha
+yc
+zX
+zX
+zc
+GX
+Ha
 fI
 fI
 fI
@@ -21199,6 +22116,9 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
@@ -21206,27 +22126,17 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+kS
+Ik
+xy
+dU
+xy
+FS
+lG
+Ik
+um
+FS
 fI
 fI
 fI
@@ -21306,6 +22216,13 @@ Os
 jc
 cc
 jc
+Ha
+AM
+zX
+zX
+sY
+Ji
+Ha
 fI
 fI
 fI
@@ -21351,6 +22268,9 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
@@ -21358,27 +22278,17 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+xy
+Ik
+kS
+Ik
+kS
+FS
+lG
+Zt
+um
+FS
 fI
 fI
 fI
@@ -21458,6 +22368,13 @@ cc
 jc
 ac
 jc
+Ha
+Ik
+Ik
+Ik
+Ik
+Ik
+Ha
 fI
 fI
 fI
@@ -21503,6 +22420,9 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
@@ -21510,27 +22430,17 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+HQ
+Ik
+xy
+Ik
+xy
+FS
+lG
+ev
+pe
+FS
 fI
 fI
 fI
@@ -21610,6 +22520,30 @@ jc
 jc
 ac
 jc
+Ha
+Ik
+Ik
+Ik
+Dq
+Ik
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
 fI
 fI
 fI
@@ -21638,51 +22572,27 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+FS
+FS
+xy
+Ik
+kS
+Ik
+xy
+FS
+lG
+lg
+lX
+FS
 fI
 fI
 fI
@@ -21762,6 +22672,30 @@ jc
 ac
 ac
 jc
+Ha
+pJ
+Ik
+Ik
+QK
+Ik
+jm
+Ik
+Ik
+Ik
+Ik
+Ik
+Dq
+Ik
+cX
+Ik
+Ik
+Ik
+Ik
+Dq
+Ik
+Ik
+Ik
+Ha
 fI
 fI
 fI
@@ -21790,57 +22724,33 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+RK
+Ij
+lg
+Zt
+yV
+Ik
+Dq
+jm
+Ik
+Ik
+Ik
+FS
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
 fI
 fI
 fI
@@ -21914,6 +22824,33 @@ jc
 ac
 ac
 jc
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+uf
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Nh
+zs
+jm
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
 fI
 fI
 fI
@@ -21939,60 +22876,33 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Nh
 fI
 fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+Zt
+Ij
+RK
+yV
+Sr
+lg
+Ik
+jm
+Ik
+Dq
+Ik
+FS
+Nh
+Qw
+Tw
+Db
+Wb
+Nh
 fI
 fI
 fI
@@ -22066,6 +22976,33 @@ jc
 ac
 ac
 jc
+kK
+su
+WG
+Ha
+sY
+Dq
+Ha
+Ik
+Ha
+su
+Ez
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Ct
+Ik
+Ik
+BU
+Tb
+YR
+YR
+Nh
 fI
 fI
 fI
@@ -22091,60 +23028,33 @@ fI
 fI
 fI
 fI
+Nh
+jm
+Nh
+Nh
 fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+Mu
+FS
+kS
+Ik
+Pf
+Ik
+Pf
+FS
+FS
+FS
+FS
+FS
+Nh
+Ga
+GR
+Db
+lk
+Nh
 fI
 fI
 fI
@@ -22218,6 +23128,33 @@ jc
 ac
 ac
 jc
+kK
+Ap
+Ir
+Ha
+sY
+Ik
+Ha
+Ik
+Ha
+Vo
+ls
+Vo
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Ik
+Ik
+Ik
+BU
+Ik
+Ik
+Ik
+Nh
 fI
 fI
 fI
@@ -22243,60 +23180,33 @@ fI
 fI
 fI
 fI
+Nh
+Ik
+Ik
+Nh
+Nh
+Nh
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+yu
+FS
+Pf
+Ik
+kS
+Ik
+Pf
+FS
+OQ
+Ik
+Dq
+Fr
+Nh
+yp
+Db
+Db
+Gd
+Nh
 fI
 fI
 fI
@@ -22370,6 +23280,33 @@ jc
 jc
 ac
 jc
+kK
+XB
+Ka
+Ha
+zX
+Ik
+jm
+Ik
+xY
+Vo
+Wo
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Ik
+Ik
+Ik
+BU
+Zt
+Ea
+Dq
+Nh
 fI
 fI
 fI
@@ -22395,63 +23332,36 @@ fI
 fI
 fI
 fI
+Nh
+Uz
+zR
+Kt
+Ik
+Nh
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+Ik
+FS
+xy
+Ik
+xy
+Ik
+xy
+FS
+Te
+HY
+Ik
+Fr
+Nh
+Nh
+Ne
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
 "}
 (126,1,1) = {"
 ca
@@ -22522,6 +23432,33 @@ cc
 jc
 ac
 jc
+kK
+Vo
+WO
+Ha
+zX
+Dq
+Ha
+Ik
+Ha
+ol
+ls
+ZH
+Au
+ac
+ac
+ac
+ac
+ac
+Nh
+Ct
+Ik
+Ik
+Al
+tb
+Ik
+yA
+Nh
 fI
 fI
 fI
@@ -22547,63 +23484,36 @@ fI
 fI
 fI
 fI
+Nh
+kf
+HZ
+VL
+Ik
+Nh
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+Ik
+FS
+kS
+Ik
+xy
+Ik
+Pf
+FS
+Ag
+lg
+Ik
+xj
+Nh
+TK
+PY
+rM
+Nh
+nz
+Db
+nz
+Nh
 "}
 (127,1,1) = {"
 ca
@@ -22674,6 +23584,33 @@ cc
 jc
 cc
 jc
+kK
+ol
+Vo
+UK
+QK
+Ik
+Ha
+Ik
+Tl
+Vo
+vt
+hv
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Ik
+Ik
+Dq
+BU
+SI
+YR
+Zt
+Nh
 fI
 fI
 fI
@@ -22699,63 +23636,36 @@ fI
 fI
 fI
 fI
+Nh
+YR
+Ht
+Jx
+HW
+Nh
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+Ik
+FS
+xy
+QK
+kS
+Ik
+Pf
+FS
+RU
+Ya
+Zt
+zn
+Nh
+cy
+Db
+Sf
+Nh
+wU
+Db
+wU
+Nh
 "}
 (128,1,1) = {"
 ca
@@ -22826,88 +23736,88 @@ cc
 jc
 ac
 jc
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+kK
+kK
+kK
+Ha
+Ha
+Ha
+Ha
+Ea
+Ha
+Ez
+Ez
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Nh
+vg
+Nh
+Nh
+Nh
+Nh
+jm
+Nh
+qD
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+Nh
+Bw
+Bw
+Bw
+Bw
+Nh
+FS
+FS
+FS
+Ij
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+vj
+Zt
+kA
+RB
+Nh
+AB
+Db
+GR
+Ne
+Db
+GR
+Hf
+Nh
 "}
 (129,1,1) = {"
 ca
@@ -22984,82 +23894,82 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ha
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Ik
+Ik
+Ik
+Ik
+cX
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Dq
+Ik
+Ik
+Ik
+ru
+Ik
+ue
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Ik
+Dq
+cX
+Ik
+Ik
+BN
+tI
+tI
+tI
+Pk
+Ud
+Ik
+Zt
+QK
+Ik
+Ik
+Ik
+Ik
+Ik
+Dq
+Ik
+Ij
+Ik
+Ik
+Ik
+uF
+pp
+wL
+kM
+xf
+Nh
+wU
+Db
+wU
+Nh
 "}
 (130,1,1) = {"
 ca
@@ -23131,87 +24041,87 @@ jc
 cc
 jc
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+jc
+jc
+jc
+jc
+fI
+Ha
+Tv
+Ha
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+kK
+vh
+kK
+kK
+lw
+kK
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+FS
+FS
+FS
+Ij
+FS
+FS
+FS
+FS
+FS
+jm
+FS
+IS
+QK
+Ik
+Vy
+Nh
+kl
+nb
+xf
+Nh
+nz
+Db
+nz
+Nh
 "}
 (131,1,1) = {"
 ca
@@ -23282,6 +24192,25 @@ cc
 jc
 cc
 jc
+jc
+jc
+ac
+ac
+Ha
+Ha
+Ha
+Zt
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
 fI
 fI
 fI
@@ -23309,6 +24238,9 @@ fI
 fI
 fI
 fI
+kK
+Ik
+kK
 fI
 fI
 fI
@@ -23319,51 +24251,29 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+kA
+Ik
+Ik
+jm
+Dq
+Ue
+FS
+Ik
+FS
+FS
+FS
+FS
+FS
+Nh
+Nh
+Ne
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
 "}
 (132,1,1) = {"
 ca
@@ -23434,6 +24344,25 @@ cc
 jc
 cc
 jc
+jc
+ac
+ac
+ac
+ac
+ac
+Hx
+Cu
+jm
+Ik
+Ik
+Dq
+Ik
+Ik
+Ik
+Ik
+Ik
+uf
+Ha
 fI
 fI
 fI
@@ -23461,6 +24390,9 @@ fI
 fI
 fI
 fI
+kK
+Ik
+kK
 fI
 fI
 fI
@@ -23471,51 +24403,29 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+GW
+Ik
+Yp
+FS
+QK
+rT
+FS
+Ik
+Ik
+Ik
+Ik
+Ik
+Db
+Db
+GR
+Db
+dp
+Ik
+Ik
+Nh
+Nh
+Nh
 "}
 (133,1,1) = {"
 ca
@@ -23586,6 +24496,25 @@ cc
 jc
 cc
 jc
+jc
+ac
+ac
+ac
+ac
+Ha
+Ha
+jm
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
 fI
 fI
 fI
@@ -23613,6 +24542,9 @@ fI
 fI
 fI
 fI
+kK
+Ik
+kK
 fI
 fI
 fI
@@ -23623,51 +24555,29 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+oL
+Dq
+oL
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+FS
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
+Nh
 "}
 (134,1,1) = {"
 ca
@@ -23738,6 +24648,25 @@ cc
 jc
 cc
 jc
+jc
+jc
+ac
+ac
+jc
+jc
+Ha
+Ik
+Ha
+Jt
+Ik
+Ik
+jm
+Ik
+jm
+dU
+Ik
+Zt
+Ha
 fI
 fI
 fI
@@ -23765,6 +24694,9 @@ fI
 fI
 fI
 fI
+kK
+Ik
+kK
 fI
 fI
 fI
@@ -23775,33 +24707,11 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+ud
+Ik
+ud
+FS
 fI
 fI
 fI
@@ -23891,6 +24801,24 @@ jc
 cc
 jc
 fI
+jc
+jc
+jc
+jc
+fI
+Ha
+Ik
+Ha
+Ik
+Ik
+Ik
+Ha
+Ik
+Ha
+Rf
+Zt
+PH
+Ha
 fI
 fI
 fI
@@ -23918,6 +24846,9 @@ fI
 fI
 fI
 fI
+kK
+mA
+kK
 fI
 fI
 fI
@@ -23928,32 +24859,11 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Mn
+oL
+Ik
+pG
+FS
 fI
 fI
 fI
@@ -24048,6 +24958,19 @@ fI
 fI
 fI
 fI
+Ha
+Ik
+Ha
+Ik
+la
+yb
+Ha
+Ik
+Ha
+th
+Ik
+th
+Ha
 fI
 fI
 fI
@@ -24075,6 +24998,9 @@ fI
 fI
 fI
 fI
+Ri
+kR
+Ri
 fI
 fI
 fI
@@ -24085,27 +25011,11 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+ud
+Zt
+ud
+FS
 fI
 fI
 fI
@@ -24200,6 +25110,19 @@ fI
 fI
 fI
 fI
+Ha
+Ik
+Ha
+Ik
+Mc
+Ik
+Ha
+Ik
+Ha
+Rf
+Dq
+Rf
+Ha
 fI
 fI
 fI
@@ -24225,6 +25148,13 @@ fI
 fI
 fI
 fI
+jz
+jz
+Ri
+kR
+Ri
+jz
+jz
 fI
 fI
 fI
@@ -24233,31 +25163,11 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+bH
+Ik
+sO
+FS
 fI
 fI
 fI
@@ -24352,6 +25262,19 @@ fI
 fI
 fI
 fI
+Ha
+Ik
+Ha
+Ha
+Ha
+Ik
+Ha
+Ik
+Ha
+th
+Ik
+th
+Ha
 fI
 fI
 fI
@@ -24372,6 +25295,19 @@ fI
 fI
 fI
 fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+jz
+jz
+jz
 fI
 fI
 fI
@@ -24379,37 +25315,11 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+FS
+FS
+FS
+FS
+FS
 fI
 fI
 fI
@@ -24504,6 +25414,19 @@ fI
 fI
 fI
 fI
+Ha
+yL
+Ha
+ni
+HY
+Ik
+Ha
+Ik
+Ha
+PH
+Zt
+EP
+Ha
 fI
 fI
 fI
@@ -24522,35 +25445,22 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
 fI
 fI
 fI
@@ -24656,6 +25566,19 @@ fI
 fI
 fI
 fI
+Ha
+Ik
+Ha
+kE
+Ik
+Ik
+Ha
+Dq
+Ha
+ZL
+Ik
+th
+Ha
 fI
 fI
 fI
@@ -24673,40 +25596,27 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+jz
+jz
+jz
+jz
+jz
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
 fI
 fI
 fI
@@ -24808,82 +25718,82 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ha
+Mk
+Ik
+Dq
+Ha
+vd
+Ha
+Rf
+Ik
+zL
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
 "}
 (142,1,1) = {"
 ca
@@ -24960,82 +25870,82 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ha
+Ha
+Ha
+Ha
+Ha
+jm
+Ha
+SP
+Ik
+SP
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
 "}
 (143,1,1) = {"
 ca
@@ -25112,82 +26022,82 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ik
+Ik
+Ik
+Ik
+jm
+Ik
+Ha
+Ha
+Ha
+Ha
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
 "}
 (144,1,1) = {"
 ca
@@ -25264,82 +26174,82 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+jm
+Ha
+Ha
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
 "}
 (145,1,1) = {"
 ca
@@ -25418,80 +26328,80 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+aX
+Dq
+Ik
+Ik
+Ik
+Ik
+dU
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+jz
 "}
 (146,1,1) = {"
 ca
@@ -25570,80 +26480,80 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ik
+Zy
+Tq
+kA
+DJ
+Zy
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+jz
+jz
+jz
 "}
 (147,1,1) = {"
 ca
@@ -25722,80 +26632,80 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+si
+uT
+si
+si
+si
+si
+Ha
+fI
+fI
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
 "}
 (148,1,1) = {"
 ca
@@ -25874,80 +26784,80 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+si
+vd
+Ik
+Dq
+Ik
+Ik
+Ha
+fI
+fI
+fI
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
 "}
 (149,1,1) = {"
 ca
@@ -26026,80 +26936,80 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ik
+Ik
+QK
+ce
+WJ
+Yt
+fq
+Ha
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
 "}
 (150,1,1) = {"
 ca
@@ -26178,78 +27088,78 @@ fI
 fI
 fI
 fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
-fI
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+Ha
+fI
+jz
+jz
+jz
+jz
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+pj
+jz
+jz
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+jz
+jz
 "}

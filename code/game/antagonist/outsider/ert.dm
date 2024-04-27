@@ -40,7 +40,7 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	to_chat(player.current, "The Mobile Task Force works for the O5 Council; your job is to contain loose SCPs and eliminate infiltrators. There is a code red alert at [station_name()], you are tasked to go and fix the problem.")
 	to_chat(player.current, "You should first gear up and discuss a plan with your team. More members may be joining, don't move out before you're ready.")
 
-/datum/antagonist/ert/equip(mob/living/carbon/human/player)
+/*/datum/antagonist/ert/equip(mob/living/carbon/human/player)
 
 	//Special radio setup
 	player.add_language(LANGUAGE_ENGLISH)
@@ -52,4 +52,4 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	player.equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/mtftactical(player), slot_wear_suit)
 
 	create_id(role_text, player)
-	return 1
+	return 1*/

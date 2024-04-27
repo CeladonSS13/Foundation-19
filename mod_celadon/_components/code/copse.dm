@@ -4,7 +4,6 @@
 
 //To do: Allow corpses to appear mangled, bloody, etc. Allow customizing the bodies appearance (they're all bald and white right now).
 
-/*
 #define CORPSE_SPAWNER_RANDOM_NAME       	(1<<0)
 #define CORPSE_SPAWNER_CUT_SURVIVAL      	(1<<1)
 #define CORPSE_SPAWNER_CUT_ID_PDA        	(1<<2)
@@ -152,4 +151,68 @@
 /obj/effect/landmark/corpse/chaos/officer
 	name = "Chaos Insurgent Leader"
 	corpse_outfits = list(/decl/hierarchy/outfit/chaos/leader)
-*/
+
+/obj/effect/landmark/corpse/science/scientist
+	name = "scientist"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/science/scientist)
+
+/obj/effect/landmark/corpse/security/officer
+	name = "sec_officer"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/security/officer)
+
+/obj/effect/landmark/corpse/security/hcz_guard
+	name = "hcz_guard"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/security/hcz_guard)
+
+/obj/effect/landmark/corpse/security/lcz_guard
+	name = "lcz_guard"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/security/lcz_guard)
+
+/obj/effect/landmark/corpse/security/hcz_sergeant
+	name = "hcz_sergeant"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/security/hcz_sergeant)
+
+/obj/effect/landmark/corpse/command/cos
+	name = "Hos"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/command/cos)
+
+/obj/effect/landmark/corpse/science/seniorscientist
+	name = "seniorscientist"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/science/seniorscientist)
+
+/obj/effect/landmark/corpse/engineering/eng
+	name = "Eng"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/engineering/eng)
+
+/obj/effect/landmark/corpse/engineering/seneng
+	name = "SenEng"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/engineering/seneng)
+
+/obj/effect/landmark/corpse/security/lcz_riot
+	name = "lcz_riot"
+	corpse_outfits = list(/decl/hierarchy/outfit/job/security/lcz_riot)
+
+/obj/effect/landmark/corpse/mtf/Omega1
+	name = "MTF Omega-1 Enforcement"
+	corpse_outfits = list(/decl/hierarchy/outfit/mtf/omega1)
+
+/obj/effect/landmark/corpse/mtf/espilon_agent
+	name = "Epsilon Agent"
+	corpse_outfits = list(/decl/hierarchy/outfit/mtf/epsilon_11/agent)
+
+/obj/effect/landmark/corpse/mtf/espilon_brancher
+	name = "Epsilon brancher"
+	corpse_outfits = list(/decl/hierarchy/outfit/mtf/epsilon_11/breacher)
+
+/obj/effect/landmark/corpse/mtf/espilon_leader
+	name = "Epsilon leader"
+	corpse_outfits = list(/decl/hierarchy/outfit/mtf/epsilon_11/leader)
+
+/obj/effect/landmark/corpse/mtf/espilon_medic
+	name = "Epsilon medic"
+	corpse_outfits = list(/decl/hierarchy/outfit/mtf/epsilon_11/medic)
+
+/obj/effect/landmark/corpse/civilian
+	name = "Civilian"
+	corpse_outfits = list(/decl/hierarchy/outfit/job)
+
