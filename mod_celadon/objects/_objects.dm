@@ -5,12 +5,3 @@
 	desc = "Различное снаряжение и дополнительные предметы."
 	/// A string with authors of this modpack.
 	author = "Voiko"
-
-/datum/modpack/objects/pre_initialize()
-	. = ..()
-
-/datum/modpack/objects/initialize()
-	. = ..()
-
-/datum/modpack/objects/post_initialize()
-	. = ..()

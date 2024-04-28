@@ -1,3 +1,4 @@
+/*
 /obj/item/modular_computer/laptop
 	anchored = TRUE
 	name = "laptop computer"
@@ -43,3 +44,4 @@
 /obj/item/modular_computer/laptop/preset
 	anchored = FALSE
 	screen_on = FALSE
+*/
