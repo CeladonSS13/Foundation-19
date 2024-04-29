@@ -415,6 +415,13 @@
 /obj/structure/flora/pottedplant/tall,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"ck" = (
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/turf/unsimulated/floor{
+	icon = 'icons/turf/flooring/tiles.dmi';
+	icon_state = "monotiledark"
+	},
+/area/shuttle/syndicate_elite/station)
 "cl" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/landmark/corpse/chaos,
@@ -722,6 +729,13 @@
 /obj/item/ammo_casing/pistol/used,
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/surface/surface/away)
+"dB" = (
+/obj/structure/closet/secure_closet/guard/hcz{
+	name = "Guard's Locker"
+	},
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "dC" = (
 /obj/structure/bed/chair/comfy/brown,
 /mob/living/simple_animal/hostile/syndicate/chaos{
@@ -1775,15 +1789,9 @@
 /turf/simulated/floor/lino,
 /area/site53/surface/surface/away/bar)
 "iU" = (
-/obj/effect/floor_decal/corner/paleblue/border,
-/obj/item/paper/crumpled/bloody{
-	info = "We knew it was a bad idea to leave this damn hive! There you go! Welcome fucking! Hive grown to a nevebicheskih size, and now the creatures are killing out of him killing people. The only chance is to detonate the warhead."
-	},
-/turf/unsimulated/floor{
-	icon = 'icons/turf/flooring/tiles.dmi';
-	icon_state = "monotiledark"
-	},
-/area/shuttle/syndicate_elite/station)
+/mob/living/simple_animal/hostile/infestation/spitter,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "iV" = (
 /obj/structure/closet/secure_closet{
 	icon = 'icons/obj/sec-lockers.dmi';
@@ -1905,6 +1913,15 @@
 /obj/structure/closet/secure_closet/guard/riotshotguns,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"kg" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"kh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/exoplanet/concrete,
+/area/site53/surface/surface/away)
 "kl" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/landmark/corpse/security/hcz_guard,
@@ -1912,12 +1929,18 @@
 /obj/machinery/light/small/red{
 	dir = 1
 	},
+/obj/item/gun/projectile/automatic/scp/p90,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
 "kn" = (
 /obj/effect/landmark/costume/sexyclown,
 /turf/simulated/floor/carpet/magenta,
 /area/site53/surface/surface/away)
+"ks" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "ku" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -1959,6 +1982,12 @@
 /obj/structure/virology/cryogenics_occupied,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"kX" = (
+/obj/effect/floor_decal/corner/black/full,
+/obj/structure/closet,
+/obj/item/ammo_magazine/box/a57,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "la" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
@@ -1981,12 +2010,17 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
+"lm" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/ammo_magazine/box/mk9,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "lr" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/carpet/purple,
 /area/site53/surface/surface/away)
 "ls" = (
-/obj/item/taperoll/engineering,
+/obj/item/tape/engineering,
 /turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "lu" = (
@@ -2083,6 +2117,11 @@
 	},
 /turf/simulated/floor/exoplanet/snow,
 /area/site53/surface/surface/away)
+"mD" = (
+/obj/effect/gibspawner/human,
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "na" = (
 /obj/item/clothing/suit/storage/toggle/labcoat/science,
 /turf/simulated/floor/exoplanet/desert,
@@ -2124,6 +2163,11 @@
 	},
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"nD" = (
+/mob/living/simple_animal/hostile/infestation/rhino,
+/mob/living/simple_animal/hostile/infestation/broodling,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "nP" = (
 /obj/structure/wall_frame/titanium,
 /obj/structure/window/phoronreinforced/full,
@@ -2224,6 +2268,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/random/tank,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "pN" = (
@@ -2267,6 +2312,11 @@
 	id_tag = "sindy entrance"
 	},
 /obj/structure/window/phoronreinforced/full,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"qo" = (
+/obj/structure/closet/crate/secure/phoron,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "qr" = (
@@ -2356,6 +2406,13 @@
 	},
 /turf/simulated/floor/exoplanet/barren,
 /area/site53/surface/surface/away)
+"rz" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "rF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood,
@@ -2525,6 +2582,11 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"ub" = (
+/obj/structure/virology/cryogenics,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "ud" = (
 /obj/structure/closet/secure_closet/scientist,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2602,7 +2664,7 @@
 /area/site53/surface/surface/away/house1)
 "uT" = (
 /obj/structure/table/gamblingtable,
-/obj/random/contraband,
+/obj/random/mre,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "uX" = (
@@ -2671,9 +2733,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "vt" = (
-/obj/item/taperoll/engineering,
-/turf/simulated/floor/exoplanet/barren,
-/area/shuttle/syndicate_elite/station)
+/mob/living/simple_animal/hostile/infestation/aggregate,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "vu" = (
 /obj/effect/floor_decal/corner/paleblue/bordercorner,
 /obj/effect/floor_decal/corner/paleblue/bordercorner{
@@ -2684,6 +2746,13 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"vJ" = (
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/turf/unsimulated/floor{
+	icon = 'icons/turf/flooring/tiles.dmi';
+	icon_state = "monotiledark"
+	},
+/area/site53/surface/surface/away)
 "vV" = (
 /obj/structure/table/steel_reinforced,
 /obj/structure/window/reinforced{
@@ -2694,6 +2763,12 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"vY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/surface/surface/away)
 "wq" = (
 /obj/structure/closet/hydrant{
 	pixel_y = 29
@@ -2710,6 +2785,11 @@
 	faction = "shaft"
 	},
 /turf/simulated/floor/exoplanet/desert,
+/area/shuttle/syndicate_elite/station)
+"wz" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "wL" = (
 /obj/item/ammo_casing/rifle/used,
@@ -2750,6 +2830,11 @@
 /obj/item/device/radio,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"xn" = (
+/obj/item/material/shard/shrapnel,
+/obj/item/tape/engineering,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "xq" = (
 /turf/unsimulated/wall,
 /area/site53/surface/surface/away)
@@ -2784,6 +2869,11 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/surface/surface/away)
+"xL" = (
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "xS" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/ionrifle/mounted,
@@ -2801,7 +2891,7 @@
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
 "xY" = (
-/obj/item/taperoll/engineering/applied,
+/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "yb" = (
@@ -2843,6 +2933,16 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"yD" = (
+/obj/structure/table/gamblingtable,
+/obj/random/snack,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"yI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "yL" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light/small,
@@ -2852,6 +2952,10 @@
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"yU" = (
+/mob/living/simple_animal/hostile/infestation/lurker,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "yV" = (
 /obj/item/usedcryobag,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -2883,6 +2987,10 @@
 /obj/machinery/reagentgrinder,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"zr" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark,
+/area/shuttle/syndicate_elite/station)
 "zs" = (
 /obj/effect/paint_stripe/red,
 /obj/effect/decal/cleanable/flour,
@@ -2904,15 +3012,9 @@
 	},
 /area/shuttle/syndicate_elite/station)
 "zB" = (
-/mob/living/simple_animal/hostile/infestation,
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 1
-	},
-/turf/unsimulated/floor{
-	icon = 'icons/turf/flooring/tiles.dmi';
-	icon_state = "monotiledark"
-	},
-/area/shuttle/syndicate_elite/station)
+/mob/living/simple_animal/hostile/infestation/assembler,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "zF" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/remains,
@@ -2943,6 +3045,11 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Ab" = (
+/mob/living/simple_animal/hostile/infestation/broodling,
+/mob/living/simple_animal/hostile/infestation/broodling,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "Af" = (
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/hotel)
@@ -2999,12 +3106,7 @@
 /obj/effect/floor_decal/corner/black/full,
 /obj/item/ammo_magazine/box/mk9,
 /obj/item/ammo_magazine/box/mk9,
-/obj/item/ammo_magazine/box/mk9,
-/obj/item/ammo_magazine/box/mk9,
 /obj/item/gun/projectile/pistol/mk9,
-/obj/item/gun/projectile/pistol/mk9,
-/obj/item/ammo_magazine/scp/mk9,
-/obj/item/ammo_magazine/scp/mk9,
 /obj/item/ammo_magazine/scp/mk9,
 /obj/item/ammo_magazine/scp/mk9,
 /turf/simulated/floor/tiled/dark,
@@ -3056,6 +3158,13 @@
 /obj/structure/barricade,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/house1)
+"BC" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/gun/projectile/pistol/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/obj/item/ammo_magazine/scp/mk9,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "BM" = (
 /obj/item/clothing/glasses/sunglasses/sechud/toggle,
 /turf/simulated/floor/exoplanet/grass,
@@ -3078,6 +3187,11 @@
 /obj/item/gun/projectile/silenced,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"BZ" = (
+/mob/living/simple_animal/hostile/infestation/aggregate,
+/mob/living/simple_animal/hostile/infestation/spitter,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "Cc" = (
 /obj/structure/table/standard,
 /obj/item/disk/nuclear,
@@ -3112,6 +3226,7 @@
 "Cu" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "CL" = (
@@ -3169,6 +3284,18 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Ee" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/tape/engineering,
+/turf/simulated/floor,
+/area/shuttle/syndicate_elite/station)
+"Ef" = (
+/mob/living/simple_animal/hostile/infestation/eviscerator,
+/turf/unsimulated/floor{
+	icon = 'icons/turf/flooring/tiles.dmi';
+	icon_state = "monotiledark"
+	},
+/area/site53/surface/surface/away)
 "Ek" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/wood,
@@ -3187,7 +3314,7 @@
 	},
 /area/site53/surface/surface/away)
 "Ez" = (
-/obj/item/taperoll/engineering/applied,
+/obj/item/tape/engineering,
 /turf/simulated/floor/exoplanet/barren,
 /area/shuttle/syndicate_elite/station)
 "EP" = (
@@ -3385,9 +3512,9 @@
 /turf/simulated/floor/exoplanet/water,
 /area/site53/surface/surface/away)
 "Hx" = (
-/obj/item/taperoll/engineering/applied,
 /obj/item/pickaxe/drill,
 /obj/effect/decal/cleanable/cobweb2,
+/obj/item/tape/engineering,
 /turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "HD" = (
@@ -3425,14 +3552,13 @@
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/pistol/used,
 /obj/item/ammo_casing/pistol/used,
+/obj/item/gun/projectile/automatic/scp/saiga12/buckshot,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Ib" = (
-/mob/living/simple_animal/hostile/infestation,
-/turf/unsimulated/floor{
-	icon = 'icons/turf/flooring/tiles.dmi';
-	icon_state = "monotiledark"
-	},
+/obj/effect/decal/cleanable/generic,
+/obj/item/tape/engineering,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Ie" = (
 /obj/structure/broken_cryo,
@@ -3451,6 +3577,7 @@
 	sheet_path = /obj/item/stack/material/phoron;
 	name = "phoron reactor"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "IF" = (
@@ -3509,10 +3636,28 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"JB" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"JC" = (
+/mob/living/simple_animal/hostile/infestation/meatchip,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "JL" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/wood,
 /area/site53/surface/surface/away/bar)
+"JN" = (
+/mob/living/simple_animal/hostile/infestation/assembler,
+/turf/unsimulated/floor{
+	icon = 'icons/turf/flooring/tiles.dmi';
+	icon_state = "monotiledark"
+	},
+/area/site53/surface/surface/away)
 "Ka" = (
 /obj/machinery/power/port_gen/pacman/super/potato,
 /turf/simulated/floor,
@@ -3569,6 +3714,11 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"Lx" = (
+/mob/living/simple_animal/hostile/infestation/spitter,
+/mob/living/simple_animal/hostile/infestation/broodling,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "LE" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/binoculars,
@@ -3615,6 +3765,11 @@
 	id_tag = "sindy entrance 2";
 	name = "checkpoint"
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"ML" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/tank,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "MS" = (
@@ -3687,6 +3842,11 @@
 	icon_state = "monotiledark"
 	},
 /area/shuttle/syndicate_elite/station)
+"Od" = (
+/obj/structure/closet/crate/uranium,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
 "Oe" = (
 /obj/effect/decal/cleanable/blood,
 /mob/living/simple_animal/hostile/syndicate/chaos{
@@ -3733,6 +3893,10 @@
 	},
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"Oy" = (
+/mob/living/simple_animal/hostile/infestation/eviscerator,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "OC" = (
 /obj/structure/table/woodentable,
 /obj/item/clothing/under/suit_jacket/really_black,
@@ -3825,6 +3989,10 @@
 /obj/item/bedsheet/orange,
 /obj/effect/landmark/corpse/engineering/eng,
 /turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"PL" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/r_wall/hull,
 /area/shuttle/syndicate_elite/station)
 "PR" = (
 /obj/infestation_structure/pike_burrow,
@@ -3949,6 +4117,10 @@
 /obj/machinery/chem_master,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
+"RE" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/dark/small,
+/area/shuttle/syndicate_elite/station)
 "RK" = (
 /obj/effect/landmark/corpse/science/scientist,
 /obj/effect/decal/cleanable/blood,
@@ -3988,11 +4160,6 @@
 "Sf" = (
 /obj/effect/floor_decal/corner/black/full,
 /obj/structure/closet,
-/obj/item/gun/projectile/automatic/scp/saiga12/buckshot,
-/obj/item/ammo_magazine/scp/saiga12/buckshot,
-/obj/item/ammo_magazine/scp/saiga12/buckshot,
-/obj/item/ammo_magazine/box/buckshot,
-/obj/item/ammo_magazine/box/buckshot,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/syndicate_elite/station)
 "Si" = (
@@ -4021,9 +4188,14 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Sy" = (
-/mob/living/simple_animal/hostile/infestation,
+/mob/living/simple_animal/hostile/infestation/rhino,
 /turf/simulated/floor/exoplanet/flesh,
 /area/site53/surface/surface/away)
+"SC" = (
+/obj/effect/paint_stripe/yellow,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/r_wall/hull,
+/area/shuttle/syndicate_elite/station)
 "SI" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/button/blast_door{
@@ -4032,6 +4204,12 @@
 	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"SM" = (
+/obj/structure/table/gamblingtable,
+/obj/random/snack,
+/obj/random/snack,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "SP" = (
@@ -4125,6 +4303,10 @@
 	icon = 'icons/turf/flooring/tiles.dmi';
 	icon_state = "monotiledark"
 	},
+/area/shuttle/syndicate_elite/station)
+"TP" = (
+/obj/random/tank,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "TY" = (
 /obj/machinery/light{
@@ -4222,8 +4404,8 @@
 	},
 /area/shuttle/syndicate_elite/station)
 "Wo" = (
-/obj/item/taperoll/engineering,
 /obj/item/pickaxe/drill,
+/obj/item/tape/engineering,
 /turf/simulated/floor,
 /area/shuttle/syndicate_elite/station)
 "Wy" = (
@@ -4305,6 +4487,11 @@
 	icon_state = "monotiledark"
 	},
 /area/site53/surface/surface/away)
+"XE" = (
+/obj/infestation_structure/pike_burrow,
+/mob/living/simple_animal/hostile/infestation/assembler,
+/turf/simulated/floor/exoplanet/flesh,
+/area/site53/surface/surface/away)
 "XI" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/unsimulated/floor{
@@ -4316,16 +4503,17 @@
 /obj/item/clothing/under/rank/scientist,
 /turf/simulated/floor/exoplanet/desert,
 /area/shuttle/syndicate_elite/station)
+"XK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/mineral/random,
+/area/shuttle/syndicate_elite/station)
 "XN" = (
 /obj/structure/bed/chair/comfy,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "XT" = (
-/mob/living/simple_animal/hostile/infestation,
-/turf/unsimulated/floor{
-	icon = 'icons/turf/flooring/tiles.dmi';
-	icon_state = "monotiledark"
-	},
+/mob/living/simple_animal/hostile/infestation/broodling,
+/turf/simulated/floor/exoplanet/flesh,
 /area/site53/surface/surface/away)
 "XU" = (
 /obj/structure/table/steel_reinforced,
@@ -4351,6 +4539,11 @@
 "Yq" = (
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light/small/red,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/shuttle/syndicate_elite/station)
+"Ys" = (
+/obj/structure/table/gamblingtable,
+/obj/random/smokes,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/syndicate_elite/station)
 "Yt" = (
@@ -12392,7 +12585,7 @@ kK
 kK
 jc
 kK
-Dq
+Ib
 kK
 jc
 jc
@@ -13074,7 +13267,7 @@ eh
 Mv
 Mv
 eh
-Mv
+ck
 Mv
 eh
 ca
@@ -13226,7 +13419,7 @@ eh
 Mv
 Mv
 eh
-Ib
+Mv
 XI
 eh
 ca
@@ -13345,7 +13538,7 @@ ca
 jc
 eh
 zx
-iU
+gS
 eh
 Mv
 XI
@@ -15123,7 +15316,7 @@ Ik
 Fw
 Ea
 Ik
-KK
+xn
 ac
 ac
 ac
@@ -15472,7 +15665,7 @@ ca
 ca
 ca
 eh
-zB
+zx
 gS
 eh
 ca
@@ -16231,12 +16424,12 @@ ca
 ca
 Nj
 QG
-Nj
+Ef
 zh
 CQ
 QZ
 Nj
-XT
+Nj
 ca
 ca
 ca
@@ -16381,11 +16574,11 @@ tc
 ca
 ca
 Nj
-XT
 Nj
 Nj
 Nj
 Nj
+vJ
 Nj
 Nj
 Nj
@@ -16538,7 +16731,7 @@ Nj
 Nj
 Nj
 Nj
-Nj
+JN
 QG
 Nj
 Nj
@@ -16688,7 +16881,7 @@ Nj
 Nj
 QG
 Nj
-XT
+Nj
 Nj
 Nj
 Nj
@@ -16983,7 +17176,7 @@ ca
 ca
 tc
 tc
-tc
+iU
 mr
 tc
 Ol
@@ -17001,7 +17194,7 @@ Nj
 Xb
 Ol
 tc
-Sy
+tc
 tc
 ca
 ca
@@ -17136,7 +17329,7 @@ tc
 hU
 tc
 tc
-Sy
+tc
 tc
 Ol
 Xb
@@ -17591,6 +17784,8 @@ tc
 tc
 tc
 tc
+vt
+iU
 tc
 tc
 tc
@@ -17599,11 +17794,9 @@ tc
 tc
 tc
 tc
-Sy
 tc
 tc
 tc
-Sy
 tc
 tc
 tc
@@ -17741,23 +17934,23 @@ ca
 ca
 tc
 tc
-Sy
-tc
-tc
-Sy
 tc
 tc
 tc
+tc
+tc
+tc
+iU
 hU
+JC
+tc
+nD
 tc
 tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
+zB
 tc
 tc
 tc
@@ -17894,25 +18087,25 @@ ca
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-mr
-tc
-tc
-tc
-tc
-tc
-tc
-tc
 Sy
+Oy
+Oy
+tc
+tc
+iU
+tc
+tc
+tc
+tc
+XE
+tc
+tc
+tc
+tc
+tc
+yU
+tc
+tc
 tc
 tc
 tc
@@ -18048,11 +18241,11 @@ tc
 tc
 tc
 tc
+Oy
+JC
 tc
 tc
 tc
-tc
-Sy
 tc
 tc
 tc
@@ -18063,7 +18256,7 @@ tc
 tc
 mr
 tc
-tc
+iU
 tc
 tc
 tc
@@ -18206,20 +18399,20 @@ mr
 tc
 tc
 tc
-Sy
+tc
 tc
 tc
 tc
 tc
 tc
 hU
-tc
-tc
-tc
-tc
+XT
 tc
 tc
 Sy
+iU
+tc
+tc
 tc
 ca
 ca
@@ -18351,24 +18544,24 @@ tc
 tc
 tc
 tc
-Sy
-Sy
+tc
+tc
+tc
+vt
 tc
 tc
 tc
 tc
 tc
+mD
 tc
 tc
+XT
+tc
+tc
+JC
 hU
-Sy
-tc
-tc
-tc
-tc
-tc
-hU
-tc
+zB
 tc
 tc
 tc
@@ -18507,19 +18700,19 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+zB
+Lx
 tc
 tc
 tc
 tc
 tc
 Sy
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -18657,19 +18850,19 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
+vt
+zB
+zB
 hU
 tc
 tc
+Oy
 tc
 tc
 tc
 tc
 tc
-tc
-tc
+JC
 tc
 tc
 tc
@@ -18811,21 +19004,21 @@ hU
 tc
 tc
 tc
-Sy
 tc
 tc
 tc
 tc
 tc
+XT
+BZ
 tc
 tc
-Sy
+JC
+JC
 tc
 tc
 tc
-tc
-tc
-tc
+Oy
 tc
 tc
 tc
@@ -18962,6 +19155,7 @@ tc
 tc
 tc
 tc
+Oy
 tc
 tc
 tc
@@ -18969,14 +19163,13 @@ tc
 tc
 tc
 tc
+vt
 tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
+Sy
+Lx
 tc
 tc
 tc
@@ -19116,16 +19309,16 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-Sy
-tc
+Oy
 tc
 tc
 tc
 tc
 tc
+tc
+tc
+tc
+zB
 mr
 tc
 tc
@@ -19262,14 +19455,15 @@ ca
 tc
 tc
 tc
-Sy
 tc
 tc
-Sy
+tc
+tc
 mr
 tc
 tc
 tc
+XT
 tc
 tc
 tc
@@ -19281,8 +19475,7 @@ tc
 tc
 tc
 tc
-tc
-tc
+XT
 tc
 tc
 ca
@@ -19423,18 +19616,18 @@ tc
 tc
 tc
 tc
-Sy
+iU
 tc
 mr
 hU
 tc
 tc
+iU
+tc
+vt
 tc
 tc
-Sy
 tc
-tc
-Sy
 tc
 tc
 ca
@@ -19572,15 +19765,15 @@ hU
 tc
 tc
 tc
+iU
+vt
 tc
 tc
 tc
 tc
 tc
 tc
-tc
-tc
-Sy
+JC
 hU
 tc
 tc
@@ -19723,7 +19916,7 @@ tc
 tc
 tc
 tc
-tc
+xL
 tc
 tc
 tc
@@ -19880,7 +20073,7 @@ tc
 tc
 tc
 tc
-tc
+zB
 tc
 tc
 tc
@@ -20024,18 +20217,18 @@ tc
 tc
 tc
 mr
+tc
+tc
+tc
+tc
+tc
+tc
+Oy
+tc
+tc
+iU
+Ab
 Sy
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-Sy
-tc
-tc
 tc
 tc
 tc
@@ -20188,7 +20381,7 @@ tc
 tc
 mr
 tc
-tc
+Sy
 tc
 tc
 tc
@@ -20340,9 +20533,9 @@ tc
 tc
 tc
 tc
+vt
 tc
 tc
-Sy
 tc
 tc
 tc
@@ -20482,7 +20675,7 @@ tc
 tc
 tc
 tc
-Sy
+tc
 tc
 tc
 tc
@@ -20801,7 +20994,7 @@ tc
 tc
 tc
 tc
-tc
+Oy
 tc
 tc
 ca
@@ -21993,7 +22186,7 @@ jc
 Ha
 Ha
 Ha
-Ha
+SC
 Ha
 Ha
 Ha
@@ -22207,7 +22400,7 @@ jz
 FS
 kS
 Ik
-xy
+ub
 dU
 xy
 FS
@@ -22296,9 +22489,9 @@ cc
 jc
 Ha
 AM
+qo
 zX
-zX
-sY
+Od
 Ji
 Ha
 jz
@@ -22450,7 +22643,7 @@ Ha
 Ik
 Ik
 Ik
-Ik
+kg
 Ik
 Ha
 jz
@@ -22599,9 +22792,9 @@ jc
 ac
 jc
 Ha
-Ik
-Ik
-Ik
+ML
+TP
+kg
 Dq
 Ik
 Ha
@@ -22610,7 +22803,7 @@ Ha
 Ha
 Ha
 Ha
-Ha
+SC
 Ha
 Ha
 Ha
@@ -22750,9 +22943,9 @@ jc
 ac
 ac
 jc
-Ha
+SC
 pJ
-Ik
+TP
 Ik
 QK
 Ik
@@ -22766,10 +22959,10 @@ Dq
 Ik
 cX
 Ik
+kg
 Ik
 Ik
-Ik
-Dq
+wz
 Ik
 Ik
 Ik
@@ -22816,7 +23009,7 @@ Ij
 lg
 Zt
 yV
-Ik
+kg
 Dq
 jm
 Ik
@@ -22912,7 +23105,7 @@ Ha
 uf
 Ha
 Ha
-Ha
+SC
 Ha
 Ha
 Ha
@@ -23054,14 +23247,14 @@ jc
 ac
 ac
 jc
-kK
+PL
 su
 WG
 Ha
 sY
 Dq
 Ha
-Ik
+kg
 Ha
 su
 Ez
@@ -23078,7 +23271,7 @@ Ik
 Ik
 BU
 Tb
-YR
+lm
 YR
 Nh
 jz
@@ -23214,7 +23407,7 @@ sY
 Ik
 Ha
 Ik
-Ha
+SC
 Vo
 ls
 Vo
@@ -23226,11 +23419,11 @@ ac
 ac
 Nh
 Ik
-Ik
+kg
 Ik
 BU
 Ik
-Ik
+kg
 Ik
 Nh
 jz
@@ -23259,8 +23452,8 @@ fI
 fI
 jz
 Nh
-Ik
-Ik
+kg
+kg
 Nh
 Nh
 Nh
@@ -23361,7 +23554,7 @@ jc
 kK
 XB
 Ka
-Ha
+SC
 zX
 Ik
 jm
@@ -23382,8 +23575,8 @@ Ik
 Ik
 BU
 Zt
-Ea
-Dq
+BC
+wz
 Nh
 jz
 fI
@@ -23520,7 +23713,7 @@ Ha
 Ik
 Ha
 ol
-ls
+Ee
 ZH
 Au
 ac
@@ -23529,12 +23722,12 @@ ac
 ac
 ac
 Nh
-Ct
+rz
 Ik
-Ik
+kg
 Al
 tb
-Ik
+kg
 yA
 Nh
 jz
@@ -23575,7 +23768,7 @@ Ik
 FS
 kS
 Ik
-xy
+ub
 Ik
 Pf
 FS
@@ -23588,8 +23781,8 @@ TK
 PY
 rM
 Nh
-nz
-Db
+dB
+zr
 nz
 Nh
 "}
@@ -23662,17 +23855,17 @@ cc
 jc
 cc
 jc
-kK
+PL
 ol
 Vo
 UK
 QK
 Ik
-Ha
+SC
 Ik
 Tl
 Vo
-vt
+Ez
 hv
 ac
 ac
@@ -23974,9 +24167,9 @@ jz
 jz
 Ha
 Ik
-Ha
+SC
 ac
-ac
+XK
 ac
 ac
 ac
@@ -23989,38 +24182,38 @@ Ik
 Ik
 Ik
 Ik
-cX
+JB
 Ik
 Ik
-Ik
+kg
 Ik
 Ik
 Ik
 Ik
 Ik
 Dq
-Ik
+kg
 Ik
 Ik
 ru
-Ik
+kg
 ue
 Ik
+kg
 Ik
 Ik
 Ik
 Ik
+kg
 Ik
-Ik
-Ik
-Ik
+yI
 Dq
 cX
 Ik
 Ik
 BN
 tI
-tI
+RE
 tI
 Pk
 Ud
@@ -24030,19 +24223,19 @@ QK
 Ik
 Ik
 Ik
-Ik
+kg
 Ik
 Dq
 Ik
 Ij
 Ik
-Ik
+kg
 Ik
 uF
 pp
 wL
 kM
-xf
+kX
 Nh
 wU
 Db
@@ -24282,7 +24475,7 @@ Ha
 Ha
 Ha
 Ha
-Ha
+SC
 Ha
 Ha
 Ha
@@ -24317,7 +24510,7 @@ jz
 jz
 jz
 kK
-Ik
+kg
 kK
 jz
 jz
@@ -24435,10 +24628,10 @@ Ik
 Ik
 Dq
 Ik
+kg
 Ik
 Ik
-Ik
-Ik
+kg
 uf
 Ha
 jz
@@ -24469,7 +24662,7 @@ fI
 fI
 jz
 kK
-Ik
+kg
 kK
 jz
 fI
@@ -24483,18 +24676,18 @@ fI
 jz
 FS
 GW
-Ik
+kg
 Yp
 FS
 QK
 rT
 FS
+kg
 Ik
 Ik
 Ik
 Ik
-Ik
-Db
+zr
 Db
 GR
 Db
@@ -24621,7 +24814,7 @@ fI
 fI
 jz
 kK
-Ik
+yI
 kK
 jz
 fI
@@ -24773,7 +24966,7 @@ fI
 fI
 jz
 kK
-Ik
+kg
 kK
 jz
 fI
@@ -24925,7 +25118,7 @@ fI
 fI
 jz
 kK
-Ku
+vY
 kK
 jz
 fI
@@ -25038,15 +25231,15 @@ fI
 jz
 Ha
 Ik
-Ha
+SC
 Ik
 la
 yb
-Ha
+SC
 Ik
 Ha
 th
-Ik
+kg
 th
 Ha
 jz
@@ -25077,7 +25270,7 @@ fI
 fI
 jz
 Ri
-kR
+kh
 Ri
 jz
 fI
@@ -25091,7 +25284,7 @@ fI
 jz
 FS
 ud
-Zt
+ks
 ud
 FS
 jz
@@ -25191,7 +25384,7 @@ jz
 Ha
 Ik
 Ha
-Ik
+kg
 Mc
 Ik
 Ha
@@ -25340,7 +25533,7 @@ fI
 fI
 fI
 jz
-Ha
+SC
 Ik
 Ha
 Ha
@@ -25499,7 +25692,7 @@ ni
 HY
 Ik
 Ha
-Ik
+kg
 Ha
 PH
 Zt
@@ -25649,7 +25842,7 @@ Ik
 Ha
 kE
 Ik
-Ik
+kg
 Ha
 Dq
 Ha
@@ -25948,7 +26141,7 @@ fI
 fI
 fI
 jz
-Ha
+SC
 Ik
 Ha
 Ha
@@ -26257,7 +26450,7 @@ Ha
 Ha
 Ha
 Ha
-Ha
+SC
 Ha
 jm
 Ha
@@ -26712,12 +26905,12 @@ jz
 jz
 Ha
 Ik
-si
+yD
 uT
-si
-si
-si
-si
+Ys
+uT
+SM
+yD
 Ha
 jz
 jz
@@ -26866,7 +27059,7 @@ Ha
 Ik
 si
 vd
-Ik
+kg
 Dq
 Ik
 Ik
@@ -27015,7 +27208,7 @@ jz
 jz
 jz
 Ha
-Ik
+kg
 Ik
 QK
 ce
