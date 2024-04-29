@@ -1,5 +1,10 @@
+#ifndef MODPACK_CELADON_OUTFITS
+#define MODPACK_CELADON_OUTFITS
+
 #include "_outfits.dm"
 
 #include "code/job/engineering.dm"
 #include "code/job/security.dm"
 #include "code/job/mtf.dm"
+
+#endif

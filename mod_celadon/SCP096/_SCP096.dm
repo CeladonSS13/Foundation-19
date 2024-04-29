@@ -6,11 +6,3 @@
 	/// A string with authors of this modpack.
 	author = "XAH"
 
-/datum/modpack/SCP096/pre_initialize()
-	. = ..()
-
-/datum/modpack/SCP096/initialize()
-	. = ..()
-
-/datum/modpack/SCP096/post_initialize()
-	. = ..()

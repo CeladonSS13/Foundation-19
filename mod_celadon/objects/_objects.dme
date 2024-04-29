@@ -1,4 +1,9 @@
+#ifndef MODPACK_CELADON_OBJECTS
+#define MODPACK_CELADON_OBJECTS
+
 #include "_objects.dm"
 
 #include "code/items/weapons/SCP/armor.dm"
 #include "code/items/weapons/SCP/helmet.dm"
+
+#endif

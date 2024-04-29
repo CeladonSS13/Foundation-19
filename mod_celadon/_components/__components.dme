@@ -1,3 +1,6 @@
+#ifndef MODPACK_CELADON_COMPONENTS
+#define MODPACK_CELADON_COMPONENTS
+
 #include "__components.dm"
 
 // Различный дополнительный функционал
@@ -8,4 +11,3 @@
 #include "code/cards_ids.dm"
 #include "code/copse.dm"
 #include "code/ert.dm"
-

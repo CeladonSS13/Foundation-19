@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_HUMAN_EXAMINE
+#define MODPACK_CELADON_HUMAN_EXAMINE
+
+#include "_human_examine.dm"
+
+#include "code/human_examine.dm"
+
+#endif

@@ -5,12 +5,3 @@
 	desc = "Место для различных наборов одежды"
 	/// A string with authors of this modpack.
 	author = "Voiko"
-
-/datum/modpack/outfits/pre_initialize()
-	. = ..()
-
-/datum/modpack/outfits/initialize()
-	. = ..()
-
-/datum/modpack/outfits/post_initialize()
-	. = ..()

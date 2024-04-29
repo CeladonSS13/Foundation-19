@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_LAPTOP
+#define MODPACK_CELADON_LAPTOP
+
+#include "_laptop_rotate.dm"
+
+#include "code/laptop_rotate.dm"
+
+#endif
