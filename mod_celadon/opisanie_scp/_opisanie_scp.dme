@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_OPISANIE_SCP
+#define MODPACK_CELADON_OPISANIE_SCP
+
+#include "_opisanie_scp.dm"
+
+#include "code/opisanie_scp.dm"
+
+#endif
