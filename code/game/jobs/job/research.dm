@@ -82,7 +82,7 @@
 	supervisors = "the Senior Researchers and Research Director"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SCIENCE = 60)
-	alt_titles = list("Biologist", "Xenoarcheologist", "Botanist", "Junior Mentalist", "Chemist", "Physicist", "Psychologist", "Memetologist", "Xenogeneticist", "Zoologist", "Microbiologist", "")
+	alt_titles = list("Biologist", "Xenoarcheologist", "Botanist", "Junior Mentalist", "Chemist", "Physicist", "Psychologist", "Memetologist", "Geneticist", "Zoologist", "Microbiologist")
 	minimal_player_age = 3
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
@@ -164,7 +164,7 @@
 	supervisors = "the Research Director"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SCIENCE = 480)
-	alt_titles = list("Senior Biologist", "Senior Xenoarcheologist", "Senior Botanist", "Mentalist", "Senior Memetologist", "Senior Physicist")
+	alt_titles = list("Senior Biologist", "Senior Xenoarcheologist", "Senior Botanist", "Mentalist", "Senior Memetologist", "Senior Physicist", "Senior Psychologist"
 	minimal_player_age = 7
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/science/seniorscientist
