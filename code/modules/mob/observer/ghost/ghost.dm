@@ -594,7 +594,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	log_and_message_staff("has respawned.", M)
 	qdel(src)
 
-// [CELADON-EDIT OPISANIE_SCP]
+// [CELADON-REMOVE OPISANIE_SCP]
 // /mob/observer/ghost/verb/become_scp()
 // 	set category = "Ghost"
 // 	set name = "Become an SCP"
