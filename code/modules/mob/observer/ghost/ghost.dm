@@ -624,10 +624,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			return
 
 		var/mob/living/selected_scp = scp_type_ref_list[selected_scp_string]
-		//[CELADON-EDIT] OPISANIE_SCP -->
+		// [CELADON-EDIT] OPISANIE_SCP
 		//var/agreement = tgui_alert(src, "Warning! SCPs are likley to spend a long amount of time within their containment chamber and are not guaranteed to be let out![(selected_scp.SCP.metaFlags & SCP_ROLEPLAY) ? " Additionally, this is a roleplay oriented SCP. That means you are expected to behave like the SCP would in lore, and failing to do so would result in ban from playing roleplay SCPs." : ""]", "Are you sure?", list("Yes","No")) // CELADON-EDIT - ORIGINAL
 		var/agreement = tgui_alert(src, (selected_scp.opisanie ? selected_scp.opisanie : ""), "Are you sure?", list("Yes","No"))
-		// <-- [CELADON-EDIT] OPISANIE_SCP
+		// [/CELADON-EDIT] OPISANIE_SCP
 		if(!LAZYLEN(agreement) || (agreement == "No"))
 			return
 		if(!canBecomeSCP(selected_scp)) //This is incase something changes while we are waiting for a response from the ghost
