@@ -39,8 +39,6 @@ ID мода: OPISANIE_SCP
 
 ### Оверрайды
 Отсутствуют
-- `mods/_master_files/sound/my_cool_sound.ogg`
-- `mods/_master_files/code/my_modular_override.dm`: `proc/overriden_proc`, `var/overriden_var`
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
@@ -50,7 +48,6 @@ ID мода: OPISANIE_SCP
 
 ### Дефайны
 Отсутствуют
-- `code/__defines/~mods/opisanie_scp.dm`: `OPISANIE_SCP_SPEED_MULTIPLIER`, `OPISANIE_SCP_SPEED_BASE`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
