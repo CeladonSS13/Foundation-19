@@ -28,7 +28,7 @@ ID мода: OPISANIE_SCP
 
 ### Изменения *кор кода*
 
-- `/mob/observer/ghost`: `verb/become_scp`
+- `/mob/observer/ghost`: `var/agreement`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
