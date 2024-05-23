@@ -82,9 +82,9 @@
 	supervisors = "the Senior Researchers and Research Director"
 	economic_power = 4
 	requirements = list(EXP_TYPE_SCIENCE = 60)
-	// CELADON-EDIT XAH
+	// [CELADON-EDIT] XAH
 	//alt_titles = list("Biologist", "Xenoarcheologist", "Botanist", "Junior Mentalist", "Chemist", "Physicist", "Psychologist", "Memetologist", "Cryptogeneticist", "Zoologist", "Microbiologist", "")
-	// CELADON-EDIT
+	// [CELADON-EDIT]
 	alt_titles = list("Biologist", "Xenoarcheologist", "Junior Mentalist", "Physicist", "Memetologist", "Cryptogeneticist", "Zoologist", "Microbiologist")
 	minimal_player_age = 3
 	ideal_character_age = 24
