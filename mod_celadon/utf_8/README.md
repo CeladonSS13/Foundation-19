@@ -22,7 +22,7 @@ ID мода: UTF_8
 
 ### Дефайны
 
-- `code/__defines/~mods/_master_defines.dm`: `browse`
+- `code/__defines/~mods/_master_defines.dm`: `show_browser`
 
 ### Используемые файлы, не содержащиеся в модпаке
 
