@@ -13,6 +13,7 @@
 #include "laptop_rotate/_laptop_rotate.dme"
 #include "opisanie_scp/_opisanie_scp.dme"
 #include "sci_job_names/_sci_job_names.dme"
+#include "utf_8/_utf_8.dme"
 
 // --- OBJECTS --- //
 #include "objects/_objects.dme"
