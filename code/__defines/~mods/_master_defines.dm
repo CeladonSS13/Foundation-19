@@ -1,4 +1,5 @@
 
 // UTF_8 - Start
-#define browse(content, options) browse(utf_8_html(content), options)
+#undef show_browser
+#define show_browser(target, content, title)  to_target(target, browse(utf_8_html(content), title))
 // UTF_8 - End
