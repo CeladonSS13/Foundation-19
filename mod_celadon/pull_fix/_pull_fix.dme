@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_PULL_FIX
+#define MODPACK_CELADON_PULL_FIX
+
+#include "_pull_fix.dm"
+
+#include "code/pull_fix.dm"
+
+#endif

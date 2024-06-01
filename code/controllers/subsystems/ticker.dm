@@ -44,6 +44,9 @@ SUBSYSTEM_DEF(ticker)
 	if(start_ASAP)
 		to_world(SPAN_INFO("<B>The game will start as soon as possible due to configuration!</B>"))
 	else
+		// [CELADON-ADD] Добавляем оповещение о начале раунда в бот чат с пингом плашки SCP.
+		send2chat("<@&1202576280835457076>, запущен новый раунд на сервере: **SCP**!", "bot-chat")
+		// [/CELADON-ADD]
 		to_world(SPAN_INFO("<B>Welcome to the pre-game lobby!</B>"))
 		to_world("Please, setup your character and select ready. Game will start in [round(pregame_timeleft/10)] seconds.")
 	round_start_time = world.time

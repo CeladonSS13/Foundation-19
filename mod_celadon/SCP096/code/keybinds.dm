@@ -11,4 +11,9 @@
 /mob/living/scp096/verb/stop_screaming()
 	set name = "Stop scream"
 	set category = "IC"
-	Destroy()
+
+	target = null
+	LAZYCLEARLIST(targets)
+	current_state = STATE_096_IDLE
+	icon_state = "scp"
+	update_icon()

@@ -2,7 +2,7 @@
 
 #### Список PRов:
 
-- https://github.com/MysticalFaceLesS/Foundation-19/pulls/#####
+- https://github.com/CeladonSS13/Foundation-19/tree/beta-dev/#####
 <!--
   Ссылки на PRы, связанные с модом:
   - Создание

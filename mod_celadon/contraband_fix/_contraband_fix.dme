@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_CONTRABAND_FIX
+#define MODPACK_CELADON_CONTRABAND_FIX
+
+#include "_contraband_fix.dm"
+
+#include "code/contraband_fix.dm"
+
+#endif
