@@ -1,2 +1,5 @@
 #include "_new_ungoc_sprites.dm"
 
+#include "code/solgov-accessory.dm"
+
+#endif
