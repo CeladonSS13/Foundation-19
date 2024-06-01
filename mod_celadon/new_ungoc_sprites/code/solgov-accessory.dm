@@ -111,9 +111,9 @@ armbands
 armour attachments
 *****************/
 /obj/item/clothing/accessory/armor/tag/base
-	icon_override = 'maps/torch/icons/obj/solgov-accessory.dmi'
-	icon = 'maps/torch/icons/obj/solgov-accessory.dmi'
-	accessory_icons = list(slot_tie_str = 'maps/torch/icons/mob/solgov-accessory.dmi', slot_w_uniform_str = 'maps/torch/icons/mob/solgov-accessory.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/solgov-accessory.dmi')
+	icon_override = 'mod_celadon/new_ungoc_sprites/icons/solgov-accessory.dmi'
+	icon = 'mod_celadon/new_ungoc_sprites/icons/solgov-accessory.dmi'
+	accessory_icons = list(slot_tie_str = 'mod_celadon/new_ungoc_sprites/icons/solgov-accessory.dmi', slot_w_uniform_str = 'mod_celadon/new_ungoc_sprites/icons/solgov-accessory.dmi', slot_wear_suit_str = 'mod_celadon/new_ungoc_sprites/icons/solgov-accessory.dmi')
 	icon_state = "solflag"
 	slot = ACCESSORY_SLOT_ARMOR_M
 
