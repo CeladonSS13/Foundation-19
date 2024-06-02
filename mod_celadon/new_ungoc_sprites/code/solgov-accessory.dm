@@ -120,6 +120,7 @@ armour attachments
 /obj/item/clothing/accessory/armor/tag/base/goc
 	name = "\improper UNGOC Flag"
 	desc = "An emblem depicting the UNGOC's flag."
+	icon_state = "solflag"
 
 /obj/item/clothing/accessory/armor/tag/base/sec
 	name = "\improper GUARD tag"
