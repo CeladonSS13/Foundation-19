@@ -19,3 +19,25 @@
 		return 1
 	else
 		handle_fall_effect(landing)
+
+// Перегрузка для can_pull()
+/mob/living/can_pull()
+	//if(!moving)
+		//return FALSE
+	if(pulling.anchored)
+		return FALSE
+	if(!isturf(pulling.loc))
+		return FALSE
+	if(restrained())
+		return FALSE
+
+	if(get_dist(src, pulling) > 2)
+		return FALSE
+
+	if(pulling.z != z)
+		if(pulling.z < z)
+			return FALSE
+		var/turf/T = GetAbove(src)
+		if(!isopenspace(T))
+			return FALSE
+	return TRUE
