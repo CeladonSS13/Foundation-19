@@ -18,7 +18,7 @@
 #include "pull_fix/_pull_fix.dme"
 #include "scp343_fix/_scp343_fix.dme"
 #include "scp012_fix/_scp012_fix.dme"
-
+#include "minor_fix/_minor_fix.dme"
 
 // --- OBJECTS --- //
 #include "objects/_objects.dme"

@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_MINOR_FIX
+#define MODPACK_CELADON_MINOR_FIX
+
+#include "_minor_fix.dm"
+
+#include "code/minor_fix.dm"
+
+#endif
