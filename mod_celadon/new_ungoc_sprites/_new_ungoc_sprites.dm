@@ -5,12 +5,3 @@
 	desc = "Новый спрайт для патча с флагом ООНГОК (по факту замена спрайта флага СолФеда из оригинальной СС13), возможно потом добавлю еще что-то"
 	/// A string with authors of this modpack.
 	author = "quary"
-
-/datum/modpack/example/pre_initialize()
-	. = ..()
-
-/datum/modpack/example/initialize()
-	. = ..()
-
-/datum/modpack/example/post_initialize()
-	. = ..()
