@@ -1,0 +1,6 @@
+#ifndef MODPACK_NEW_UNGOC_SPRITES
+#define MODPACK_NEW_UNGOC_SPRITES
+#include "_new_ungoc_sprites.dm"
+#include "code/solgov-accessory.dm"
+#endif
+

@@ -2,6 +2,34 @@
 /mob/living/carbon/human/scp343
 	var/move_delay = 3.0
 
+
+// Перегрузка метода. Добавлено ограничение по времени.
+/mob/living/carbon/human/scp343/Initialize(mapload, new_species = "SCP-343")
+	. = ..()
+	SCP = new /datum/scp(
+		src, // Ref to actual SCP atom
+		"strange elderly man", //Name (Should not be the scp desg, more like what it can be described as to viewers)
+		SCP_SAFE, //Obj Class
+		"343", //Numerical Designation
+		SCP_PLAYABLE|SCP_ROLEPLAY
+	)
+
+	add_language(LANGUAGE_ENGLISH)
+	add_language(LANGUAGE_HUMAN_FRENCH)
+	add_language(LANGUAGE_HUMAN_GERMAN)
+	add_language(LANGUAGE_HUMAN_SPANISH)
+	if(!(MUTATION_XRAY in mutations))
+		mutations.Add(MUTATION_XRAY)
+		update_mutations()
+		update_sight()
+
+	add_verb(src, /mob/living/carbon/human/scp343/verb/object_phase)
+
+	SCP.min_time = 15 MINUTES
+	SCP.min_playercount = 20
+
+
+
 // Новый verb для 343
 /mob/living/carbon/human/scp343/verb/change_shell()
 	set name = "Change shell"
