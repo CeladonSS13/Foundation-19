@@ -19,6 +19,7 @@
 #include "scp343_fix/_scp343_fix.dme"
 #include "scp012_fix/_scp012_fix.dme"
 #include "minor_fix/_minor_fix.dme"
+#include "scp166_update/_scp166_update.dme"
 
 // --- OBJECTS --- //
 #include "objects/_objects.dme"

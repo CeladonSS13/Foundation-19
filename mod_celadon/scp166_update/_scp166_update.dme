@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_SCP166_UPDATE
+#define MODPACK_CELADON_SCP166_UPDATE
+
+#include "_scp166_update.dm"
+
+#include "code/scp166_update.dm"
+
+#endif
