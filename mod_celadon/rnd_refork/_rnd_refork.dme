@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_RND_REFORK
+#define MODPACK_CELADON_RND_REFORK
+
+#include "_rnd_refork.dm"
+
+#include "code/rnd_refork.dm"
+
+#endif
