@@ -2,7 +2,7 @@
 
 #### Список PRов:
 
-- https://github.com/CeladonSS13/Foundation-19/tree/beta-dev/#####
+- https://github.com/CeladonSS13/Foundation-19/pull/95
 
 ## Мод-пример
 
@@ -12,9 +12,14 @@ ID мода: MINOR_FIX
 
 Мод для минорных изменений в коде: Описание, свойства объектов
 
+- Изменения доступа для СМО и СЕ
+- Отключение рандомизации имён для Д-класса
+
 ### Изменения *кор кода*
 
-Минимальные
+- `code\game\jobs\job\medical.dm` Добавляем СМО админ доступ 4
+- `code\game\jobs\job\engineering.dm` Добавляем СЕ админ доступ 4
+- `code\game\jobs\job\misc.dm` Убираем для Д класса случайнные имена
 
 ### Оверрайды
 

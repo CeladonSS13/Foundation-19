@@ -1,4 +1,29 @@
 var/list/department_radio_keys = list(
+	  // [CELADON-EDIT]
+	  ":й" = "right ear",	".й" = "right ear",
+	  ":з" = "left ear",	".з" = "left ear",
+	  ":ш" = "intercom",	".ш" = "intercom",
+	  ":р" = "department",	".р" = "department",
+	  ":с" = "Command",		".с" = "Command",
+	  ":т" = "Science",		".т" = "Science",
+	  ":ь" = "Medical",		".ь" = "Medical",
+	  ":у" = "Engineering",	".у" = "Engineering",
+	  ":ы" = "Security",	".ы" = "Security",
+	  ":ц" = "whisper",		".ц" = "whisper",
+	  ":д" = "Mercenary",	".д" = "Mercenary",
+	  ":г" = "Supply",		".г" = "Supply",
+	  ":п" = "GOC",			".п" = "GOC", //GOC
+	  ":м" = "Service",		".м" = "Service",
+	  ":к" = "Response Team", ".к" = "Response Team",
+
+	  ":ч" = "LCZ-Security",		".ч" = "LCZ-Security",
+	  ":л" = "HCZ-Security",		".л" = "HCZ-Security",
+	  ":я" = "ECZ-Security",		".я" = "ECZ-Security",
+	  ":Ч" = "LCZ-Security",		".Ч" = "LCZ-Security",
+	  ":Л" = "HCZ-Security",		".Л" = "HCZ-Security",
+	  ":Я" = "ECZ-Security",		".Я" = "ECZ-Security",
+	  // [/CELADON-EDIT]
+
 	  ":r" = "right ear",	".r" = "right ear",
 	  ":l" = "left ear",	".l" = "left ear",
 	  ":i" = "intercom",	".i" = "intercom",
@@ -19,49 +44,6 @@ var/list/department_radio_keys = list(
 	  ":y" = "Exploration",		".y" = "Exploration",
 	  ":o" = "Response Team",".o" = "Response Team", //ERT
 	  ":j" = "Hailing", ".j" = "Hailing",
-
-	  ":R" = "right ear",	".R" = "right ear",
-	  ":L" = "left ear",	".L" = "left ear",
-	  ":I" = "intercom",	".I" = "intercom",
-	  ":H" = "department",	".H" = "department",
-	  ":C" = "Command",		".C" = "Command",
-	  ":N" = "Science",		".N" = "Science",
-	  ":M" = "Medical",		".M" = "Medical",
-	  ":E" = "Engineering",	".E" = "Engineering",
-	  ":S" = "Security",	".S" = "Security",
-	  ":W" = "whisper",		".W" = "whisper",
-	  ":T" = "Mercenary",	".T" = "Mercenary",
-	  ":X" = "Raider",		".X" = "Raider",
-	  ":U" = "Supply",		".U" = "Supply",
-	  ":V" = "Service",		".V" = "Service",
-	  ":P" = "AI Private",	".P" = "AI Private",
-	  ":Z" = "Entertainment",".Z" = "Entertainment",
-	  ":Y" = "Exploration",		".Y" = "Exploration",
-	  ":O" = "Response Team", ".O" = "Response Team",
-	  ":J" = "Hailing", ".J" = "Hailing",
-
-	  //kinda localization -- rastaf0
-	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
-	  ":ê" = "right ear",	".ê" = "right ear",
-	  ":ä" = "left ear",	".ä" = "left ear",
-	  ":ø" = "intercom",	".ø" = "intercom",
-	  ":ð" = "department",	".ð" = "department",
-	  ":ñ" = "Command",		".ñ" = "Command",
-	  ":ò" = "Science",		".ò" = "Science",
-	  ":ü" = "Medical",		".ü" = "Medical",
-	  ":ó" = "Engineering",	".ó" = "Engineering",
-	  ":û" = "Security",	".û" = "Security",
-	  ":ö" = "whisper",		".ö" = "whisper",
-	  ":å" = "Mercenary",	".å" = "Mercenary",
-	  ":é" = "Supply",		".é" = "Supply",
-	  ":g" = "GOC",			".g" = "GOC", //GOC
-
-	  ":x" = "LCZ-Security",		".x" = "LCZ-Security",
-	  ":k" = "HCZ-Security",		".k" = "HCZ-Security",
-	  ":z" = "ECZ-Security",		".z" = "ECZ-Security",
-	  ":X" = "LCZ-Security",		".X" = "LCZ-Security",
-	  ":K" = "HCZ-Security",		".K" = "HCZ-Security",
-	  ":Z" = "ECZ-Security",		".Z" = "ECZ-Security",
 )
 
 

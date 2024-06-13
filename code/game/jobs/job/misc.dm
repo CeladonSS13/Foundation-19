@@ -19,8 +19,9 @@
 		SKILL_WEAPONS = SKILL_TRAINED
 	)
 
+// [CELADON-EDIT]
 /datum/job/classd/equip(mob/living/carbon/human/H)
-	H.fully_replace_character_name(random_name(H.gender, H.species.name))
+	//H.fully_replace_character_name(random_name(H.gender, H.species.name)) - CELADON-EDIT
 	. = ..()
 	var/r = rand(100,9000)
 	while (used_numbers.Find(r))
@@ -29,6 +30,7 @@
 	if(istype(H.wear_id, /obj/item/card/id))
 		var/obj/item/card/id/ID = H.wear_id
 		ID.registered_name = "D-[used_numbers[used_numbers.len]]"
+// [/CELADON-EDIT]
 
 //Office Worker
 

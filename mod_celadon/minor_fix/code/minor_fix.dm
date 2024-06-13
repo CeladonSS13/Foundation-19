@@ -26,3 +26,12 @@
 // Фиксим берет?
 /datum/gear/head/beret
 	whitelist_department_flags = 65535 // ALL IN, все отделы
+
+
+// Изменения в кор коде:
+// /datum/job/classd/equip(mob/living/carbon/human/H)
+// /datum/job/chief_engineer
+// /datum/job/cmo
+
+
+
