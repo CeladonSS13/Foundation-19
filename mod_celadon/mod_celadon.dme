@@ -23,6 +23,7 @@
 // --- OBJECTS --- //
 #include "objects/_objects.dme"
 #include "SCP096/_SCP096.dme"
+#include "new_ungoc_sprites/_new_ungoc_sprites.dme"
 
 
 // --- MISC --- //

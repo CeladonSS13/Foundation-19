@@ -23,7 +23,7 @@ ID мода: CELADON_COMPONENTS
 
 ### Описание мода
 
-Этот мод добавляет новые кнопки, фуллскрин, редактирование кнопок.
+Этот мод добавляет новые кнопки, фуллскрин, редактирование кнопок, изменяет анимацию взрыва нюки.
 `_components.dm` - кнопка моргания
 `cards_ids.dm` - новый доступ
 `keybinds.dm` - кнопка исправления раскладки, кнопка для наблюдения за сцп из гостов
@@ -45,6 +45,10 @@ ID мода: CELADON_COMPONENTS
 - EDIT, ADD: `code\modules\admin\admin.dm`: `/datum/admins/proc/announce()`
 
 - EDIT: `code\_onclick\click.dm`: `/mob/proc/AltMiddleClickOn`
+
+- EDIT: `code\datums\cinematic.dm`: `/datum/cinematic/proc/station_explosion_cinematic(station_missed = FALSE, datum/game_mode/override)`
+
+- EDIT: `code\game\gamemodes\endgame\nuclear_explosion\nuclear_explosion.dm`: `/datum/universal_state/nuclear_explosion/New(atom/nuke)`
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.

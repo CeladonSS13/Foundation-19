@@ -10,7 +10,9 @@ var/global/universe_has_ended = 0
 
 	//create the cinematic screen obj
 	cinematic = new
-	cinematic.icon = 'icons/effects/station_explosion.dmi'
+	// [CELADON-EDIT] - Больше никаких взрывов космических кораблей. [icons/effects/station_explosion.dmi]
+	cinematic.icon = 'mod_celadon/_components/icons/station_explosion.dmi'
+	// [/CELADON-EDIT]
 	cinematic.icon_state = "station_intact"
 	cinematic.plane = HUD_PLANE
 	cinematic.layer = HUD_ABOVE_ITEM_LAYER
