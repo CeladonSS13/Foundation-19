@@ -9317,7 +9317,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"terser@npm:^5.14.2, terser@npm:^5.26.0":
+"terser@npm:^5.26.0":
   version: 5.31.0
   resolution: "terser@npm:5.31.0"
   dependencies:
@@ -9328,6 +9328,20 @@ resolve@^2.0.0-next.3:
   bin:
     terser: bin/terser
   checksum: 48f14229618866bba8a9464e9d0e7fdcb6b6488b3a6c4690fcf4d48df65bf45959d5ae8c02f1a0b3f3dd035a9ae340b715e1e547645b112dc3963daa3564699a
+  languageName: node
+  linkType: hard
+
+"terser@npm:^5.31.1":
+  version: 5.31.1
+  resolution: "terser@npm:5.31.1"
+  dependencies:
+    "@jridgewell/source-map": ^0.3.3
+    acorn: ^8.8.2
+    commander: ^2.20.0
+    source-map-support: ~0.5.20
+  bin:
+    terser: bin/terser
+  checksum: 6ab57e62e9cd690dc99b3d0ee2e07289cd3408109a950c7118bf39e32851a5bf08b67fe19e0ac43a5a98813792ac78101bf25e5aa524f05ae8bb4e0131d0feef
   languageName: node
   linkType: hard
 
@@ -9393,7 +9407,7 @@ resolve@^2.0.0-next.3:
     glob: ^7.1.7
     source-map: ^0.7.3
     stacktrace-parser: ^0.1.10
-    ws: ^7.5.3
+    ws: ^7.5.10
   languageName: unknown
   linkType: soft
 
@@ -9416,7 +9430,7 @@ resolve@^2.0.0-next.3:
   dependencies:
     core-js: ^3.16.1
     regenerator-runtime: ^0.13.9
-    terser: ^5.14.2
+    terser: ^5.31.1
     unfetch: ^4.2.0
   languageName: unknown
   linkType: soft
@@ -10408,7 +10422,7 @@ typescript@^4.3.5:
   languageName: node
   linkType: hard
 
-"ws@npm:^7.3.1, ws@npm:^7.4.6, ws@npm:^7.5.3":
+"ws@npm:^7.3.1, ws@npm:^7.4.6":
   version: 7.5.3
   resolution: "ws@npm:7.5.3"
   peerDependencies:
@@ -10420,6 +10434,21 @@ typescript@^4.3.5:
     utf-8-validate:
       optional: true
   checksum: 423dc0d859fa74020f5555140905b862470a60ea1567bb9ad55a087263d7718b9c94f69678be1cee9868925c570f1e6fc79d09f90c39057bc63fa2edbb2c547b
+  languageName: node
+  linkType: hard
+
+"ws@npm:^7.5.10":
+  version: 7.5.10
+  resolution: "ws@npm:7.5.10"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: f9bb062abf54cc8f02d94ca86dcd349c3945d63851f5d07a3a61c2fcb755b15a88e943a63cf580cbdb5b74436d67ef6b67f745b8f7c0814e411379138e1863cb
   languageName: node
   linkType: hard
 
