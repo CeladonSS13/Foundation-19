@@ -740,14 +740,12 @@
 /turf/simulated/floor,
 /area/site53/reswing/lowres/researchmaint)
 "ahH" = (
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+/obj/effect/floor_decal/corner/green/border{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/structure/reagent_dispensers/watertank,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "ahM" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
@@ -2267,14 +2265,10 @@
 /area/site53/llcz/scp500)
 "axB" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/camera/network/lcz{
-	dir = 1
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	pixel_y = -32
 	},
-/obj/machinery/light,
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "axF" = (
@@ -2499,6 +2493,19 @@
 "azR" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/uhcz/hallways)
+"azU" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/storage/box/beakers{
+	pixel_y = 7;
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/condiment/soysauce{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "aAa" = (
 /obj/machinery/door/airlock/multi_tile/glass/civilian{
 	id_tag = "cell4door";
@@ -3495,16 +3502,13 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/reswing/researchwing)
 "aLL" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/vending/wallmed1{
-	dir = 1;
-	pixel_y = -32
-	},
-/obj/machinery/bodyscanner{
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/primaryhallway)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "aMi" = (
 /obj/effect/floor_decal/corner/brown/border,
 /obj/structure/disposalpipe/segment,
@@ -4022,6 +4026,15 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/uhcz/scp247observation)
+"aRR" = (
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "aRT" = (
 /obj/structure/closet/secure_closet/virology{
 	req_access = list("ACCESS_MEDICAL_LEVEL1")
@@ -4126,11 +4139,21 @@
 /turf/simulated/floor/tiled/freezer,
 /area/site53/lhcz/scp343room)
 "aSU" = (
-/obj/structure/table/reinforced,
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/item/book/manual/chef_recipes,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/item/card/id/dassignment/dluxury,
+/obj/item/card/id/dassignment/dluxury,
+/obj/item/card/id/dassignment/dluxury,
+/obj/item/card/id/dassignment/dluxury,
+/obj/structure/closet{
+	name = "Luxery reward card "
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/assignment)
 "aSX" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/tiled/monotile,
@@ -5061,6 +5084,12 @@
 	dir = 4
 	},
 /area/site53/llcz/scp500)
+"bcW" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/material/kitchen/rollingpin,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "bdi" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -5840,14 +5869,14 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/atmos)
 "blY" = (
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/floor_decal/corner/green/border{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/structure/table/standard,
+/obj/item/material/minihoe,
+/obj/item/reagent_containers/glass/bucket,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "blZ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -6664,9 +6693,6 @@
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/camera/network/lcz{
 	dir = 4;
 	c_tag = "CDCZ Briefing Hall External"
@@ -6675,6 +6701,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -7969,16 +7998,9 @@
 /turf/simulated/floor/tiled/dark/vertical,
 /area/site53/uhcz/securitypost)
 "bIw" = (
-/obj/effect/floor_decal/corner/green/mono,
-/obj/structure/table/standard,
-/obj/item/device/scanner/reagent,
-/obj/item/device/scanner/reagent,
-/obj/item/device/scanner/reagent,
-/obj/item/device/scanner/reagent,
-/obj/item/device/scanner/reagent,
-/obj/item/device/scanner/reagent,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/structure/flora/pottedplant/floorleaf,
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "bIB" = (
 /obj/machinery/camera/network/entrance{
 	dir = 4
@@ -8362,11 +8384,17 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/entrancezone/hallway)
 "bMg" = (
-/obj/machinery/cooker/candy,
-/obj/structure/table/reinforced,
-/obj/effect/floor_decal/corner/black/diagonal,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor,
+/area/site53/llcz/hallways)
 "bMj" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/shutters{
@@ -8770,6 +8798,9 @@
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "bQw" = (
@@ -8812,7 +8843,7 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/reswing/researchanddevelopment)
 "bQJ" = (
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -9910,9 +9941,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/mining/miningops)
 "cdo" = (
-/obj/machinery/cooker/grill,
-/obj/effect/floor_decal/corner/black/diagonal,
-/turf/simulated/floor/tiled/white,
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "CDCZ Kitchen Delivery"
+	},
+/obj/machinery/smartfridge/foods,
+/obj/machinery/door/window/brigdoor/northright{
+	name = "CDCZ Kitchen Delivery";
+	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_KITCHEN"))
+	},
+/turf/simulated/floor/tiled/dark/small,
 /area/site53/llcz/dclass/kitchen)
 "cdu" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -11038,14 +11075,16 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/upper_surface/breachshelter)
 "cpk" = (
-/obj/effect/floor_decal/corner/green/border{
+/obj/effect/floor_decal/corner/red/border{
 	dir = 8
 	},
-/obj/machinery/camera/network/lcz{
-	c_tag = "CDCZ Greenhouse"
+/obj/structure/table/reinforced,
+/obj/item/card/id/dassignment/dbotany{
+	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/item/card/id/dassignment/dkitchen,
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/assignment)
 "cpl" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12218,12 +12257,26 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/uhcz/scp8containment)
 "cBT" = (
-/obj/structure/table/reinforced,
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/item/clothing/suit/chef,
-/obj/item/clothing/head/chefhat,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/item/card/id/dassignment/dmedical,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dkitchen,
+/obj/item/card/id/dassignment/dkitchen,
+/obj/item/card/id/dassignment/djanitorial,
+/obj/item/card/id/dassignment/djanitorial,
+/obj/item/card/id/dassignment/djanitorial,
+/obj/item/card/id/dassignment/dbotany,
+/obj/item/card/id/dassignment/dbotany,
+/obj/structure/closet{
+	name = "Spare assigment card "
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/assignment)
 "cCd" = (
 /obj/structure/table/standard,
 /obj/item/clothing/gloves/thick/botany,
@@ -13027,6 +13080,30 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/storage)
+"cLi" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/machinery/reagent_temperature{
+	pixel_x = 2
+	},
+/obj/machinery/reagent_temperature/cooler{
+	pixel_y = 18;
+	pixel_x = 2
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "cLk" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/blast/shutters/open{
@@ -13137,12 +13214,12 @@
 /area/site53/uez/hallway)
 "cMj" = (
 /obj/effect/floor_decal/corner/orange/border,
-/obj/machinery/light,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "cMn" = (
@@ -14693,7 +14770,7 @@
 /turf/simulated/floor/wood/maple,
 /area/site53/llcz/entrance_checkpoint)
 "dbx" = (
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 4
 	},
 /turf/simulated/open,
@@ -15268,7 +15345,6 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/reswing/xenobiology)
 "dhY" = (
-/obj/machinery/light,
 /obj/structure/railing/mapped{
 	dir = 1
 	},
@@ -15278,6 +15354,7 @@
 /obj/effect/floor_decal/industrial/fire{
 	dir = 5
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "did" = (
@@ -16216,6 +16293,22 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/site53/reswing/robotics)
+"dsu" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/book/manual/chef_recipes{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_y = 11;
+	pixel_x = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "dsy" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/wall/r_titanium,
@@ -16867,9 +16960,6 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/site53/llcz/scp263research)
 "dyZ" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 1
 	},
@@ -16877,6 +16967,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/light/spot{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -17726,23 +17819,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/uhcz/securitypost)
 "dIj" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/soysauce,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "dIw" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
 /obj/machinery/camera/network/lcz{
 	dir = 8;
 	c_tag = "CDCZ Southeast Pillar Lower"
+	},
+/obj/machinery/light/spot{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -18480,7 +18571,7 @@
 /turf/simulated/floor/plating,
 /area/site53/engineering/atmos)
 "dPy" = (
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /turf/simulated/open,
@@ -18696,6 +18787,17 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/site53/lowertrams/restaurantkitchenarea)
+"dSx" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/site53/llcz/hallways)
 "dSC" = (
 /obj/effect/floor_decal/corner/keter/border{
 	dir = 4
@@ -19249,7 +19351,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/scp500)
 "dXq" = (
-/obj/machinery/light,
 /obj/structure/railing/mapped{
 	dir = 1
 	},
@@ -19259,6 +19360,7 @@
 /obj/effect/floor_decal/industrial/fire{
 	dir = 9
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "dXs" = (
@@ -20164,11 +20266,12 @@
 /turf/simulated/floor/blackgrid,
 /area/site53/science/aiccore)
 "ehK" = (
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/table/reinforced,
-/obj/item/storage/box/beakers,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/green/mono,
+/obj/structure/table/standard,
+/obj/item/device/scanner/plant,
+/obj/item/device/scanner/reagent,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "ehM" = (
 /obj/effect/floor_decal/corner/orange/bordercorner{
 	dir = 4
@@ -20338,6 +20441,20 @@
 /obj/machinery/light,
 /turf/simulated/floor,
 /area/site53/surface/bunker)
+"ejC" = (
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "ejH" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -20810,10 +20927,14 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/atmos)
 "eoR" = (
-/obj/machinery/reagentgrinder,
-/obj/effect/floor_decal/corner/black/diagonal,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor,
+/area/site53/llcz/mine/unexplored)
 "eoS" = (
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/dclass/cells)
@@ -20987,6 +21108,12 @@
 	},
 /turf/simulated/floor/tiled/white/vertical,
 /area/site53/lhcz/scp049containment)
+"eqw" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/material/knife/table/plastic,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "eqH" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -21536,6 +21663,13 @@
 	},
 /turf/simulated/floor,
 /area/chapel)
+"exd" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/hygiene/sink/kitchen{
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "exe" = (
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
@@ -22182,10 +22316,10 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/site53/surface/surface/west)
 "eEX" = (
-/obj/machinery/light{
+/obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
-/obj/effect/floor_decal/corner/orange/border{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -22286,17 +22420,16 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/lhcz/scp049containment)
 "eGh" = (
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/machinery/light{
-	dir = 4
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/body_scanconsole{
+	dir = 8
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/light,
+/obj/effect/floor_decal/industrial/outline{
+	color = "#6a97b0"
 	},
 /turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/area/site53/llcz/dclass/primaryhallway)
 "eGo" = (
 /obj/effect/floor_decal/corner/yellow/three_quarters,
 /obj/structure/closet/wardrobe/robotics_black,
@@ -22441,7 +22574,14 @@
 /area/vacant/prototype/engine)
 "eHt" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/filingcabinet/chestdrawer,
+/obj/structure/bed/chair,
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "eHB" = (
@@ -22619,9 +22759,10 @@
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/uez/hallway)
 "eKg" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/optable,
-/turf/simulated/floor/tiled/white,
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "eKt" = (
 /obj/structure/railing/mapped{
@@ -22842,10 +22983,14 @@
 /turf/simulated/floor/plating,
 /area/site53/logistics/understorage)
 "eMx" = (
-/obj/machinery/vending/hydronutrients,
-/obj/effect/floor_decal/corner/green/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/machinery/camera/network/lcz{
+	c_tag = "CDCZ Kitchen"
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "eMC" = (
 /obj/item/modular_computer/console/preset/cardslot/command,
 /turf/simulated/floor/carpet/blue,
@@ -22946,6 +23091,18 @@
 	},
 /turf/simulated/floor/tiled/dark/vertical,
 /area/site53/uhcz/hallways)
+"eNK" = (
+/obj/effect/floor_decal/corner/blue/border{
+	dir = 8
+	},
+/obj/item/device/radio/intercom/locked{
+	frequency = 9902;
+	name = "intercom (Medical staff request)";
+	dir = 4;
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/medicalpost)
 "eNM" = (
 /obj/structure/table/reinforced,
 /obj/item/folder/blue,
@@ -23165,10 +23322,11 @@
 /turf/simulated/floor/exoplanet/concrete,
 /area/quartermaster/hangar)
 "eQr" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/corner/green/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "eQC" = (
 /obj/effect/paint_stripe/white,
 /obj/structure/disposalpipe/segment{
@@ -24962,12 +25120,16 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "fjI" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/primaryhallway)
+/obj/machinery/camera/network/lcz{
+	dir = 8;
+	c_tag = "CDCZ Canteen"
+	},
+/obj/structure/table/marble,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/site53/llcz/dclass/canteen)
 "fjS" = (
 /obj/item/device/flashlight/lamp,
 /obj/structure/table/reinforced,
@@ -25863,13 +26025,15 @@
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 9
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/flora/pottedplant/floorleaf,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "fsY" = (
@@ -26145,17 +26309,10 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/shower)
 "fwX" = (
+/obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/red/border{
 	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
 /obj/item/card/id/dassignment/djanitorial,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
@@ -26348,6 +26505,15 @@
 	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/llcz/entrance_checkpoint)
+"fzg" = (
+/obj/effect/floor_decal/corner/red/border{
+	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "fzl" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/standard,
@@ -26567,11 +26733,12 @@
 	name = "CDCZ Aid Post";
 	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_MEDICAL"))
 	},
+/obj/machinery/contraband_detector,
 /obj/machinery/holosign/surgery{
 	dir = 8;
 	id_tag = "surgcdccdsign"
 	},
-/turf/simulated/floor/tiled/dark/small,
+/turf/simulated/floor,
 /area/site53/llcz/dclass/primaryhallway)
 "fBy" = (
 /obj/effect/floor_decal/corner/yellow/full,
@@ -27053,13 +27220,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/zonecommanderoffice)
 "fFt" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
+/obj/machinery/vending/games,
+/obj/effect/floor_decal/spline/fancy/black,
 /turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/area/site53/llcz/dclass/canteen)
 "fFF" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -28299,6 +28463,23 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/site53/lowertrams/restaurantkitchenarea)
+"fRB" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/biogenerator,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "fRC" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -28491,7 +28672,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -29636,7 +29817,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/surface/surface/caves)
 "geo" = (
-/obj/machinery/light,
+/obj/machinery/light/spot,
 /turf/simulated/open,
 /area/site53/llcz/dclass/primaryhallway)
 "geu" = (
@@ -29937,6 +30118,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/controlroom)
+"gie" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/machinery/cooker/grill,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "gim" = (
 /obj/effect/floor_decal/corner/yellow/border{
 	dir = 1
@@ -30263,11 +30450,20 @@
 /turf/simulated/floor/tiled/nullglass,
 /area/site53/reswing/psionic)
 "glv" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
+/obj/structure/closet/crate/bin,
+/obj/item/storage/pill_bottle/happy,
+/obj/item/trash/candy,
+/obj/item/trash/cigbutt,
+/obj/item/trash/croutons,
+/obj/item/trash/pistachios,
+/obj/item/trash/salo,
+/obj/item/trash/sosjerky,
+/obj/item/trash/weebonuts,
+/obj/item/trash/stick,
+/obj/item/trash/cubewrapper,
+/obj/item/book/manual/medical_diagnostics_manual,
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "glw" = (
@@ -30567,6 +30763,19 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/lhcz/scp049containment)
+"gpr" = (
+/obj/structure/table/reinforced,
+/obj/machinery/button/flasher{
+	id_tag = "line1"
+	},
+/obj/effect/floor_decal/corner/red/border{
+	dir = 4
+	},
+/obj/item/card/id/dassignment/djanitorial{
+	pixel_y = 12
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/assignment)
 "gpB" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
 	dir = 1
@@ -31490,6 +31699,17 @@
 "gzQ" = (
 /turf/simulated/floor/wood/walnut,
 /area/site53/llcz/dclass/luxurylibrary)
+"gzR" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/site53/llcz/mine/unexplored)
 "gAg" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -31905,6 +32125,14 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/exoplanet/snow,
 /area/site53/lhcz/scp343room)
+"gEJ" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/optable,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "gER" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -32141,6 +32369,9 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "gHo" = (
@@ -32252,7 +32483,9 @@
 /turf/simulated/floor/plating,
 /area/site53/uez/hallway)
 "gIy" = (
-/obj/structure/closet/crate/secure/large,
+/obj/structure/closet/crate/secure/large{
+	anchored = 1
+	},
 /obj/effect/floor_decal/industrial/hatch/red,
 /obj/machinery/light{
 	dir = 1
@@ -32429,6 +32662,12 @@
 /obj/effect/paint_stripe/orange,
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/dclass/isolation)
+"gLk" = (
+/obj/machinery/vending/coffee{
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/site53/llcz/dclass/canteen)
 "gLl" = (
 /obj/machinery/light{
 	dir = 4
@@ -35576,7 +35815,6 @@
 /area/site53/reswing/lowres/xenoarchaeology)
 "hoa" = (
 /obj/machinery/smartfridge,
-/obj/effect/paint_stripe/orange,
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/dclass/kitchen)
 "hoj" = (
@@ -36239,19 +36477,11 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/engineering/primaryhallway)
 "hvl" = (
-/obj/effect/floor_decal/corner/orange/border{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/site53/llcz/dclass/primaryhallway)
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/machinery/stove,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "hvo" = (
 /obj/effect/floor_decal/corner/red/border{
 	dir = 8
@@ -37330,8 +37560,9 @@
 /area/site53/surface/explorers/surrounding)
 "hIA" = (
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/closet/secure_closet/freezer/kitchen{
-	req_access = list()
+/obj/structure/table/reinforced,
+/obj/machinery/microwave{
+	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
@@ -38573,11 +38804,31 @@
 /turf/simulated/wall/prepainted,
 /area/site53/ulcz/hallways)
 "hUJ" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/reinforced,
-/obj/item/storage/medical_lolli_jar{
-	pixel_y = 6
+/obj/item/organ/internal/lungs,
+/obj/item/organ/internal/heart,
+/obj/item/organ/internal/liver,
+/obj/item/organ/internal/kidneys,
+/obj/item/organ/internal/kidneys,
+/obj/item/organ/internal/kidneys,
+/obj/item/organ/internal/heart,
+/obj/item/organ/internal/heart,
+/obj/item/organ/internal/liver,
+/obj/item/organ/internal/liver,
+/obj/item/organ/internal/lungs,
+/obj/item/organ/internal/lungs,
+/obj/structure/closet/secure_closet/freezer{
+	icon = 'icons/obj/closets/fridge.dmi';
+	name = "Secure Freezer";
+	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_MEDICAL"))
 	},
+/obj/item/organ/internal/eyes,
+/obj/item/organ/internal/eyes,
+/obj/item/organ/internal/eyes,
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/structure/window/reinforced/tinted,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "hUM" = (
@@ -39099,6 +39350,14 @@
 /obj/effect/floor_decal/corner/orange/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/site53/upper_surface/commstower)
+"ibJ" = (
+/obj/effect/floor_decal/corner/green/mono,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "icb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -39223,12 +39482,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/uez/hallway)
 "idC" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/camera/network/lcz{
 	c_tag = "CDCZ Northeast Pillar Upper";
 	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 4
 	},
 /turf/simulated/open,
 /area/site53/llcz/dclass/primaryhallway)
@@ -40994,8 +41253,8 @@
 /turf/simulated/floor/asteroid,
 /area/site53/surface/surface/caves)
 "izx" = (
-/obj/structure/sign/bluecross_1,
 /obj/effect/paint_stripe/orange,
+/obj/structure/sign/bluecross_1,
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/dclass/primaryhallway)
 "izB" = (
@@ -41752,15 +42011,15 @@
 /turf/simulated/wall/wood,
 /area/site53/surface/surface/east)
 "iID" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
 /obj/machinery/camera/network/lcz{
 	dir = 4;
 	c_tag = "CDCZ Northwest Pillar Lower"
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -42352,13 +42611,11 @@
 /turf/simulated/floor/tiled,
 /area/site53/llcz/dclass/primaryhallway)
 "iNV" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/machinery/camera/network/lcz{
-	c_tag = "CDCZ Kitchen"
+/obj/machinery/light{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "iNY" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
@@ -42646,10 +42903,30 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/reswing/lowres/xenoarchaeology)
+"iQs" = (
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "iQu" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/light{
-	dir = 1
+/obj/structure/table/reinforced,
+/obj/item/storage/medical_lolli_jar{
+	pixel_y = 6
+	},
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9902;
+	name = "intercom (Medical staff request)"
 	},
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
@@ -43086,11 +43363,12 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/uez/commandpanicbunker)
 "iUr" = (
-/obj/structure/table/reinforced,
-/obj/item/material/knife/table/plastic,
-/obj/effect/floor_decal/corner/black/diagonal,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/green/border,
+/obj/effect/floor_decal/corner/green/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "iUA" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -44027,9 +44305,14 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/uez/equipmentroom)
 "jfA" = (
-/obj/effect/floor_decal/corner/green/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "jfC" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/machinery/light{
@@ -44595,15 +44878,15 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/entrancezone/forensics)
 "jlS" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
 /obj/machinery/camera/network/lcz{
 	dir = 4;
 	c_tag = "CDCZ Southwest Pillar Lower"
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -45051,27 +45334,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/uez/commandpanicbunker)
 "jrd" = (
-/obj/item/organ/internal/lungs,
-/obj/item/organ/internal/heart,
-/obj/item/organ/internal/liver,
-/obj/item/organ/internal/kidneys,
-/obj/item/organ/internal/kidneys,
-/obj/item/organ/internal/kidneys,
-/obj/item/organ/internal/heart,
-/obj/item/organ/internal/heart,
-/obj/item/organ/internal/liver,
-/obj/item/organ/internal/liver,
-/obj/item/organ/internal/lungs,
-/obj/item/organ/internal/lungs,
-/obj/structure/closet/secure_closet/freezer{
-	icon = 'icons/obj/closets/fridge.dmi';
-	name = "Secure Freezer";
-	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_MEDICAL"))
-	},
-/obj/item/organ/internal/eyes,
-/obj/item/organ/internal/eyes,
-/obj/item/organ/internal/eyes,
 /obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/iv_drip,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
 /obj/machinery/button/holosign{
 	id_tag = "surgcdccdsign";
 	pixel_y = 25
@@ -46882,6 +47149,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "jJi" = (
@@ -47766,6 +48036,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/site53/uez/hallway)
+"jSr" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor,
+/area/site53/llcz/mine/unexplored)
 "jSw" = (
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/white,
@@ -48035,22 +48317,13 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "jVi" = (
-/obj/structure/closet/crate/bin,
-/obj/item/storage/pill_bottle/happy,
-/obj/item/trash/candy,
-/obj/item/trash/cigbutt,
-/obj/item/trash/croutons,
-/obj/item/trash/pistachios,
-/obj/item/trash/salo,
-/obj/item/trash/sosjerky,
-/obj/item/trash/weebonuts,
-/obj/item/trash/stick,
-/obj/item/trash/cubewrapper,
-/obj/item/book/manual/medical_diagnostics_manual,
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/status_display{
-	pixel_y = 32
+/obj/structure/table/reinforced,
+/obj/structure/filingcabinet/wallcabinet{
+	pixel_y = 24
 	},
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "jVk" = (
@@ -48250,6 +48523,11 @@
 	icon = 'icons/effects/landmarks.dmi';
 	icon_state = "medinternspawn";
 	name = "Medical Intern"
+	},
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9902;
+	name = "intercom (Medical staff request)"
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/site53/medical/equipstorage)
@@ -49485,13 +49763,13 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/logistics/logistics)
 "kjX" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/corner/green/mono,
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/machinery/reagentgrinder,
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "kkc" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -50796,6 +51074,9 @@
 /obj/random/soap,
 /obj/random/soap,
 /obj/effect/floor_decal/corner/purple/full,
+/obj/item/storage/box/lights/mixed,
+/obj/item/storage/box/lights/mixed,
+/obj/item/storage/box/lights/mixed,
 /turf/simulated/floor/tiled,
 /area/site53/llcz/dclass/janitorial)
 "kxQ" = (
@@ -53128,6 +53409,12 @@
 /obj/structure/table/reinforced,
 /obj/item/device/flashlight/lamp,
 /obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/item/device/radio/intercom/locked{
+	frequency = 9902;
+	name = "intercom (Medical staff request)";
+	dir = 8;
+	pixel_x = 24
+	},
 /turf/simulated/floor/tiled/white,
 /area/site53/ulcz/hallways)
 "kVO" = (
@@ -53739,6 +54026,12 @@
 	},
 /turf/simulated/floor/carpet/green,
 /area/chapel)
+"lco" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/machinery/cooker/oven,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "lcs" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 5
@@ -54726,15 +55019,13 @@
 /turf/simulated/floor/exoplanet/snow,
 /area/site53/engineering/primaryhallway)
 "lmy" = (
-/obj/structure/table/marble,
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/microwave{
-	pixel_y = 8
-	},
-/turf/simulated/floor/wood/walnut,
-/area/site53/llcz/dclass/canteen)
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/window/reinforced/tinted,
+/obj/structure/table/reinforced,
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "lmB" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/light/small{
@@ -55475,6 +55766,11 @@
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
+	},
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9902;
+	name = "intercom (Medical staff request)"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/medicalpost)
@@ -57109,14 +57405,12 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
-/obj/item/card/id/dassignment/dbotany,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
 "lNY" = (
@@ -57728,10 +58022,22 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/uhcz/scp106parts)
 "lUh" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/bed/chair/office/comfy/blue,
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -2;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -8;
+	pixel_y = 2
+	},
 /turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/primaryhallway)
+/area/site53/llcz/dclass/kitchen)
 "lUk" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -57866,12 +58172,26 @@
 /turf/simulated/floor/tiled/dark,
 /area/vacant/prototype/control)
 "lVK" = (
-/obj/effect/floor_decal/corner/green/mono,
-/obj/structure/table/standard,
-/obj/item/material/minihoe,
-/obj/item/reagent_containers/glass/bucket,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/roller{
+	pixel_x = -2;
+	pixel_y = 10
+	},
+/obj/item/roller{
+	pixel_y = 13;
+	pixel_x = 1
+	},
+/obj/item/roller{
+	pixel_y = 16;
+	pixel_x = 4
+	},
+/obj/item/storage/pill_bottle/assorted{
+	pixel_x = 7;
+	pixel_y = -9
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "lVS" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/checkequip)
@@ -58179,12 +58499,15 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/uhcz/scp8containment)
 "mab" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/machinery/light,
-/obj/machinery/body_scanconsole{
-	dir = 8
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/white,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "maj" = (
 /obj/item/clothing/gloves/thick/botany,
@@ -59291,6 +59614,16 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/site53/llcz/scp500)
+"mlP" = (
+/obj/effect/floor_decal/corner/green/border,
+/obj/effect/floor_decal/corner/green/border{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "mlR" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4;
@@ -60031,6 +60364,7 @@
 /obj/item/device/lightreplacer,
 /obj/item/device/lightreplacer,
 /obj/effect/floor_decal/corner/purple/full,
+/obj/random/soap,
 /turf/simulated/floor/tiled,
 /area/site53/llcz/dclass/janitorial)
 "msS" = (
@@ -60630,8 +60964,9 @@
 /area/site53/llcz/dclass/primaryhallway)
 "mAg" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/table/reinforced,
-/obj/item/storage/firstaid/stab,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/primaryhallway)
 "mAh" = (
@@ -60694,17 +61029,15 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
-/obj/item/card/id/dassignment/djanitorial,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
+/obj/item/card/id/dassignment/dmining,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
 "mAS" = (
@@ -62592,9 +62925,12 @@
 /obj/effect/floor_decal/corner/purple/bordercorner{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 1
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9901;
+	name = "intercom (Help request from D class)"
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "mUo" = (
@@ -63229,6 +63565,13 @@
 	},
 /turf/simulated/floor,
 /area/site53/lhcz/scp1102room)
+"nbc" = (
+/obj/machinery/flasher{
+	id_tag = "line1"
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/llcz/dclass/assignment)
 "nbd" = (
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
@@ -63635,6 +63978,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/upper_surface/serverfarminterior)
 "nfx" = (
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/machinery/flasher{
+	id_tag = "line1"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/assignment)
 "nfA" = (
@@ -63711,13 +64058,8 @@
 /turf/unsimulated/mineral,
 /area/site53/surface/surface/caves)
 "ngV" = (
-/obj/machinery/camera/network/lcz{
-	dir = 8;
-	c_tag = "CDCZ Canteen"
-	},
-/obj/structure/table/marble,
-/turf/simulated/floor/wood/walnut,
-/area/site53/llcz/dclass/canteen)
+/turf/simulated/wall/prepainted,
+/area/site53/llcz/mine/unexplored)
 "ngX" = (
 /obj/effect/floor_decal/corner/paleblue/border,
 /obj/effect/floor_decal/corner/paleblue/border{
@@ -65282,6 +65624,16 @@
 	},
 /turf/simulated/floor/tiled/white/corner,
 /area/site53/uez/commandpanicbunker)
+"nxD" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/pill_bottle/paracetamol{
+	pixel_x = -3;
+	pixel_y = 17
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "nxL" = (
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/scp263research)
@@ -65892,6 +66244,14 @@
 /obj/machinery/power/port_gen/pacman/mrs,
 /turf/simulated/floor,
 /area/site53/uez/commandpanicbunker)
+"nEw" = (
+/obj/machinery/vending/hydronutrients,
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "nEB" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Toilet"
@@ -68871,6 +69231,17 @@
 	},
 /turf/simulated/floor/exoplanet/grass,
 /area/site53/uez/hallway)
+"ooi" = (
+/obj/structure/flora/pottedplant/minitree,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/device/radio/intercom/locked{
+	frequency = 9901;
+	name = "intercom (Help request from D class)";
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/dark,
+/area/site53/llcz/dclass/cellbubble)
 "ook" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -69226,14 +69597,7 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
+/obj/item/card/id/dassignment/djanitorial,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
 "otx" = (
@@ -69823,6 +70187,11 @@
 	name = "north bump";
 	pixel_y = 24
 	},
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9902;
+	name = "intercom (Medical staff request)"
+	},
 /turf/simulated/floor/tiled/white/small,
 /area/site53/medical/infirmreception/waiting)
 "oAN" = (
@@ -69964,6 +70333,10 @@
 /obj/item/clothing/under/scp/dclass/undershirt,
 /obj/item/clothing/under/scp/dclass/undershirt,
 /obj/item/clothing/under/scp/dclass/undershirt,
+/obj/machinery/holosign/surgery{
+	dir = 4;
+	id_tag = "surg1sign"
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "oDo" = (
@@ -71954,20 +72327,17 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/medicalpost/surgery)
 "oYp" = (
-/obj/effect/floor_decal/corner/red/border{
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/machinery/camera/network/lcz{
+	c_tag = "CDCZ Greenhouse 2";
+	dir = 1
+	},
+/obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/turf/simulated/floor/tiled/white/monotile,
-/area/site53/llcz/dclass/assignment)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "oYq" = (
 /obj/item/reagent_containers/ivbag/blood/OMinus,
 /obj/machinery/light,
@@ -72631,8 +73001,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/wood/walnut,
-/area/site53/llcz/dclass/canteen)
+/obj/effect/floor_decal/corner/green/border{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "peN" = (
 /obj/machinery/door/airlock/glass/research{
 	name = "Hallway"
@@ -73754,6 +74127,21 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/tiled/freezer,
 /area/site53/lhcz/scp343room)
+"pqx" = (
+/obj/structure/fitness/punchingbag,
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "pqz" = (
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
@@ -74264,6 +74652,7 @@
 /obj/effect/floor_decal/corner/purple/full,
 /obj/item/clothing/under/scp/dclass/janitor,
 /obj/item/clothing/head/soft/dclass,
+/obj/random/soap,
 /turf/simulated/floor/tiled,
 /area/site53/llcz/dclass/janitorial)
 "pxB" = (
@@ -74319,9 +74708,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/medicalpost/surgery)
 "pxU" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
@@ -74329,6 +74715,9 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -74955,19 +75344,17 @@
 /turf/simulated/wall/r_titanium,
 /area/site53/lhcz/hczguardgear)
 "pES" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/corner/green/mono,
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
+/obj/structure/railing/mapped{
+	dir = 1
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
+/obj/effect/floor_decal/corner/red/border{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "pEX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/corner/brown/border{
@@ -76617,7 +77004,9 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/site53/engineering/bathrooms)
 "pVK" = (
-/obj/machinery/contraband_detector,
+/obj/effect/floor_decal/industrial/fire{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/assignment)
 "pVU" = (
@@ -76890,14 +77279,23 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/vacant/prototype/engine)
-"pYi" = (
-/obj/machinery/portable_atmospherics/hydroponics,
-/obj/effect/floor_decal/corner/green/mono,
-/obj/machinery/light{
-	dir = 4
+"pYe" = (
+/obj/effect/floor_decal/corner/green/bordercorner{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/dclass/botany)
+"pYi" = (
+/obj/effect/floor_decal/corner/yellow/border{
+	dir = 8
+	},
+/obj/item/device/radio/intercom/locked{
+	dir = 4;
+	name = "intercom (SCP-173)";
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/ulcz/scp173)
 "pYj" = (
 /obj/effect/floor_decal/corner/brown/border,
 /obj/structure/filingcabinet/filingcabinet,
@@ -76972,7 +77370,7 @@
 /area/site53/llcz/dclass/cells)
 "pYB" = (
 /obj/effect/floor_decal/corner/orange/border,
-/obj/machinery/light,
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "pYR" = (
@@ -77277,10 +77675,15 @@
 /turf/simulated/floor/tiled/white/vertical,
 /area/site53/medical/infirmary)
 "qbR" = (
-/obj/effect/floor_decal/corner/green/mono,
-/obj/machinery/biogenerator,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/bodyscanner{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch{
+	color = "#6a97b0"
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "qbT" = (
 /obj/effect/floor_decal/corner/brown/border,
 /obj/structure/disposalpipe/segment,
@@ -78009,18 +78412,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/vacant/prototype/engine)
 "qkr" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave{
-	pixel_y = 8
-	},
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "qkE" = (
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 6
@@ -79404,13 +79799,13 @@
 /turf/simulated/floor,
 /area/site53/reswing/lowres/researchoffices)
 "qyX" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
 /obj/structure/closet/crate/bin,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "qzf" = (
@@ -80086,17 +80481,8 @@
 	},
 /area/site53/lhcz/scp049containment)
 "qHx" = (
-/obj/machinery/cooker/fryer,
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "qHy" = (
@@ -81966,13 +82352,11 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "qZK" = (
-/obj/machinery/light{
-	dir = 4
+/obj/effect/floor_decal/industrial/fire{
+	dir = 6
 	},
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/iv_drip,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/primaryhallway)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/llcz/dclass/assignment)
 "qZT" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/ulcz/scp914)
@@ -82591,6 +82975,17 @@
 /obj/machinery/cooker/grill,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/ulcz/humanoidcontainment)
+"rgc" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/northright{
+	name = "CDCZ Kitchen Delivery";
+	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_KITCHEN"))
+	},
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "CDCZ Kitchen Delivery"
+	},
+/turf/simulated/floor/tiled/dark/small,
+/area/site53/llcz/dclass/kitchen)
 "rgh" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -83805,6 +84200,17 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/vacant/prototype/engine)
+"rrs" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/camera/network/lcz{
+	dir = 1
+	},
+/obj/machinery/sleeper{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/outline,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "rrv" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -85411,14 +85817,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/entrancezone/hallway)
 "rHl" = (
-/obj/structure/closet/crate/bin{
-	anchored = 1;
-	name = "trash bin"
+/obj/machinery/contraband_detector,
+/obj/structure/railing/mapped{
+	dir = 1
 	},
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/item/clothing/suit/chef/classic,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/llcz/dclass/assignment)
 "rHn" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -85548,8 +85952,14 @@
 /turf/simulated/floor/grass,
 /area/site53/uez/hallway)
 "rID" = (
-/obj/machinery/seed_extractor,
-/obj/effect/floor_decal/corner/green/mono,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/effect/floor_decal/corner/green/border{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/dclass/botany)
 "rIH" = (
@@ -86206,11 +86616,12 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/reswing/xenobiology)
 "rOg" = (
-/obj/machinery/camera/autoname{
-	network = list("Light Containment Zone Network")
-	},
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/machinery/camera/autoname{
+	network = list("Light Containment Zone Network");
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/scp066)
@@ -86711,6 +87122,13 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/ulcz/scp914)
+"rUq" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/bed/chair/office/comfy/blue{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "rUw" = (
 /obj/effect/floor_decal/corner/yellow/border{
 	dir = 1
@@ -86943,29 +87361,13 @@
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/dclass/isolation)
 "rWt" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular,
-/obj/structure/closet/secure_closet{
-	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_MEDICAL"));
-	name = "Class-D Clinic Doctor's locker";
-	icon_closed = "medical";
-	icon_locked = "medical1";
-	icon_off = "medicaloff";
-	icon_opened = "medicalopen";
-	icon_state = "medical1"
+/obj/structure/closet/secure_closet/hydroponics_dclass,
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/camera/network/lcz{
+	c_tag = "CDCZ Greenhouse 1"
 	},
-/obj/item/clothing/gloves/latex/nitrile,
-/obj/item/clothing/mask/surgical,
-/obj/item/defibrillator/loaded,
-/obj/item/device/flash,
-/obj/item/storage/firstaid/surgery,
-/obj/item/storage/pill_bottle/inaprovaline,
-/obj/item/clothing/suit/surgicalapron,
-/obj/item/storage/firstaid/o2,
-/obj/item/storage/firstaid/toxin,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/primaryhallway)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "rWy" = (
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/button/crematorium{
@@ -88317,6 +88719,12 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/site53/ulcz/scp082/throne)
+"slU" = (
+/obj/effect/floor_decal/corner/green/border{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "slX" = (
 /obj/machinery/door/airlock/glass/virology{
 	name = "Medicinal Herbs Garden";
@@ -90086,13 +90494,13 @@
 /turf/simulated/floor/tiled/dark/corner,
 /area/site53/uhcz/securitypost)
 "sDT" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/orange/bordercorner{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/purple/bordercorner{
+	dir = 1
+	},
+/obj/machinery/light/spot{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -90148,6 +90556,15 @@
 	},
 /turf/simulated/floor/tiled/white/horizontal,
 /area/site53/lhcz/scp049containment)
+"sEo" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "sEH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -90841,10 +91258,10 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "sMf" = (
-/obj/machinery/light{
+/obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/orange/border{
+/obj/machinery/light/spot{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -91351,6 +91768,11 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/red/border,
+/obj/item/device/radio/intercom/locked{
+	pixel_y = 20;
+	frequency = 9901;
+	name = "intercom (Help request)"
+	},
 /turf/simulated/floor/tiled/dark/horizontal,
 /area/site53/ulcz/hallways)
 "sRJ" = (
@@ -93708,6 +94130,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/lhcz/scp1102room)
+"tpn" = (
+/obj/structure/table/marble,
+/obj/machinery/microwave{
+	pixel_y = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/site53/llcz/dclass/canteen)
 "tpo" = (
 /obj/effect/floor_decal/corner/research/border{
 	dir = 1
@@ -94915,6 +95344,7 @@
 /obj/effect/floor_decal/corner/purple/full,
 /obj/item/clothing/under/scp/dclass/janitor,
 /obj/item/clothing/head/soft/dclass,
+/obj/random/soap,
 /turf/simulated/floor/tiled,
 /area/site53/llcz/dclass/janitorial)
 "tCA" = (
@@ -94940,13 +95370,13 @@
 /turf/simulated/floor/tiled/horizontal,
 /area/site53/logistics/logistics)
 "tCO" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 8
 	},
 /obj/structure/closet/crate/bin,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "tCS" = (
@@ -95237,16 +95667,30 @@
 /turf/simulated/floor/wood/walnut,
 /area/site53/lowertrams/restaurantkitchenarea)
 "tFz" = (
-/obj/effect/floor_decal/corner/green/border{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
+/obj/structure/closet/secure_closet{
+	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_MEDICAL"));
+	name = "Class-D Clinic Doctor's locker";
+	icon_closed = "medical";
+	icon_locked = "medical1";
+	icon_off = "medicaloff";
+	icon_opened = "medicalopen";
+	icon_state = "medical1"
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/clothing/mask/surgical,
+/obj/item/defibrillator/loaded,
+/obj/item/device/flash,
+/obj/item/storage/pill_bottle/inaprovaline,
+/obj/item/clothing/suit/surgicalapron,
+/obj/item/storage/firstaid/o2,
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/burn,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "tFN" = (
 /turf/simulated/floor/plating,
 /area/site53/entrancezone/substation)
@@ -95704,11 +96148,10 @@
 /turf/simulated/floor/carpet/purple,
 /area/site53/uez/hallway)
 "tLj" = (
-/obj/machinery/stove,
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/condiment/sugar,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "tLm" = (
@@ -96181,6 +96624,10 @@
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/horizontal,
 /area/site53/logistics/logistics)
+"tQt" = (
+/obj/effect/floor_decal/corner/green/border,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "tQv" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -96300,6 +96747,9 @@
 	},
 /obj/machinery/camera/network/lcz{
 	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -96792,23 +97242,8 @@
 /turf/simulated/floor,
 /area/site53/engineering/atmos)
 "tWO" = (
-/obj/effect/floor_decal/corner/red/border{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/item/card/id/dassignment/dkitchen,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/site53/llcz/dclass/assignment)
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/kitchen)
 "tWU" = (
 /obj/machinery/camera/network/hcz{
 	dir = 4
@@ -97084,16 +97519,9 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/reswing/researchanddevelopment)
 "tZY" = (
-/obj/structure/hygiene/sink{
-	dir = 4;
-	pixel_x = 11
-	},
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
+/obj/machinery/chem_master/condimaster,
+/obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "tZZ" = (
@@ -97665,6 +98093,12 @@
 /obj/effect/floor_decal/corner/blue/border,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/zonecommanderoffice)
+"ugb" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/structure/bed/chair,
+/obj/effect/floor_decal/industrial/outline/orange,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "ugi" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/structure/table/rack,
@@ -98636,15 +99070,15 @@
 /turf/simulated/floor/plating,
 /area/site53/uez/maintenance)
 "uqe" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 4
 	},
 /obj/machinery/camera/network/lcz{
 	dir = 8;
 	c_tag = "CDCZ Northeast Pillar Lower"
+	},
+/obj/machinery/light/spot{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -99934,6 +100368,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/site53/uhcz/scp106containment)
+"uEi" = (
+/obj/machinery/light/spot{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/orange/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "uEw" = (
 /obj/structure/closet/crate/large,
 /turf/simulated/floor/exoplanet/snow,
@@ -100390,6 +100833,31 @@
 "uKK" = (
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/site53/ulcz/maintenance)
+"uKV" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/secure_closet/freezer/kitchen{
+	req_access = list()
+	},
+/obj/item/clothing/suit/chef/classic,
+/obj/item/clothing/suit/chef/classic,
+/obj/item/clothing/head/chefhat,
+/obj/item/clothing/head/chefhat,
+/obj/item/clothing/suit/chef,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/material/knife/table/plastic,
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "uKZ" = (
 /turf/simulated/floor/carpet/brown,
 /area/site53/uez/hallway)
@@ -100863,18 +101331,14 @@
 /obj/effect/floor_decal/corner/red/border{
 	dir = 8
 	},
-/obj/structure/table/reinforced,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
-/obj/item/card/id/dassignment/dmining,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/table/reinforced,
+/obj/item/card/id/dassignment/dbotany{
+	pixel_y = 8
+	},
+/obj/item/card/id/dassignment/dkitchen,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/assignment)
 "uPJ" = (
@@ -100995,15 +101459,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/site53/lhcz/hczguardgear)
 "uQM" = (
-/obj/machinery/door/window/brigdoor/northright{
-	name = "CDCZ Kitchen Delivery";
-	req_access = list(list("ACCESS_SECURITY_LEVEL2","ACCESS_DCLASS_KITCHEN"))
-	},
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "CDCZ Kitchen Delivery"
-	},
-/obj/structure/table/reinforced,
-/turf/simulated/floor/tiled/dark/small,
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/white,
 /area/site53/llcz/dclass/kitchen)
 "uQP" = (
 /obj/machinery/photocopier,
@@ -102612,12 +103071,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/lhcz/scp1102room)
 "vhM" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/camera/network/lcz{
 	c_tag = "CDCZ Northwest Pillar Upper";
 	dir = 4
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/open,
 /area/site53/llcz/dclass/primaryhallway)
@@ -102690,6 +103149,10 @@
 	},
 /obj/effect/floor_decal/corner/orange/border{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -103194,12 +103657,12 @@
 /turf/simulated/floor/tiled/white,
 /area/site53/ulcz/hallways)
 "voz" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/camera/network/lcz{
 	c_tag = "CDCZ Southwest Pillar Upper";
 	dir = 4
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/open,
 /area/site53/llcz/dclass/primaryhallway)
@@ -103556,12 +104019,12 @@
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/llcz/scp066)
 "vti" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/machinery/camera/network/lcz{
 	dir = 4;
 	c_tag = "CDCZ Assignments Post Line"
+	},
+/obj/machinery/light/spot{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/dclass/assignment)
@@ -103662,20 +104125,28 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/uppernukeladders)
 "vuH" = (
-/obj/machinery/camera/autoname{
-	network = list("Entrance Zone Network")
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 4;
+	pixel_y = 7
 	},
-/obj/effect/floor_decal/corner/beige/border{
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -2;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -2;
+	pixel_y = 3
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
+"vuI" = (
+/obj/effect/floor_decal/corner/green/border{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/site53/uez/bridge)
-"vuI" = (
-/obj/structure/table/reinforced,
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/item/material/kitchen/rollingpin,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/area/site53/llcz/dclass/botany)
 "vuM" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Medical Waste Maintenance";
@@ -104435,6 +104906,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/atmos)
+"vEB" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/machinery/cooker/candy,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "vEC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -106178,6 +106655,11 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
 /area/site53/reswing/roboticsupr)
+"vXL" = (
+/obj/effect/floor_decal/corner/green/mono,
+/obj/machinery/seed_extractor,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/llcz/dclass/botany)
 "vXR" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -107149,6 +107631,14 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/hallways)
+"wjL" = (
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/sleeper{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/outline,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/primaryhallway)
 "wjM" = (
 /obj/effect/floor_decal/corner/green/bordercorner,
 /obj/machinery/light{
@@ -107776,10 +108266,14 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/engineering/controlroom)
 "wpY" = (
-/obj/effect/floor_decal/corner/black/diagonal,
-/obj/machinery/chem_master/condimaster,
-/turf/simulated/floor/tiled/white,
-/area/site53/llcz/dclass/kitchen)
+/obj/effect/floor_decal/corner/beige/border{
+	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	network = list("Entrance Zone Network")
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/site53/uez/bridge)
 "wqf" = (
 /obj/effect/floor_decal/corner/safe/border{
 	dir = 9
@@ -109569,15 +110063,11 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/ulcz/scp151)
 "wKm" = (
-/obj/structure/railing/mapped{
+/obj/machinery/light/spot{
 	dir = 1
 	},
-/obj/machinery/flasher{
-	id_tag = "line1"
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/site53/llcz/dclass/assignment)
+/turf/simulated/open,
+/area/site53/llcz/dclass/primaryhallway)
 "wKp" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -110881,14 +111371,14 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
@@ -113744,12 +114234,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/reswing/lowres/xenobotany)
 "xBK" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/camera/network/lcz{
 	c_tag = "CDCZ Southeast Pillar Upper";
 	dir = 8
+	},
+/obj/machinery/light/spot{
+	dir = 4
 	},
 /turf/simulated/open,
 /area/site53/llcz/dclass/primaryhallway)
@@ -114824,6 +115314,14 @@
 "xPy" = (
 /turf/simulated/floor/tiled/monotile,
 /area/site53/reswing/lowres/xenobotany)
+"xPG" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/closet/crate/bin{
+	anchored = 1;
+	name = "trash bin"
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "xPJ" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -115269,6 +115767,14 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/medicalpost/storage)
+"xUb" = (
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/structure/table/reinforced,
+/obj/item/material/knife/table/plastic{
+	pixel_x = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "xUf" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -115861,14 +116367,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/uez/bridge)
 "xZi" = (
-/obj/effect/floor_decal/corner/green/mono,
-/obj/structure/table/standard,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
+/obj/effect/floor_decal/corner/green/bordercorner,
+/obj/effect/floor_decal/corner/green/bordercorner{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/llcz/dclass/botany)
 "xZm" = (
@@ -116004,13 +116506,14 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/engineering/primaryhallway)
 "yaN" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/floor_decal/corner/black/diagonal,
+/obj/machinery/cooker/fryer,
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white,
+/area/site53/llcz/dclass/kitchen)
 "yaQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -116298,10 +116801,9 @@
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/uhcz/scp096)
 "yev" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/effect/floor_decal/corner/green/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/site53/llcz/dclass/botany)
+/obj/effect/floor_decal/industrial/fire,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/llcz/dclass/assignment)
 "yew" = (
 /obj/effect/catwalk_plated/white,
 /obj/structure/window/reinforced{
@@ -117826,12 +118328,12 @@ rOI
 uPD
 lNN
 fwX
-tWO
-rOI
-udM
 vsi
-oYp
-lNN
+cBT
+udM
+aSU
+rOI
+cpk
 mAP
 otv
 wOi
@@ -118345,7 +118847,7 @@ jRU
 mqh
 khS
 mJH
-jRU
+gpr
 mqh
 khS
 sdD
@@ -118850,17 +119352,17 @@ dQP
 qRN
 eby
 fsm
-nfx
-wKm
+yev
+mmn
 nfx
 mmn
 vti
-wKm
+mmn
 nfx
 mmn
 bQJ
-wKm
-nfx
+mmn
+nbc
 mmn
 iLm
 mwY
@@ -119107,16 +119609,16 @@ sDt
 ewp
 eby
 pVK
+qZK
+rHl
 dfY
 uVY
+tAf
+tAf
 dfY
 uVY
-dfY
-uVY
-dfY
-uVY
-dfY
-uVY
+tAf
+tAf
 dfY
 uVY
 tAf
@@ -119366,7 +119868,7 @@ gYY
 rMk
 rMk
 rMk
-rMk
+fzg
 rMk
 rMk
 rMk
@@ -119379,8 +119881,8 @@ rMk
 rMk
 frF
 xWj
-wCk
 xWj
+eEX
 xWj
 xWj
 xWj
@@ -119617,9 +120119,9 @@ mpg
 eby
 eby
 eby
-lwm
+eKg
 rXH
-dTW
+pES
 elm
 elm
 elm
@@ -120902,7 +121404,7 @@ leK
 elm
 fnk
 sNV
-lwm
+eKg
 rXH
 dTW
 elm
@@ -121161,7 +121663,7 @@ fnk
 sNV
 leK
 rXH
-dTW
+pES
 elm
 elm
 elm
@@ -121170,10 +121672,10 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
-sVI
+aRR
 elm
 elm
 elm
@@ -121185,7 +121687,7 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
 dyZ
@@ -121427,10 +121929,10 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
-sVI
+aRR
 elm
 elm
 elm
@@ -121442,7 +121944,7 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
 dyZ
@@ -122953,8 +123455,8 @@ wUr
 wUr
 wUr
 xEH
-wUr
 aTG
+wUr
 wUr
 wUr
 tcF
@@ -123210,18 +123712,18 @@ hMR
 hMR
 hMR
 hMR
-hMR
 fTK
 hMR
 hMR
+hMR
 iMR
+sMf
 wlM
 wlM
 wlM
-iuK
+wlM
+sMf
 pWX
-elm
-elm
 elm
 elm
 elm
@@ -123240,7 +123742,7 @@ tAC
 hdc
 bKC
 sNV
-sVI
+lNY
 elm
 elm
 elm
@@ -123466,19 +123968,19 @@ qrQ
 qMU
 qMU
 hZL
-hZL
 tEs
 oQn
 tEs
 hZL
 mFO
 mFO
+mFO
 iro
 iro
 iro
-jht
-pWX
-elm
+sNV
+sNV
+uEi
 elm
 elm
 elm
@@ -123724,18 +124226,18 @@ uOn
 qMU
 vmR
 pHk
-mCK
 jtU
 tjO
 tjO
 mFO
 qXW
-aSU
-bMg
-iro
-iro
-jht
-pWX
+dsu
+lUh
+xUb
+vEB
+kjX
+sNV
+epC
 elm
 elm
 elm
@@ -123981,18 +124483,18 @@ fHP
 qMU
 wCS
 pHk
-mCK
 jtU
 tEO
 rvz
 mFO
-dIj
+exd
 iSc
 iSc
-eoR
+iSc
+iSc
+iSc
 iro
-iro
-lNY
+epC
 elm
 lSN
 iyf
@@ -124238,17 +124740,17 @@ iSe
 qMU
 yki
 bDo
-peM
 lfo
 iyZ
 iyZ
 mFO
-iNV
+gie
 iSc
+lco
 iSc
+lco
 iSc
-rHl
-iro
+rgc
 epC
 elm
 teK
@@ -124496,16 +124998,16 @@ qMU
 kDe
 pHk
 mCK
-mCK
 tjO
 tjO
 mFO
+yaN
+iSc
 hIA
 iSc
-cBT
+hIA
 iSc
-iSc
-uQM
+rgc
 epC
 elm
 teK
@@ -124753,16 +125255,16 @@ qMU
 lOC
 pHk
 mCK
-mCK
 tEO
 tEO
 mFO
-qHx
-ahH
-iUr
+eMx
 iSc
-ehK
-iro
+iSc
+iSc
+iSc
+iSc
+rgc
 epC
 elm
 ocB
@@ -125010,25 +125512,25 @@ qMU
 ryp
 pHk
 mCK
-mCK
 iyZ
 mal
 mFO
-tLj
-blY
-vuI
+uQM
 iSc
-wpY
-iro
+dIj
+eqw
+bcW
+iSc
+cdo
 epC
 elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
-sVI
+aRR
 elm
 elm
 elm
@@ -125040,7 +125542,7 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
 dyZ
@@ -125264,28 +125766,28 @@ dwa
 ibw
 ibw
 teZ
-vmR
-ulA
-lmy
-ngV
+fFt
+pHk
+mCK
 mCK
 mCK
 mFO
-cdo
-tZY
-qkr
-eGh
-rjz
-lKm
-eol
+jfA
+iSc
+vuH
+hvl
+tLj
+qHx
+iro
+epC
 elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
-sVI
+aRR
 elm
 elm
 elm
@@ -125297,7 +125799,7 @@ elm
 elm
 elm
 elm
-xMO
+pYB
 sNV
 sNV
 dyZ
@@ -125521,20 +126023,20 @@ oQc
 oQc
 oQc
 teZ
-hZL
-hZL
-hZL
-hZL
-hZL
-hZL
+vmR
+ulA
+fjI
+tpn
+gLk
 mFO
-mFO
-mFO
-mFO
-mFO
-hoa
-mFO
-hvl
+eQr
+iSc
+iSc
+sEo
+rjz
+rjz
+lKm
+eol
 elm
 elm
 elm
@@ -125778,19 +126280,19 @@ qmt
 oQc
 oQc
 teZ
-mpg
-mpg
-mpg
-mpg
-qdY
-cun
-eQr
-kjX
-eQr
-eQr
-pES
-jfA
-fPn
+hZL
+hZL
+hZL
+hZL
+hZL
+mFO
+uKV
+iSc
+azU
+cLi
+tZY
+xPG
+iro
 uHH
 elm
 elm
@@ -126038,17 +126540,17 @@ teZ
 mpg
 mpg
 mpg
-mpg
 qdY
-cpk
-noU
-noU
-noU
-noU
-tFz
-noU
-fPn
-uHH
+qdY
+mFO
+mFO
+tWO
+hoa
+mFO
+mFO
+mFO
+mFO
+ejC
 elm
 elm
 elm
@@ -126295,16 +126797,16 @@ teZ
 mpg
 mpg
 mpg
-mpg
 qdY
 vpQ
-lVK
-xZi
-rID
+vuI
+iNV
 eGR
-fFt
-yaN
-bES
+tQt
+ehK
+fRB
+vXL
+fPn
 wYr
 jVL
 jVL
@@ -126552,17 +127054,17 @@ teZ
 mpg
 mpg
 mpg
-mpg
 qdY
-vpQ
-lVK
-bIw
-qbR
+rWt
+vuI
 eGR
 eGR
-eGR
-ofD
-epC
+pYe
+noU
+rID
+peM
+bES
+mab
 elm
 elm
 elm
@@ -126809,16 +127311,16 @@ teZ
 mpg
 mpg
 mpg
-mpg
 qdY
-lVW
-lVW
-lVW
-lVW
-lVW
-lVW
-lVW
-fPn
+nEw
+vuI
+eGR
+eGR
+eGR
+eGR
+eGR
+eGR
+ofD
 epC
 elm
 elm
@@ -127066,27 +127568,27 @@ teZ
 mpg
 mpg
 mpg
-mpg
 qdY
-eMx
-eQr
-pYi
-eQr
-eQr
-eQr
-yev
+cun
+slU
+xZi
+blY
+ahH
+blY
+xZi
+lVW
 fPn
 iSJ
 iuK
 wlM
 wlM
-wlM
+sMf
 kdb
+sMf
 wlM
 wlM
 wlM
-iuK
-wlM
+sMf
 wlM
 wlM
 wlM
@@ -127094,13 +127596,13 @@ tRh
 wlM
 wlM
 wlM
-iuK
+sMf
 wlM
 wlM
 pWX
 bWJ
 lSN
-iuK
+sMf
 wlM
 wlM
 wlM
@@ -127323,15 +127825,15 @@ jjg
 jjg
 jjg
 jjg
-jjg
 qdY
 qdY
+ibJ
+iUr
+aLL
 qdY
-qdY
-qdY
-qdY
-qdY
-qdY
+aLL
+iUr
+oYp
 qdY
 sNV
 sNV
@@ -127580,17 +128082,17 @@ aqN
 aqN
 aqN
 aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-aqN
-pmb
+bMg
+qdY
+qkr
+iUr
+qkr
+qdY
+qkr
+iUr
+qkr
+qdY
+sNV
 fsX
 cbz
 jJf
@@ -127615,10 +128117,10 @@ sVI
 bWJ
 xMO
 sNV
-sNV
+ugb
+qUh
+qUh
 kQQ
-qUh
-qUh
 glv
 sNV
 tAI
@@ -127837,19 +128339,19 @@ jjg
 jjg
 jjg
 jjg
-jjg
-jjg
-jjg
-jjg
-jjg
-jjg
-jjg
-jjg
-jjg
-jjg
+dSx
+qdY
+qkr
+mlP
+qkr
+qdY
+qkr
+mlP
+qkr
+qdY
 sNV
-epC
-elm
+iQs
+bIw
 elm
 elm
 elm
@@ -127873,8 +128375,8 @@ dvf
 jdJ
 sNV
 eHt
-fjI
-imc
+qUh
+qUh
 qUh
 axB
 sNV
@@ -128093,19 +128595,19 @@ eyo
 eyo
 eyo
 eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
-eyo
+ngV
+gzR
+qdY
+qdY
+qdY
+qdY
+qdY
+qdY
+qdY
+qdY
+qdY
 sNV
-pYv
+pqx
 elm
 bjU
 fRU
@@ -128130,12 +128632,12 @@ hzq
 hzq
 sNV
 iQu
-lUh
 nLI
+imc
 qUh
 qUh
+wjL
 sNV
-eyo
 eyo
 eyo
 eyo
@@ -128349,19 +128851,19 @@ uRh
 uRh
 uRh
 uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
 eyo
-sNV
+ngV
+jSr
+eoR
+eoR
+eoR
+eoR
+eoR
+eoR
+eoR
+eoR
+eoR
+pmb
 viK
 elm
 lwI
@@ -128387,13 +128889,13 @@ xWj
 xuG
 sNV
 jVi
+rUq
 qUh
-hUJ
 qUh
-aLL
+qUh
+rrs
 sNV
-uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -128606,18 +129108,18 @@ uRh
 uRh
 uRh
 uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
 eyo
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
+ngV
 sNV
 nAo
 elm
@@ -128644,13 +129146,13 @@ qOF
 waK
 sNV
 jrd
+mAg
+hUJ
 qUh
 qUh
-qUh
-mab
+qbR
 sNV
-uRh
-jFu
+eyo
 jFu
 uRh
 uRh
@@ -128863,17 +129365,17 @@ uRh
 uRh
 uRh
 uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-uRh
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
 eyo
 sNV
 vcf
@@ -128900,14 +129402,14 @@ jht
 wlM
 jdJ
 sNV
-bEq
-eKg
-qZK
-rWt
-mAg
+gEJ
+qUh
+qUh
+qUh
+qUh
+eGh
 sNV
-uRh
-jFu
+eyo
 jFu
 uRh
 uRh
@@ -129157,14 +129659,14 @@ uPJ
 uPJ
 uPJ
 sNV
+bEq
+qUh
+lmy
+tFz
+lVK
+nxD
 sNV
-sNV
-sNV
-sNV
-sNV
-sup
-uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -129414,19 +129916,19 @@ otx
 tKH
 kYq
 sNV
+sNV
+sNV
+sNV
+sNV
+sNV
+sNV
+sNV
 eyo
-jFu
 uRh
 uRh
 uRh
 uRh
 uRh
-uRh
-uRh
-uRh
-uRh
-uRh
-jFu
 uRh
 uRh
 uRh
@@ -129654,7 +130156,7 @@ bJe
 fGG
 vpG
 bQq
-sMf
+wlM
 qkE
 sNV
 xVt
@@ -129672,13 +130174,13 @@ ovG
 cOn
 sNV
 eyo
-jFu
-uRh
-uRh
-uRh
-jFu
-uRh
-uRh
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
+eyo
 uRh
 uRh
 uRh
@@ -129936,11 +130438,11 @@ uRh
 uRh
 uRh
 uRh
-jFu
 uRh
 uRh
-jFu
-jFu
+uRh
+uRh
+uRh
 uRh
 uRh
 uRh
@@ -130193,7 +130695,7 @@ uRh
 uRh
 uRh
 uRh
-jFu
+uRh
 uRh
 uRh
 uRh
@@ -130416,7 +130918,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -130673,7 +131175,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -130710,8 +131212,8 @@ uRh
 uRh
 uRh
 uRh
-jFu
-jFu
+uRh
+uRh
 uRh
 uRh
 uRh
@@ -130930,7 +131432,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -130967,8 +131469,8 @@ uRh
 uRh
 uRh
 uRh
-jFu
-jFu
+uRh
+uRh
 uRh
 uRh
 uRh
@@ -131187,7 +131689,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -131220,7 +131722,7 @@ uRh
 uRh
 uRh
 uRh
-jFu
+uRh
 uRh
 uRh
 uRh
@@ -131444,7 +131946,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -131701,7 +132203,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -131958,7 +132460,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -132215,7 +132717,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -132472,7 +132974,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -132729,7 +133231,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -132986,7 +133488,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -133243,7 +133745,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -133500,7 +134002,7 @@ uRh
 uRh
 uRh
 uRh
-uRh
+eyo
 uRh
 uRh
 uRh
@@ -186709,7 +187211,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 vLr
@@ -186724,7 +187226,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 tVB
@@ -186966,7 +187468,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 vLr
@@ -186981,7 +187483,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 tVB
@@ -188246,7 +188748,7 @@ bYm
 bYm
 bYm
 sNV
-vLr
+quL
 vLr
 vLr
 vLr
@@ -189274,7 +189776,7 @@ nid
 mwP
 elm
 sNV
-vLr
+quL
 vLr
 vLr
 vLr
@@ -190564,7 +191066,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 vLr
@@ -190579,7 +191081,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 tVB
@@ -190808,7 +191310,7 @@ gyG
 ukk
 gaY
 kJX
-xrt
+ooi
 sHt
 gaY
 cgo
@@ -190821,7 +191323,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 vLr
@@ -190836,7 +191338,7 @@ vLr
 geo
 sNV
 sNV
-quL
+wKm
 vLr
 vLr
 tVB
@@ -191319,7 +191821,7 @@ cWJ
 pef
 dDx
 ajx
-ajx
+eNK
 mVm
 ajx
 ucR
@@ -248262,15 +248764,15 @@ mpg
 mpg
 mpg
 mpg
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
 mpg
 mpg
 mpg
@@ -248520,11 +249022,268 @@ mpg
 mpg
 mpg
 nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+"}
+(3,1,3) = {"
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+mpg
+nkq
 tUm
 ali
 usd
 usd
-usd
+pYi
 ali
 nlI
 nkq
@@ -248715,7 +249474,7 @@ mpg
 mpg
 mpg
 "}
-(3,1,3) = {"
+(4,1,3) = {"
 mpg
 mpg
 mpg
@@ -248972,7 +249731,7 @@ mpg
 mpg
 mpg
 "}
-(4,1,3) = {"
+(5,1,3) = {"
 mpg
 mpg
 mpg
@@ -249229,7 +249988,7 @@ mpg
 mpg
 mpg
 "}
-(5,1,3) = {"
+(6,1,3) = {"
 mpg
 mpg
 mpg
@@ -249486,7 +250245,7 @@ mpg
 mpg
 mpg
 "}
-(6,1,3) = {"
+(7,1,3) = {"
 mpg
 mpg
 mpg
@@ -249743,7 +250502,7 @@ mpg
 mpg
 mpg
 "}
-(7,1,3) = {"
+(8,1,3) = {"
 mpg
 mpg
 mpg
@@ -249813,264 +250572,7 @@ rpa
 rpa
 rpa
 nkq
-rpa
-rpa
-rpa
-rpa
-qwI
-cwG
-cwG
-dht
-syz
-emI
-usd
-fnj
-nkq
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-"}
-(8,1,3) = {"
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-nkq
-rpa
-rpa
-rpa
-rpa
-rpa
-rpa
-rpa
-rpa
-rpa
+ejg
 rpa
 rpa
 rpa
@@ -250079,9 +250581,9 @@ cwG
 cwG
 dht
 vYC
-egc
-cwG
-sLe
+emI
+usd
+fnj
 nkq
 mpg
 mpg
@@ -250326,7 +250828,7 @@ rpa
 rpa
 rpa
 rpa
-rpa
+nkq
 rpa
 rpa
 rpa
@@ -250338,7 +250840,7 @@ nQn
 syz
 egc
 cwG
-dht
+sLe
 nkq
 mpg
 mpg
@@ -250583,7 +251085,7 @@ rpa
 rpa
 rpa
 rpa
-rpa
+nkq
 rpa
 rpa
 rpa
@@ -250833,7 +251335,7 @@ mpg
 mpg
 mpg
 nkq
-ejg
+rpa
 rpa
 rpa
 rpa
@@ -251090,7 +251592,7 @@ mpg
 mpg
 mpg
 nkq
-rpa
+ejg
 rpa
 rpa
 rpa
@@ -251347,15 +251849,15 @@ mpg
 mpg
 mpg
 nkq
+rpa
+rpa
+rpa
+rpa
+rpa
+rpa
+rpa
 nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-nkq
-ejg
+rpa
 rpa
 rpa
 rpa
@@ -251603,16 +252105,16 @@ mpg
 mpg
 mpg
 mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
 nkq
-rpa
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
+ejg
 rpa
 rpa
 rpa
@@ -251869,10 +252371,10 @@ mpg
 mpg
 mpg
 nkq
-nkq
-nkq
-nkq
-nkq
+rpa
+rpa
+rpa
+rpa
 nkq
 mpg
 mpg
@@ -252125,12 +252627,12 @@ mpg
 mpg
 mpg
 mpg
-mpg
-mpg
-mpg
-mpg
-mpg
-mpg
+nkq
+nkq
+nkq
+nkq
+nkq
+nkq
 mpg
 mpg
 mpg
@@ -281193,7 +281695,7 @@ xdK
 akc
 axF
 lgj
-fFh
+wpY
 chr
 npa
 wYS
@@ -281450,7 +281952,7 @@ wvV
 wvV
 chr
 wki
-vuH
+fFh
 poK
 lgj
 lgj
