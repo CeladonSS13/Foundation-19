@@ -38,12 +38,45 @@ ID мода: CELADON_OUTFITS
         `/decl/hierarchy/outfit/mtf/epsilon_11/leader`
         Изменены: `suit`, `head`
 
-- EDIT: `code\datums\outfits\jobs\engineering.dm`:
+<!-- - EDIT: `code\datums\outfits\jobs\engineering.dm`:
         `/decl/hierarchy/outfit/job/engineering/seneng`
         Изменено: `id_type`
 - ADD: `code\datums\outfits\jobs\engineering.dm`:
         `/decl/hierarchy/outfit/job/engineering/seneng`
         Добавлено: `r_ear`
+-->
+- ADD: `code\datums\outfits\jobs\security.dm`
+        ADDED: `/decl/hierarchy/outfit/job/security/ez_senmedic`
+        ADDED: `/decl/hierarchy/outfit/job/security/lcz_senmedic`
+        ADDED: `/decl/hierarchy/outfit/job/security/hcz_senmedic`
+        ADDED: `/decl/hierarchy/outfit/job/security/hcz_medic`
+
+- ADD: `code\game\jobs\job\engineering.dm`
+        ADDED: `alt_titles`
+
+- EDIT: `code\datums\outfits\jobs\engineering.dm`:
+        `/decl/hierarchy/outfit/job/engineering/conteng`
+        EDITED: `id_type`, `l_ear`
+
+- EDIT: `code\datums\outfits\jobs\security.dm`
+        `/decl/hierarchy/outfit/job/security/ez_medic`
+        EDITED: `id_type`, `glasses`
+
+- EDIT: `code\datums\outfits\jobs\security.dm`
+        `/decl/hierarchy/outfit/job/security/ez_guard`
+        EDITED: `id_type`
+
+- EDIT: `code\datums\outfits\jobs\security.dm`
+        `/decl/hierarchy/outfit/job/security/raisa_agent`
+        EDITED: `belt`
+- EDIT: `code\datums\outfits\jobs\security.dm`
+        `/decl/hierarchy/outfit/job/security/ez_guard_investigative`
+        EDITED: `id_type`
+
+- EDIT `code\game\jobs\job\security.dm`
+        `/datum/job/raisa`
+        EDITED: `min_skills`, `max_skills`
+
 <!--
   Если вы редактировали какие-либо процедуры или переменные в кор коде,
   они должны быть указаны здесь.
@@ -85,7 +118,7 @@ ID мода: CELADON_OUTFITS
 
 ### Авторы:
 
-Voiko
+Voiko / John Chiffir
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.

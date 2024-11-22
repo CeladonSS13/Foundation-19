@@ -86,6 +86,25 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/lcz
 
 
+// [CELADON-ADD] - CELADON_OUTFITS
+/decl/hierarchy/outfit/job/security/lcz_senmedic
+	name = OUTFIT_JOB_NAME("LCZ Senior Medic")
+	uniform = /obj/item/clothing/under/rank/warden/lcz
+	glasses = /obj/item/clothing/glasses/hud/health/visor
+	suit = /obj/item/clothing/suit/armor/vest/scp/medarmor/medic
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/card/id/seclvl3lcz
+	l_ear = /obj/item/device/radio/headset/headset_sec_lcz/medic
+	l_pocket = /obj/item/handcuffs
+	r_pocket = /obj/item/melee/telebaton
+	backpack_contents = list(/obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1)
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	head = /obj/item/clothing/head/helmet/scp/security/medic
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
+
+// /[CELADON-ADD]
+
 /decl/hierarchy/outfit/job/security/hcz_sergeant
 	name = OUTFIT_JOB_NAME("HCZ Sergeant")
 	uniform = /obj/item/clothing/under/rank/warden/hcz
@@ -101,6 +120,24 @@
 	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
 	mask = /obj/item/clothing/mask/balaclava
 	gloves = /obj/item/clothing/gloves/tactical/scp
+
+// [CELADON-ADD] - CELADON_OUTFITS
+/decl/hierarchy/outfit/job/security/hcz_senmedic
+	name = OUTFIT_JOB_NAME("HCZ Senior Combat Medic")
+	uniform = /obj/item/clothing/under/rank/warden/hcz
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/card/id/seclvl3hcz
+	l_ear = /obj/item/device/radio/headset/headset_sec_hcz
+	suit = /obj/item/clothing/suit/armor/pcarrier/scp/tactical
+	l_pocket = /obj/item/handcuffs
+	r_pocket = /obj/item/melee/telebaton
+	backpack_contents = list(/obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1)
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	glasses = /obj/item/clothing/glasses/hud/health/visor
+	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
+// /[CELADON-ADD]
 
 /decl/hierarchy/outfit/job/security/ez_sergeant
 	name = OUTFIT_JOB_NAME("EZ Senior Agent")
@@ -119,9 +156,10 @@
 	mask = /obj/item/clothing/mask/balaclava
 	gloves = /obj/item/clothing/gloves/tactical/scp
 
-/decl/hierarchy/outfit/job/security/ez_medic
-	name = OUTFIT_JOB_NAME("EZ Combat Medic")
-	uniform = /obj/item/clothing/under/rank/security/ez
+// [CELADON-ADD] - CELADON_OUTFITS
+/decl/hierarchy/outfit/job/security/ez_senmedic
+	name = OUTFIT_JOB_NAME("EZ Senior Combat Medic")
+	uniform = /obj/item/clothing/under/rank/warden/ez
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/card/id/seclvl3ez
 	l_ear = /obj/item/device/radio/headset/headset_sec_ecz
@@ -131,7 +169,31 @@
 	r_pocket = /obj/item/melee/telebaton
 	backpack_contents = list(/obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1)
 	belt = /obj/item/storage/belt/holster/security/fullmk9
-	glasses = /obj/item/clothing/glasses/sunglasses/sechud
+	glasses = /obj/item/clothing/glasses/hud/health/visor
+	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
+// [/CELADON-ADD]
+
+/decl/hierarchy/outfit/job/security/ez_medic
+	name = OUTFIT_JOB_NAME("EZ Combat Medic")
+	uniform = /obj/item/clothing/under/rank/security/ez
+	shoes = /obj/item/clothing/shoes/dutyboots
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// id_type = /obj/item/card/id/seclvl3ez
+	id_type = /obj/item/card/id/junseclvl2ez
+	// [/CELADON-EDIT]
+	l_ear = /obj/item/device/radio/headset/headset_sec_ecz
+	l_pocket = /obj/item/book/manual/scp/secsop
+	suit = /obj/item/clothing/suit/armor/pcarrier/scp/medium
+	l_pocket = /obj/item/handcuffs
+	r_pocket = /obj/item/melee/telebaton
+	backpack_contents = list(/obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1)
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// glasses = /obj/item/clothing/glasses/sunglasses/sechud
+	glasses = /obj/item/clothing/glasses/hud/health/visor
+	// [CELADON-EDIT]
 	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
 	mask = /obj/item/clothing/mask/balaclava
 	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
@@ -140,7 +202,10 @@
 	name = OUTFIT_JOB_NAME("EZ Agent")
 	uniform = /obj/item/clothing/under/rank/security/ez
 	shoes = /obj/item/clothing/shoes/dutyboots
-	id_type = /obj/item/card/id/seclvl3ez
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// id_type = /obj/item/card/id/seclvl3ez
+	id_type = /obj/item/card/id/junseclvl2ez
+	// [/CELADON-EDIT]
 	l_ear = /obj/item/device/radio/headset/headset_sec_ecz
 	l_pocket = /obj/item/book/manual/scp/secsop
 	suit = /obj/item/clothing/suit/armor/pcarrier/scp/medium
@@ -174,7 +239,10 @@
 	uniform = /obj/item/clothing/under/det
 	shoes = /obj/item/clothing/shoes/dress
 	suit = /obj/item/clothing/suit/storage/det_trench
-	id_type = /obj/item/card/id/seclvl3ez
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	// id_type = /obj/item/card/id/seclvl3ez
+	id_type = /obj/item/card/id/junseclvl2ez
+	// /[CELADON-EDIT]
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	belt = /obj/item/storage/belt/holster/security/fullrhino
 	l_hand = /obj/item/storage/briefcase/crimekit
@@ -265,6 +333,25 @@
 	mask = /obj/item/clothing/mask/balaclava
 	gloves = /obj/item/clothing/gloves/tactical/scp
 
+// [CELADON-ADD] - CELADON_OUTFITS
+/decl/hierarchy/outfit/job/security/hcz_medic
+	name = OUTFIT_JOB_NAME("HCZ Combat Medic")
+	uniform = /obj/item/clothing/under/rank/security/hcz
+	glasses = /obj/item/clothing/glasses/sunglasses/sechud/goggles
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/card/id/junseclvl3hcz
+	l_ear = /obj/item/device/radio/headset/headset_sec_hcz
+	suit = /obj/item/clothing/suit/armor/pcarrier/scp/tactical
+	l_pocket = /obj/item/handcuffs
+	r_pocket = /obj/item/melee/telebaton
+	backpack_contents = list(/obj/item/storage/firstaid/adv = 1, /obj/item/storage/firstaid/stab = 1)
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	glasses = /obj/item/clothing/glasses/hud/health/visor
+	head = /obj/item/clothing/head/helmet/scp/hczsecurityguard
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/latex/nitrile/armored
+// /[CELADON-ADD]
+
 /decl/hierarchy/outfit/job/security/raisa_agent
 	name = OUTFIT_JOB_NAME("RAISA Agent")
 	uniform = /obj/item/clothing/under/rank/security/ez
@@ -277,7 +364,10 @@
 	r_pocket = /obj/item/melee/telebaton
 	backpack_contents = list()
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
-	belt = /obj/item/gun/energy/stunrevolver/taser
+	// [CELADON-EDIT] - CELADON_OUTFITS
+	//belt = /obj/item/gun/energy/stunrevolver/taser
+	belt = /obj/item/storage/belt/holster/security/fullmk9
+	// /[CELADON-EDIT]
 	gloves = /obj/item/clothing/gloves/tactical/scp
 
 /decl/hierarchy/outfit/job/security/lcz_cadet

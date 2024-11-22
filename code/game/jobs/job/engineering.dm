@@ -127,6 +127,12 @@
 	economic_power = 5
 	minimal_player_age = 10
 	ideal_character_age = 30
+	// [CELADON-ADD] - CELADON_OUTFITS
+	alt_titles = list(
+		"Containment Specialist",
+		"Containment Technician"
+		)
+	// /[CELADON-ADD]
 	outfit_type = /decl/hierarchy/outfit/job/engineering/conteng
 	requirements = list(EXP_TYPE_ENGINEERING = 600)
 	class = CLASS_B
