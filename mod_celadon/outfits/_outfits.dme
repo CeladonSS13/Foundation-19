@@ -2,5 +2,6 @@
 #define MODPACK_CELADON_OUTFITS
 
 #include "_outfits.dm"
+#include "code\security.dm"
 
 #endif

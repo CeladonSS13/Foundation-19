@@ -262,16 +262,30 @@
 		ACCESS_NETWORK
 	)
 	minimal_access = list()
+// [CELADON-EDIT] - CELADON_OUTFITS
+//	min_skill = list(
+//	    SKILL_COMPUTER    = SKILL_EXPERIENCED,
+//	    SKILL_FORENSICS   = SKILL_TRAINED
+//	)
 
+//	max_skill = list(
+//	    SKILL_COMPUTER    = SKILL_MASTER,
+//	    SKILL_FORENSICS   = SKILL_EXPERIENCED
+//	)
 	min_skill = list(
-	    SKILL_COMPUTER    = SKILL_EXPERIENCED,
-	    SKILL_FORENSICS   = SKILL_TRAINED
+		SKILL_COMPUTER    = SKILL_EXPERIENCED,
+		SKILL_FORENSICS   = SKILL_TRAINED,
+		SKILL_COMBAT      = SKILL_BASIC,
+		SKILL_WEAPONS     = SKILL_BASIC
 	)
 
 	max_skill = list(
-	    SKILL_COMPUTER    = SKILL_MASTER,
-	    SKILL_FORENSICS   = SKILL_EXPERIENCED
+		SKILL_COMBAT      = SKILL_EXPERIENCED,
+		SKILL_WEAPONS     = SKILL_EXPERIENCED,
+		SKILL_COMPUTER    = SKILL_MASTER,
+		SKILL_FORENSICS   = SKILL_EXPERIENCED
 	)
+// /[CELADON-EDIT]
 	skill_points = 17
 
 	roleplay_difficulty = "Medium - Hard"
@@ -290,7 +304,7 @@
 	supervisors = "the LCZ Zone Lieutenant"
 	economic_power = 4
 	requirements = list(EXP_TYPE_LCZ = 480)
-	alt_titles = list("LCZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/lcz_medic, "LCZ Senior Riot Control Unit" = /decl/hierarchy/outfit/job/security/lcz_riot)
+	alt_titles = list("LCZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/lcz_senmedic, "LCZ Senior Riot Control Unit" = /decl/hierarchy/outfit/job/security/lcz_riot)
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/lcz_sergeant
@@ -339,7 +353,7 @@
 	supervisors = "the HCZ Zone Lieutenant"
 	economic_power = 4
 	requirements = list(EXP_TYPE_HCZ = 480)
-	alt_titles = list("HCZ Senior Containment Response Agent", "HCZ Containment Response Sergeant", "HCZ Senior Combat Medic", "HCZ Senior Agent")
+	alt_titles = list("HCZ Senior Containment Response Agent", "HCZ Containment Response Sergeant", "HCZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/hcz_senmedic, "HCZ Senior Agent")
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/hcz_sergeant
@@ -383,7 +397,7 @@
 	supervisors = "the EZ Zone Supervisor"
 	economic_power = 4
 	requirements = list(EXP_TYPE_ECZ = 480)
-	alt_titles = list("Investigation Officer" = /decl/hierarchy/outfit/job/security/ez_sergeant_investigative, "EZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/ez_medic)
+	alt_titles = list("Investigation Officer" = /decl/hierarchy/outfit/job/security/ez_sergeant_investigative, "EZ Senior Combat Medic" = /decl/hierarchy/outfit/job/security/ez_senmedic)
 	minimal_player_age = 5
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/ez_sergeant
@@ -485,7 +499,7 @@
 	supervisors = "the HCZ Sergeants and Zone Lieutenant"
 	economic_power = 4
 	requirements = list(EXP_TYPE_HCZ = 220)
-	alt_titles = list("HCZ Containment Response Agent", "HCZ Containment Response Guard", "HCZ Combat Medic", "HCZ Agent")
+	alt_titles = list("HCZ Containment Response Agent", "HCZ Containment Response Guard", "HCZ Combat Medic" = /decl/hierarchy/outfit/job/security/hcz_medic, "HCZ Agent")
 //	minimal_player_age = 0
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/security/hcz_guard
