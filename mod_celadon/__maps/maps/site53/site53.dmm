@@ -4930,6 +4930,9 @@
 /obj/item/clothing/head/helmet/scp/hczsecurityguard,
 /obj/item/clothing/head/helmet/scp/hczsecurityguard,
 /obj/effect/floor_decal/corner/red/mono,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/lhcz/hczguardgear)
 "baL" = (
@@ -5476,6 +5479,12 @@
 "bhd" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/machinery/camera/network/entrance,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/reagent_containers/food/drinks/milk,
 /turf/simulated/floor/tiled/freezer,
 /area/site53/lowertrams/restaurantkitchenarea)
 "bhe" = (
@@ -11874,7 +11883,9 @@
 /area/site53/ulcz/hallways)
 "cxh" = (
 /obj/effect/paint_stripe/red,
-/obj/structure/reagent_dispensers/peppertank,
+/obj/machinery/power/breakerbox/activated{
+	RCon_tag = "Telecommunications Breaker"
+	},
 /turf/simulated/wall/r_titanium,
 /area/site53/llcz/checkequip)
 "cxl" = (
@@ -32605,9 +32616,6 @@
 "gHP" = (
 /obj/structure/table/rack,
 /obj/machinery/door/window/brigdoor/westright,
-/obj/item/rig_module/device/anomaly_scanner,
-/obj/item/rig_module/device/drill,
-/obj/item/rig_module/mounted/plasmacutter,
 /obj/item/rig_module/vision/meson,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/reswing/lowres/xenoarchaeology)
@@ -38000,6 +38008,13 @@
 /obj/effect/floor_decal/corner/red/bordercorner,
 /turf/simulated/floor/tiled/horizontal,
 /area/site53/lowertrams/hub)
+"hLD" = (
+/obj/effect/floor_decal/corner/yellow/bordercorner{
+	dir = 4
+	},
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/upper_surface/entrancehallway)
 "hLF" = (
 /obj/effect/floor_decal/corner/orange/border,
 /obj/machinery/camera/network/lcz{
@@ -39814,6 +39829,15 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/ulcz/scp914)
+"ihm" = (
+/obj/effect/floor_decal/corner/red/border{
+	dir = 6
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/upper_surface/breachshelter)
 "ihq" = (
 /obj/effect/floor_decal/corner/blue/bordercorner{
 	dir = 8
@@ -40223,6 +40247,9 @@
 /obj/item/ammo_magazine/scp/p90_mag/rubber,
 /obj/item/ammo_magazine/scp/p90_mag/rubber,
 /obj/item/ammo_magazine/scp/p90_mag/rubber,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/llcz/checkequip)
 "imk" = (
@@ -41523,7 +41550,7 @@
 /area/site53/llcz/entrance_checkpoint)
 "iAL" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/white/monotile,
 /area/site53/ulcz/humanoidcontainment)
 "iAM" = (
 /obj/effect/floor_decal/corner/paleblue/border{
@@ -41943,6 +41970,9 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/red/border,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 27
+	},
 /turf/simulated/floor/tiled/dark/horizontal,
 /area/site53/ulcz/hallways)
 "iGg" = (
@@ -42553,6 +42583,16 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/lowertrams/restaurantkitchenarea)
+"iLN" = (
+/obj/effect/floor_decal/corner/red/border{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 0;
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/checkequip)
 "iLQ" = (
 /obj/effect/floor_decal/corner/green/bordercorner{
 	dir = 1
@@ -64787,6 +64827,9 @@
 	dir = 4;
 	pixel_x = -32
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/ulcz/scp914)
 "nlC" = (
@@ -65339,8 +65382,7 @@
 /area/site53/surface/bunker)
 "nqI" = (
 /obj/structure/closet/secure_closet/personal/empty{
-	name = "Representative's Locker";
-	req_access = null
+	name = "Representative's Locker"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/site53/uez/goirepoffice)
@@ -66346,6 +66388,9 @@
 	pixel_y = 4
 	},
 /obj/item/device/toner,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/entrancezone/securitypost)
 "nBi" = (
@@ -75821,10 +75866,14 @@
 /turf/simulated/floor/tiled/white/horizontal,
 /area/site53/medical/infirmary)
 "pER" = (
-/obj/effect/paint_stripe/red,
-/obj/structure/reagent_dispensers/peppertank,
-/turf/simulated/wall/r_titanium,
-/area/site53/lhcz/hczguardgear)
+/obj/effect/floor_decal/corner/red/border{
+	dir = 10
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/upper_surface/breachshelter)
 "pES" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -76028,6 +76077,13 @@
 	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/uez/commandpanicbunker)
+"pGh" = (
+/obj/effect/floor_decal/corner/red/border,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark/horizontal,
+/area/site53/llcz/dclass/checkpointoverlook)
 "pGj" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/machinery/atmospherics/unary/cryo_cell,
@@ -82576,6 +82632,9 @@
 	text = null
 	},
 /obj/effect/floor_decal/corner/red/mono,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/lhcz/hczguardgear)
 "qWz" = (
@@ -83499,6 +83558,12 @@
 /area/site53/reswing/lowres/researchmaint2)
 "reJ" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/drinks/milk,
+/obj/item/reagent_containers/food/drinks/soymilk,
+/obj/item/reagent_containers/food/drinks/milk,
 /turf/simulated/floor/tiled/freezer,
 /area/site53/lowertrams/restaurantkitchenarea)
 "reQ" = (
@@ -84341,6 +84406,10 @@
 	dir = 4
 	},
 /area/site53/uhcz/scp457containment)
+"rlX" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/site53/ulcz/humanoidcontainment)
 "rmd" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
@@ -89213,7 +89282,7 @@
 /area/site53/engineering/atmos)
 "sle" = (
 /obj/machinery/power/smes/buildable/preset/ds90/substation_full{
-	RCon_tag = "Self-Destruct Substation"
+	RCon_tag = "Upper Light Containment Auxiliary Storage Substation"
 	},
 /turf/simulated/floor,
 /area/site53/llcz/checkequip)
@@ -89748,6 +89817,10 @@
 	req_access = list("ACCESS_SECURITY_LEVEL1")
 	},
 /obj/structure/table/reinforced,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = 0;
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "sqN" = (
@@ -93759,6 +93832,9 @@
 	pixel_y = 2;
 	req_access = list("ACCESS_SECURITY_LEVEL2")
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/corner,
 /area/site53/uhcz/securitypost)
 "tfK" = (
@@ -94273,7 +94349,7 @@
 /obj/machinery/door/airlock/multi_tile/glass/security{
 	icon_state = "closed";
 	name = "EZ Agent Locker Room";
-	req_access = list("ACCESS_SECURITY_LEVEL3","ACCESS_ADMIN_LEVEL2")
+	req_access = list("ACCESS_SECURITY_LEVEL2","ACCESS_ADMIN_LEVEL2")
 	},
 /turf/simulated/floor/tiled/dark/small,
 /area/site53/uez/equipmentroom)
@@ -95522,7 +95598,7 @@
 /area/site53/engineering/engine_smes)
 "tyh" = (
 /obj/machinery/power/breakerbox/activated{
-	RCon_tag = "Self-Destruct Bypass"
+	RCon_tag = "Upper Light Containment Auxiliary Storage Breaker"
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -96757,6 +96833,9 @@
 	c_tag = "Entrance Zone Security post 2";
 	dir = 4;
 	network = list("Entrance Zone Network")
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/entrancezone/hallway)
@@ -98941,6 +99020,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/site53/engineering/storage)
+"uhG" = (
+/obj/machinery/door/airlock/glass/security{
+	name = "EZ Lower Hall";
+	req_access = list("ACCESS_SECURITY_LEVEL2")
+	},
+/turf/simulated/open,
+/area/site53/surface/surface/upper)
 "uhK" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/floor_decal/corner/red/mono,
@@ -99073,6 +99159,9 @@
 /obj/item/clothing/head/helmet/scp/security,
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 1
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/llcz/checkequip)
@@ -99469,6 +99558,9 @@
 /obj/structure/table/standard,
 /obj/machinery/photocopier{
 	pixel_y = 4
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/upper_surface/entrancehallway2)
@@ -105707,6 +105799,9 @@
 	c_tag = "Gate B Security Office";
 	dir = 1
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/upper_surface/entrancehallway)
 "vGd" = (
@@ -107058,6 +107153,9 @@
 /obj/item/material/knife/combat,
 /obj/item/material/knife/combat,
 /obj/effect/floor_decal/corner/red/mono,
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/lhcz/hczguardgear)
 "vUg" = (
@@ -111699,6 +111797,9 @@
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 1
 	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/site53/llcz/checkequip)
 "wTs" = (
@@ -116033,13 +116134,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/logistics/logistics)
 "xNF" = (
-/obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/obj/item/reagent_containers/food/snacks/meat/chicken,
-/turf/simulated/floor/tiled/freezer,
-/area/site53/lowertrams/restaurantkitchenarea)
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/site53/ulcz/humanoidcontainment)
 "xNI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/pill_bottle/inaprovaline,
@@ -124805,8 +124904,8 @@ mFO
 iro
 iro
 iro
-sNV
-sNV
+mFO
+mFO
 cvb
 elm
 elm
@@ -125063,7 +125162,7 @@ wdW
 eoR
 rtO
 uch
-sNV
+mFO
 epC
 elm
 elm
@@ -191345,7 +191444,7 @@ wnv
 jcu
 wzt
 jcu
-ugu
+pGh
 cjg
 cjg
 cjg
@@ -203687,7 +203786,7 @@ mcm
 dJE
 xjF
 imd
-cxh
+iNN
 mpg
 mpg
 mpg
@@ -203944,7 +204043,7 @@ mcm
 dJE
 xjF
 wTq
-cxh
+iNN
 mpg
 mpg
 mpg
@@ -204201,7 +204300,7 @@ pNf
 wZR
 cKD
 ujK
-cxh
+iNN
 mpg
 mpg
 mpg
@@ -204445,7 +204544,7 @@ xyD
 nKY
 obj
 qma
-cXk
+iLN
 cXk
 cXk
 cXk
@@ -204702,7 +204801,7 @@ vsP
 wpz
 obj
 bKy
-iNN
+cxh
 ldu
 ldu
 blI
@@ -215438,7 +215537,7 @@ frd
 tXp
 voO
 fMU
-xNF
+reJ
 grF
 nkh
 fMU
@@ -226293,7 +226392,7 @@ noT
 noT
 wvr
 vUa
-pER
+rav
 mpg
 ydq
 bQk
@@ -226550,7 +226649,7 @@ noT
 noT
 wvr
 baG
-pER
+rav
 mpg
 mpg
 mpg
@@ -226807,7 +226906,7 @@ hqL
 wmd
 nYk
 qWy
-pER
+rav
 mpg
 mpg
 mpg
@@ -229836,7 +229935,7 @@ lVm
 lVm
 lVm
 lVm
-lVm
+xNF
 hYO
 lVm
 lVm
@@ -231631,7 +231730,7 @@ bQS
 hKH
 hbe
 hKH
-psP
+rlX
 hYO
 hYO
 hYO
@@ -277142,7 +277241,7 @@ ugl
 drV
 jLo
 tkA
-xCC
+ihm
 adQ
 uOI
 uOI
@@ -278177,7 +278276,7 @@ mpo
 mpo
 mpo
 pVA
-qjV
+pER
 adQ
 lFu
 mpo
@@ -283530,7 +283629,7 @@ hLH
 jPJ
 xvy
 xvy
-crC
+hLD
 auq
 gPY
 nBt
@@ -353177,7 +353276,7 @@ gDo
 gDo
 gDo
 gDo
-gDo
+uhG
 gDo
 gDo
 gDo
