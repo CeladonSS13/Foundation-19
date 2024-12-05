@@ -3,5 +3,6 @@
 
 #include "_outfits.dm"
 #include "code\security.dm"
+#include "code\dclass.dm"
 
 #endif
