@@ -3,7 +3,7 @@
 	department_flag = MSC
 
 	total_positions = 0 // Not used for AI, see is_position_available below and modules/mob/living/silicon/ai/latejoin.dm
-	spawn_positions = 1
+	spawn_positions = 0
 	selection_color = "#3f823f"
 	supervisors = "your laws"
 	req_admin_notify = 1
@@ -40,7 +40,8 @@
 	return 1
 
 /datum/job/ai/is_position_available()
-	return (empty_playable_ai_cores.len != 0)
+	// return (empty_playable_ai_cores.len != 0)
+	return FALSE // [CELADON-EDIT] - Отключаем возможность спавна AI.
 
 /datum/job/ai/handle_variant_join(mob/living/carbon/human/H, alt_title)
 	return H
@@ -48,8 +49,8 @@
 /datum/job/cyborg
 	title = "Robot"
 	department_flag = MSC
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "your laws and the AI"
 	selection_color = "#254c25"
 	minimal_player_age = 7
