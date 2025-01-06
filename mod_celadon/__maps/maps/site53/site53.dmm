@@ -104692,16 +104692,6 @@
 /obj/effect/paint_stripe/yellow,
 /turf/simulated/wall/r_wall/prepainted,
 /area/site53/lowertrams/janitoroffice)
-"vsp" = (
-/obj/machinery/button/blast_door{
-	dir = 1;
-	id_tag = "HCZ Secure Armoury";
-	name = "HCZ Secure Armoury";
-	req_access = list("ACCESS_ADMIN_LEVEL3");
-	pixel_y = 2
-	},
-/turf/simulated/floor/exoplanet/snow,
-/area/site53/uez/hallway)
 "vsv" = (
 /obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
 /obj/machinery/recharger/wallcharger{
@@ -345749,7 +345739,7 @@ wrP
 wrP
 tqC
 tqC
-vsp
+wrP
 wrP
 wrP
 wrP
