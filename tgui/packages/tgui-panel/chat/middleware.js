@@ -5,15 +5,20 @@
  */
 
 import { storage } from 'common/storage';
-import DOMPurify from 'dompurify';
 
-import { loadSettings, updateSettings } from '../settings/actions';
+import {
+  addHighlightSetting,
+  loadSettings,
+  removeHighlightSetting,
+  updateHighlightSetting,
+  updateSettings,
+} from '../settings/actions';
 import { selectSettings } from '../settings/selectors';
 import {
   addChatPage,
   changeChatPage,
   changeScrollTracking,
-  clearChat,
+  clearChatMessages,
   loadChat,
   rebuildChat,
   removeChatPage,
@@ -21,7 +26,7 @@ import {
   toggleAcceptedType,
   updateMessageCount,
 } from './actions';
-import { MAX_PERSISTED_MESSAGES, MESSAGE_SAVE_INTERVAL } from './constants';
+import { MESSAGE_PRUNE_INTERVAL, MESSAGE_SAVE_INTERVAL } from './constants';
 import { createMessage, serializeMessage } from './model';
 import { chatRenderer } from './renderer';
 import { selectChat, selectCurrentChatPage } from './selectors';
@@ -30,23 +35,38 @@ import { selectChat, selectCurrentChatPage } from './selectors';
 const FORBID_TAGS = ['a', 'iframe', 'link', 'video'];
 
 const saveChatToStorage = async (store) => {
+  const settings = selectSettings(store.getState());
   const state = selectChat(store.getState());
-  const fromIndex = Math.max(
-    0,
-    chatRenderer.messages.length - MAX_PERSISTED_MESSAGES,
-  );
-  const messages = chatRenderer.messages
-    .slice(fromIndex)
-    .map((message) => serializeMessage(message));
+
+  if (!window.hubStorage && !Byond.TRIDENT) {
+    const indexedDbBackend = await storage.backendPromise;
+    indexedDbBackend.processChatMessages(chatRenderer.storeQueue);
+  } else {
+    const fromIndex = Math.max(
+      0,
+      chatRenderer.messages.length - settings.maxMessages,
+    );
+    const messages = chatRenderer.messages
+      .slice(fromIndex)
+      .map((message) => serializeMessage(message));
+
+    storage.set('chat-messages', messages);
+  }
+
+  chatRenderer.storeQueue = [];
   storage.set('chat-state', state);
-  storage.set('chat-messages', messages);
 };
 
 const loadChatFromStorage = async (store) => {
-  const [state, messages] = await Promise.all([
-    storage.get('chat-state'),
-    storage.get('chat-messages'),
-  ]);
+  const state = await storage.get('chat-state');
+
+  let messages;
+  if (!window.hubStorage && !Byond.TRIDENT) {
+    messages = await (await storage.backendPromise).getChatMessages();
+  } else {
+    messages = await storage.get('chat-messages');
+  }
+
   // Discard incompatible versions
   if (state && state.version <= 4) {
     store.dispatch(loadChat());
@@ -54,7 +74,7 @@ const loadChatFromStorage = async (store) => {
   }
   if (messages) {
     for (let message of messages) {
-      if (message.html) {
+      if (message?.html) {
         message.html = DOMPurify.sanitize(message.html, {
           FORBID_TAGS,
         });
@@ -90,6 +110,10 @@ export const chatMiddleware = (store) => {
   setInterval(() => {
     saveChatToStorage(store);
   }, MESSAGE_SAVE_INTERVAL);
+  setInterval(() => {
+    const settings = selectSettings(store.getState());
+    chatRenderer.pruneMessagesTo(settings.maxMessages);
+  }, MESSAGE_PRUNE_INTERVAL);
   return (next) => (action) => {
     const { type, payload } = action;
     if (!initialized) {
@@ -122,18 +146,25 @@ export const chatMiddleware = (store) => {
       return;
     }
     if (type === rebuildChat.type) {
-      chatRenderer.rebuildChat();
+      const settings = selectSettings(store.getState());
+      chatRenderer.rebuildChat(settings.maxMessages);
       return next(action);
     }
-    if (type === updateSettings.type || type === loadSettings.type) {
+
+    if (
+      type === updateSettings.type ||
+      type === loadSettings.type ||
+      type === addHighlightSetting.type ||
+      type === removeHighlightSetting.type ||
+      type === updateHighlightSetting.type
+    ) {
       next(action);
       const settings = selectSettings(store.getState());
       chatRenderer.setHighlight(
-        settings.highlightText,
-        settings.highlightColor,
-        settings.matchWord,
-        settings.matchCase,
+        settings.highlightSettings,
+        settings.highlightSettingById,
       );
+
       return;
     }
     if (type === 'roundrestart') {
@@ -145,8 +176,8 @@ export const chatMiddleware = (store) => {
       chatRenderer.saveToDisk();
       return;
     }
-    if (type === clearChat.type) {
-      chatRenderer.clearChat();
+    if (type === clearChatMessages.type) {
+      chatRenderer.clear();
       return;
     }
     return next(action);

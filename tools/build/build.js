@@ -35,10 +35,14 @@ export const PortParameter = new Juke.Parameter({
 });
 
 export const DmVersionParameter = new Juke.Parameter({
-  type: 'string',
+  type: "string",
 });
 
-export const CiParameter = new Juke.Parameter({ type: 'boolean' });
+export const DmVersionParameter = new Juke.Parameter({
+  type: "string",
+});
+
+export const CiParameter = new Juke.Parameter({ type: "boolean" });
 
 export const WarningParameter = new Juke.Parameter({
   type: "string[]",
@@ -46,8 +50,13 @@ export const WarningParameter = new Juke.Parameter({
 });
 
 export const NoWarningParameter = new Juke.Parameter({
-  type: 'string[]',
-  alias: 'I',
+  type: "string[]",
+  alias: "I",
+});
+
+export const NoWarningParameter = new Juke.Parameter({
+  type: "string[]",
+  alias: "I",
 });
 
 export const DmMapsIncludeTarget = new Juke.Target({
@@ -68,7 +77,12 @@ export const DmMapsIncludeTarget = new Juke.Target({
 });
 
 export const DmTarget = new Juke.Target({
-  parameters: [DefineParameter, DmVersionParameter, WarningParameter, NoWarningParameter],
+  parameters: [
+    DefineParameter,
+    DmVersionParameter,
+    WarningParameter,
+    NoWarningParameter,
+  ],
   dependsOn: ({ get }) => [
     get(DefineParameter).includes("ALL_MAPS") && DmMapsIncludeTarget,
   ],
@@ -84,8 +98,8 @@ export const DmTarget = new Juke.Target({
   outputs: [`${DME_NAME}.dmb`, `${DME_NAME}.rsc`],
   executes: async ({ get }) => {
     await DreamMaker(`${DME_NAME}.dme`, {
-      defines: ['CBT', ...get(DefineParameter)],
-      warningsAsErrors: get(WarningParameter).includes('error'),
+      defines: ["CBT", ...get(DefineParameter)],
+      warningsAsErrors: get(WarningParameter).includes("error"),
       ignoreWarningCodes: get(NoWarningParameter),
       namedDmVersion: get(DmVersionParameter),
     });
@@ -110,7 +124,7 @@ export const DmTestTarget = new Juke.Target({
       "-trusted",
       "-verbose",
       "-params",
-      "log-directory=ci"
+      "log-directory=ci",
     );
     Juke.rm("*.test.*");
     try {
@@ -144,7 +158,7 @@ export const AutowikiTarget = new Juke.Target({
       "-trusted",
       "-verbose",
       "-params",
-      "log-directory=ci"
+      "log-directory=ci",
     );
     Juke.rm("*.test.*");
     if (!fs.existsSync("data/autowiki_edits.txt")) {

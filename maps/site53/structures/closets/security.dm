@@ -239,13 +239,13 @@
 		/obj/item/material/knife/combat,
 		/obj/item/melee/telebaton,
 		/obj/item/gun/energy/stunrevolver/taser,
-		/obj/item/ammo_magazine/box/a57,
+		/obj/item/ammo_magazine/box/a57/ap,
 		/obj/item/ammo_magazine/box/a57/rubber,
 		/obj/item/clothing/head/bio_hood/security,
 		/obj/item/clothing/suit/bio_suit/security,
 		/obj/item/clothing/suit/armor/pcarrier/scp/medium,
 		/obj/item/clothing/head/beret/sec/guard,
-		/obj/item/ammo_magazine/scp/mk9 = 3,
+		/obj/item/ammo_magazine/scp/usp45 = 3,
 	)
 
 // HCZ - Sergeant
@@ -277,6 +277,27 @@
 		/obj/item/clothing/suit/bio_suit/security,
 		/obj/item/clothing/suit/armor/pcarrier/scp/medium,
 		/obj/item/clothing/head/beret/sec/sergeant,
+		/obj/item/ammo_magazine/scp/usp45 = 3,
+	)
+
+// EZ - Cadet
+/obj/structure/closet/secure_closet/cadet/ez
+	name = "EZ Probationary Agent's Locker"
+	req_access = list(ACCESS_SECURITY_LVL2, ACCESS_ADMIN_LVL1)
+	icon_state = "ezcadet1"
+	icon_closed = "ezcadet"
+	icon_locked = "ezcadet1"
+	icon_opened = "ezopen"
+	icon_off = "ezcadetoff"
+
+/obj/structure/closet/secure_closet/cadet/ez/WillContain()
+	return ..() | list(
+		/obj/item/clothing/suit/armor/pcarrier/scp/medium,
+		/obj/item/clothing/head/helmet/scp/hczsecurityguard,
+		/obj/item/melee/telebaton,
+		/obj/item/clothing/accessory/storage/holster/thigh,
+		/obj/item/gun/energy/taser,
+		/obj/item/ammo_magazine/box/a9mm,
 		/obj/item/ammo_magazine/scp/mk9 = 3,
 	)
 
