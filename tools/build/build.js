@@ -38,20 +38,11 @@ export const DmVersionParameter = new Juke.Parameter({
   type: "string",
 });
 
-export const DmVersionParameter = new Juke.Parameter({
-  type: "string",
-});
-
 export const CiParameter = new Juke.Parameter({ type: "boolean" });
 
 export const WarningParameter = new Juke.Parameter({
   type: "string[]",
   alias: "W",
-});
-
-export const NoWarningParameter = new Juke.Parameter({
-  type: "string[]",
-  alias: "I",
 });
 
 export const NoWarningParameter = new Juke.Parameter({

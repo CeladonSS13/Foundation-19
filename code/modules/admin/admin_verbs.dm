@@ -580,16 +580,6 @@ var/list/admin_verbs_mentors = list(
 
 /client/proc/drop_bomb() // Some admin dickery that can probably be done better -- TLE
 	set category = "Special Verbs"
-	set name = "Offsite Panel"
-	set desc = "Opens the offsite management panel."
-
-	if(!length(SSoffsites.offsites) || !mob) return
-	if(!check_rights(R_ADMIN|R_MOD)) return
-
-	SSoffsites.tgui_interact(mob)
-
-/client/proc/drop_bomb() // Some admin dickery that can probably be done better -- TLE
-	set category = "Fun"
 	set name = "Drop Bomb"
 	set desc = "Cause an explosion of varying strength at your location."
 	if(!check_rights(R_FUN)) return
