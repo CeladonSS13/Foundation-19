@@ -2813,6 +2813,7 @@
 /obj/effect/floor_decal/corner/red/border{
 	dir = 8
 	},
+/obj/item/device/flashlight/slime,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "aDW" = (
@@ -48895,6 +48896,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/device/flashlight/slime,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/dclass/primaryhallway)
 "kdm" = (
@@ -60135,6 +60137,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/site53/uez/commandpanicbunker)
+"mtO" = (
+/obj/item/device/flashlight/slime,
+/turf/simulated/floor/tiled/white/monotile,
+/area/site53/llcz/dclass/primaryhallway)
 "mtQ" = (
 /obj/structure/bed/chair,
 /obj/effect/floor_decal/spline/fancy/black{
@@ -82257,6 +82263,14 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/site53/llcz/mining/miningops)
+"rcI" = (
+/obj/effect/floor_decal/corner/red/mono,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/item/device/flashlight/slime,
+/turf/simulated/floor/tiled/monotile,
+/area/site53/lowertrams/hub)
 "rcJ" = (
 /obj/effect/floor_decal/corner/red/border{
 	dir = 4
@@ -86657,6 +86671,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/device/flashlight/slime,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/llcz/entrance_checkpoint)
 "rTO" = (
@@ -119889,16 +119904,16 @@ sNV
 szr
 rXH
 dTW
+mtO
+elm
+elm
+elm
+mtO
 elm
 elm
 elm
 elm
-elm
-elm
-elm
-elm
-elm
-elm
+mtO
 elm
 elm
 elm
@@ -120677,7 +120692,7 @@ ljd
 rpj
 elm
 elm
-elm
+mtO
 elm
 elm
 teK
@@ -121435,7 +121450,7 @@ elm
 elm
 elm
 elm
-elm
+mtO
 elm
 elm
 elm
@@ -121946,7 +121961,7 @@ mTh
 fEU
 elm
 elm
-elm
+mtO
 elm
 elm
 elm
@@ -122978,7 +122993,7 @@ elm
 elm
 elm
 elm
-elm
+mtO
 elm
 elm
 elm
@@ -123258,7 +123273,7 @@ elm
 elm
 bWJ
 elm
-elm
+mtO
 elm
 elm
 oXr
@@ -126597,7 +126612,7 @@ elm
 elm
 elm
 bWJ
-elm
+mtO
 elm
 elm
 elm
@@ -126845,7 +126860,7 @@ elm
 elm
 elm
 elm
-elm
+mtO
 elm
 elm
 elm
@@ -187914,7 +187929,7 @@ qHK
 nAg
 qHK
 qHK
-qHK
+pQv
 qHK
 qHK
 gNs
@@ -214909,7 +214924,7 @@ bCU
 ryH
 fXs
 pdF
-fDL
+rcI
 eQG
 cyV
 ryH
