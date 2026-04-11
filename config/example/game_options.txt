@@ -38,20 +38,20 @@ REVIVAL_BRAIN_LIFE -1
 ## These values get directly added to values and totals in-game. To speed things up make the number negative, to slow things down, make the number positive.
 
 
-## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied. 
-RUN_DELAY 2
-WALK_DELAY 4
-CREEP_DELAY 6
+## These modify the run/walk speed of all mobs before the mob-specific modifiers are applied.
+RUN_DELAY 1.5
+WALK_DELAY 2
+CREEP_DELAY 4
 MINIMUM_SPRINT_COST 0.8
 SKILL_SPRINT_COST_RANGE 0.8
 MINIMUM_STAMINA_RECOVERY 5
-MAXIMUM_STAMINA_RECOVERY 5
+MAXIMUM_STAMINA_RECOVERY 15
 
 ## Set this to 0 for perfectly smooth movement gliding, or 1 or more for delayed chess move style movements.
-#GLIDE_SIZE_DELAY 0
+GLIDE_SIZE_DELAY 1
 
 ## Allow multiple input keys to be pressed for diagonal movement.
-#ALLOW_DIAGONAL_MOVEMENT
+ALLOW_DIAGONAL_MOVEMENT
 
 ### Miscellaneous ###
 
