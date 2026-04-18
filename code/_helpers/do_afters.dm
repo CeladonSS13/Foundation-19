@@ -86,7 +86,7 @@
 			break
 
 		// target reliant
-		if(target && (user != target) && (\
+		if(target && (user != target) && !(do_flags & DO_IGNORE_TARGET_MOVEMENT) && (\
 			((do_flags & DO_TARGET_CAN_MOVE) && (target_loc != target.loc))\
 			|| ((do_flags & DO_TARGET_CAN_TURN) && target_dir != target.dir)))
 			. = FALSE

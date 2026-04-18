@@ -26,7 +26,7 @@
 	/// How much time you have to wait before defecating again
 	var/defecation_cooldown_time = 45 SECONDS
 	/// What kind of objects/effects we spawn on defecation. Also used when checking the area
-	var/list/defecation_types = list(/obj/effect/decal/cleanable/blood/gibs/red, /obj/effect/decal/cleanable/vomit, /obj/effect/decal/cleanable/mucus)
+	var/list/defecation_types
 	/// How much defecation we need to breach
 	var/defication_max = 60
 
@@ -37,7 +37,7 @@
 	var/ignore_vision = FALSE
 
 	/// Movement sound, same function as with simple mobs. Remove when 173 becomes one
-	var/movement_sound = null
+	var/movement_sound = 'sounds/scp/173/rattle.ogg'
 
 	//AI config
 
@@ -98,6 +98,7 @@
 	add_language(LANGUAGE_GUTTER, FALSE)
 	add_language(LANGUAGE_SIGN, FALSE)
 	add_language(LANGUAGE_ENGLISH, FALSE)
+	defecation_types = GLOB.scp173_decals
 	return ..()
 
 /mob/living/scp173/Destroy()
@@ -112,7 +113,22 @@
 /mob/living/scp173/say(message)
 	return // lol you can't talk
 
+/mob/living/scp173/emote(act, m_type, message)
+	if(IsBeingWatched())
+		return FALSE
+	return ..()
+
 /mob/living/scp173/Move(a,b,f)
+	if(IsBeingWatched())
+		return FALSE
+	return ..()
+
+/mob/living/scp173/keybind_face_direction(direction)
+	if(IsBeingWatched())
+		return FALSE
+	return ..()
+
+/mob/living/scp173/pointed(atom/A as mob|obj|turf in view())
 	if(IsBeingWatched())
 		return FALSE
 	return ..()
@@ -144,6 +160,37 @@
 		playsound(loc, pick('sounds/scp/spook/NeckSnap1.ogg', 'sounds/scp/spook/NeckSnap3.ogg'), 50, 1)
 		show_sound_effect(loc, src)
 		H.death()
+		return
+	if(isexosuit(A))
+		if(snap_cooldown > world.time)
+			to_chat(src, SPAN_WARNING("You can't attack yet."))
+			return
+		var/mob/living/exosuit/E = A
+		if(!LAZYLEN(E.pilots))
+			return
+		for(var/mob/pilot in E.pilots)
+			if(pilot.stat == DEAD)
+				to_chat(src, SPAN_WARNING("<I>[pilot] is already dead!</I>"))
+				continue
+			snap_cooldown = world.time + snap_cooldown_time
+			visible_message(SPAN_DANGER("[src] snaps [pilot]'s neck!"))
+			playsound(loc, pick('sounds/scp/spook/NeckSnap1.ogg', 'sounds/scp/spook/NeckSnap3.ogg'), 50, 1)
+			show_sound_effect(loc, src)
+			pilot.death()
+			return
+	if(isrobot(A))
+		if(snap_cooldown > world.time)
+			to_chat(src, SPAN_WARNING("You can't attack yet."))
+			return
+		var/mob/living/silicon/robot/R = A
+		if(R.stat == DEAD)
+			to_chat(src, SPAN_WARNING("<I>[R] is already dead!</I>"))
+			return
+		snap_cooldown = world.time + snap_cooldown_time
+		visible_message(SPAN_DANGER("[src] smashes \the [R]!"))
+		playsound(loc, pick('sounds/scp/spook/NeckSnap1.ogg', 'sounds/scp/spook/NeckSnap3.ogg'), 50, 1) // Change sound to smash
+		show_sound_effect(loc, src)
+		R.death()
 		return
 	if(istype(A, /obj/machinery/door))
 		OpenDoor(A)
@@ -182,11 +229,8 @@
 		var/obj/structure/inflatable/W = A
 		W.deflate(violent=1)
 	if(istype(A, /obj/structure/closet))
-		var/obj/structure/closet/C = A
-		if(C.open())
-			return
-		C.dump_contents()
-		QDEL_NULL(C)
+		OpenCloset(A)
+		return
 	return
 
 /mob/living/scp173/Life()
@@ -241,7 +285,7 @@
 	log_and_message_admins("put [src] through SCP-914 on \"[mode]\" mode.", user, src)
 	switch(mode)
 		if(MODE_ROUGH, MODE_COARSE)
-			movement_sound = null
+			movement_sound = 'sounds/scp/173/rattle.ogg'
 			bump_attack = FALSE
 			ignore_vision = FALSE
 			snap_cooldown_time = initial(snap_cooldown_time)
@@ -255,7 +299,7 @@
 		if(MODE_VERY_FINE) // God has abandoned you
 			playsound(src, 'sounds/effects/screech2.ogg', 150, FALSE, 32)
 			to_chat(src, SPAN_USERDANGER("You are unstoppable, nothing can stand on your path now!"))
-			movement_sound = 'sounds/scp/173/rattle.ogg'
+			movement_sound = null // Absolute silence. Good luck
 			bump_attack = TRUE
 			ignore_vision = TRUE
 			snap_cooldown_time = 0
@@ -331,6 +375,13 @@
 	A.set_broken(TRUE)
 	var/check = A.open(1)
 	src.visible_message("\The [src] slices \the [A]'s controls[check ? ", ripping it open!" : ", breaking it!"]")
+
+/mob/living/scp173/proc/OpenCloset(obj/structure/closet/C)
+	if(C.open())
+		return
+	C.dump_contents()
+	src.visible_message(SPAN_DANGER("\The [src] smashes \the [C]!"))
+	QDEL_NULL(C)
 
 /mob/living/scp173/proc/Defecate()
 	var/feces_amount = CheckFeces()
@@ -567,7 +618,7 @@
 		to_chat(user, SPAN_WARNING("Someone is looking at you!"))
 		return
 	resist_cooldown = world.time + 5 SECONDS
-	if(!do_after(user, 1 SECOND, src, DO_BOTH_CAN_MOVE|DO_DEFAULT, bonus_percentage = 100)) // Some moron suggested putting 173 in a conveyor loop.
+	if(!do_after(user, 1 SECOND, src, DO_BOTH_CAN_MOVE|DO_DEFAULT|DO_IGNORE_TARGET_MOVEMENT, bonus_percentage = 100)) // Some moron suggested putting 173 in a conveyor loop.
 		return
 	if(user.IsBeingWatched())
 		to_chat(user, SPAN_WARNING("Someone is looking at you!"))
@@ -652,12 +703,30 @@
 	playsound(loc, 'sounds/machines/bolts_up.ogg', 50, 1)
 	for(var/mob/living/L in contents)
 		L.forceMove(get_turf(src))
+		if(L.client)
+			L.client.eye = L
+			L.client.perspective = MOB_PERSPECTIVE
 	update_icon()
 	return TRUE
 
 /obj/structure/scp173_cage/Destroy()
 	ReleaseContents()
 	return ..()
+
+//	--- Различные декали для 173
+//	--- Гораздо труднее в очистке, их можно смыть лишь вручную и медленно
+//	--- Автор Nokia2Student
+
+/obj/effect/decal/cleanable/blood/gibs/red/scp173
+	fleshcolor = "#fc1111"
+	basecolor = "#fc1111"
+	desc = "Кровавые, изуродованные останки. Отмыть это будет непросто."
+
+/obj/effect/decal/cleanable/mucus/scp173
+	desc = "Омерзительная слизь. Отмыть это будет непросто."
+
+/obj/effect/decal/cleanable/vomit/scp173
+	desc = "Фу, как неприятно. Отмыть это будет непросто."
 
 /*
  * Acid
