@@ -188,7 +188,7 @@
 			return
 		snap_cooldown = world.time + snap_cooldown_time
 		visible_message(SPAN_DANGER("[src] smashes \the [R]!"))
-		playsound(loc, pick('sounds/scp/spook/NeckSnap1.ogg', 'sounds/scp/spook/NeckSnap3.ogg'), 50, 1) // Change sound to smash
+		playsound(loc, pick('sounds/effects/sparks4.ogg'), 50, 1)
 		show_sound_effect(loc, src)
 		R.death()
 		return
