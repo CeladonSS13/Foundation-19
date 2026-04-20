@@ -17,6 +17,8 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
 	antaghud_indicator = "hudloyalist"
+	faction_indicator = "hud_loyal"
+	faction_invisible = 1
 
 	hard_cap = 5
 	hard_cap_round = 7
@@ -44,5 +46,9 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 
 	//Special radio setup
 	player.add_language(LANGUAGE_ENGLISH)
-	dressup_human(player, outfits_decls_by_type_[/decl/hierarchy/outfit/mtf/epsilon_11/agent], TRUE)
+	if (player.mind == leader)
+		dressup_human(player, outfits_decls_by_type_[/decl/hierarchy/outfit/mtf/epsilon_11/leader], TRUE)
+	else
+		dressup_human(player, outfits_decls_by_type_[/decl/hierarchy/outfit/mtf/epsilon_11/agent], TRUE)
+		player.put_in_l_hand(new /obj/item/ert_kit(player))
 	return 1
