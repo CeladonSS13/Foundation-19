@@ -22,7 +22,10 @@
 /obj/machinery/photocopier/interact(mob/user)
 	user.set_machine(src)
 
-	var/dat = "Photocopier<BR><BR>"
+	var/datum/browser/popup = new(user, "copier_window", "Photocopier", 400, 300) // Фикс копирки от yeszvq
+
+
+	var/dat = ""
 	if(copyitem)
 		dat += "<a href='byond://?src=\ref[src];remove=1'>Remove Item</a><BR>"
 		if(toner)
@@ -37,8 +40,10 @@
 	dat += "Current toner level: [toner]"
 	if(!toner)
 		dat +="<BR>Please insert a new toner cartridge!"
-	show_browser(user, dat, "window=copier")
-	onclose(user, "copier")
+	popup.set_content(dat)
+	popup.open()
+	//show_browser(user, dat, "window=copier")
+	//onclose(user, "copier")
 	return
 
 /obj/machinery/photocopier/OnTopic(user, href_list, state)

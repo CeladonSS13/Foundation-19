@@ -39,8 +39,8 @@
 		wet_overlay = null
 
 /turf/simulated/clean()
-	for(var/obj/effect/decal/cleanable/blood/B in contents)
-		B.clean()
+	for(var/obj/effect/decal/cleanable/D in contents)
+		D.clean()
 	..()
 
 /turf/simulated/New()

@@ -251,9 +251,15 @@
 	color = "#a5f0ee"
 	touch_met = 50
 	value = 0.7
+	var/list/scp173_decals
+
+/datum/reagent/hydroxylsan/initialize_data(newdata)
+	. = ..()
+	scp173_decals = GLOB.scp173_decals
 
 /datum/reagent/hydroxylsan/touch_obj(obj/O)
-	O.clean()
+	if(!(is_type_in_list(O, scp173_decals)))
+		O.clean()
 
 /datum/reagent/hydroxylsan/touch_turf(turf/T)
 	if(volume >= 1)
@@ -262,7 +268,9 @@
 			S.dirt = 0
 			if(S.wet > 1)
 				S.unwet_floor(FALSE)
-		T.clean()
+		var/obj/effect/decal/cleanable/D = locate(/obj/effect/decal/cleanable, T)
+		if(!(is_type_in_list(D, GLOB.scp173_decals)))
+			T.clean()
 
 
 		for(var/mob/living/carbon/slime/M in T)

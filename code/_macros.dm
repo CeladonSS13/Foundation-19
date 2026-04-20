@@ -100,6 +100,8 @@ var/const/NEGATIVE_INFINITY = -1#INF // win: -1.#INF, lin: -inf
 
 #define isPlunger(A) istype(A, /obj/item/clothing/mask/plunger) || istype(A, /obj/item/device/plunger/robot)
 
+#define isexosuit(A) istype(A, /mob/living/exosuit)
+
 /proc/isspecies(A, B)
 	if(!iscarbon(A))
 		return FALSE

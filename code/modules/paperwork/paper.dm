@@ -157,7 +157,7 @@
 			can_read = ishuman(user) || issilicon(user)
 			if (can_read)
 				can_read = get_dist(src, user) < PAPER_EYEBALL_DISTANCE
-	var/html = ""
+	var/html = "<meta charset='utf-8'>"
 	if (!can_read)
 		html += PAPER_META_BAD("The paper is too far away or you can't read.")
 	var/has_content = length(info)
@@ -331,7 +331,7 @@
 	info_links = info
 	var/i = 0
 	for(i=1,i<=fields,i++)
-		addtofield(i, "<font face=\"[deffont]\"><A href='byond://?src=\ref[src];write=[i]'>write</A></font>", TRUE)
+		addtofield(i, "<meta charset='utf-8'><font face=\"[deffont]\"><A href='byond://?src=\ref[src];write=[i]'>write</A></font>", TRUE)
 	info_links = info_links + "<font face=\"[deffont]\"><A href='byond://?src=\ref[src];write=end'>write</A></font>"
 
 
@@ -450,7 +450,8 @@
 		if(P.isfancy)
 			isfancy = TRUE
 		sanitize()
-		var/t = tgui_input_text(usr, "Enter what you want to write:", "Write", null, free_space, TRUE, trim = FALSE)
+		var/t = stripped_multiline_input(usr, "Enter what you want to write", "Write", null, 5000)
+		// tgui_input_text(usr, "Enter what you want to write:", "Write", null, free_space, TRUE, trim = FALSE)
 		if(!t)
 			return
 
