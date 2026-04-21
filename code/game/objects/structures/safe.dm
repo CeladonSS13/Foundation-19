@@ -157,6 +157,34 @@ FLOOR SAFES
 /obj/structure/safe/ex_act(severity)
 	return
 
+/obj/structure/safe/lcz
+	maxspace = 80
+
+/obj/structure/safe/lcz/Initialize()
+	for (var/subtype in subtypesof(/obj/item/card/id/lcz))
+		new subtype(src.loc)
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/safe/lcz/LateInitialize()
+	. = ..()
+	var/obj/item/paper/P
+	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
+
+/obj/structure/safe/hcz
+	maxspace = 80
+
+/obj/structure/safe/hcz/Initialize()
+	for (var/subtype in subtypesof(/obj/item/card/id/hcz))
+		new subtype(src.loc)
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/safe/hcz/LateInitialize()
+	. = ..()
+	var/obj/item/paper/P
+	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
+
 //FLOOR SAFES
 /obj/structure/safe/floor
 	name = "floor safe"

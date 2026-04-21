@@ -33,6 +33,29 @@
 		var/obj/item/card/id/ID = H.wear_id
 		ID.registered_name = "D-[used_numbers[used_numbers.len]]"
 
+/datum/job/classe
+	title = "Class E"
+	department = "Civilian"
+	selection_color = "#E55700"
+	economic_power = 1
+	total_positions = 0
+	spawn_positions = 0
+	supervisors = "all Foundation Personnel"
+	access = list()
+	minimal_access = list()
+	outfit_type = /decl/hierarchy/outfit/job/civ/classe
+	class = CLASS_E
+	hud_icon = "huddclass"
+
+	max_skill = list(
+		SKILL_COMBAT = SKILL_TRAINED,
+		SKILL_WEAPONS = SKILL_TRAINED
+	)
+
+	roleplay_difficulty = "Variable"
+	mechanical_difficulty = "Variable"
+	duties = "You're a temporary dismissed personal. You're restricted from contact other personal without security."
+
 // LOGISTICS DEPARTMENT
 /datum/job/qm
 	title = "Logistics Officer"

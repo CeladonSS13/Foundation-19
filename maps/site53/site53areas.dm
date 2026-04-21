@@ -1007,6 +1007,11 @@
 	icon_state = "head_quarters"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/entrancezone/ecz_E_class_zone
+	name = "\improper Entrance Zone E-class Zone"
+	icon_state = "head_quarters"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/site53/entrancezone/hallway
 	name = "\improper Entrance Zone Hallway"
 	icon_state = "hallC1"
@@ -1095,6 +1100,12 @@
 
 /area/site53/engineering/biosupplies
 	name = "\improper Engineering Bio supplies"
+	icon_state = "engine_smes"
+	sound_env = SMALL_ENCLOSED
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/engineering/ecz_atmos
+	name = "\improper Entrance Zone atmosphere supplies"
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
 	area_flags = AREA_FLAG_RAD_SHIELDED

@@ -1,3 +1,9 @@
+/datum/access/containment_scp_008
+	id = ACCESS_CONTAINMENT_SCP_008
+	desc = "SCP-008 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL1, ACCESS_SECURITY_LVL1)
+
 /datum/access/containment_scp_012
 	id = ACCESS_CONTAINMENT_SCP_012
 	desc = "SCP-012 Containment"
@@ -13,6 +19,12 @@
 /datum/access/containment_scp017
 	id = ACCESS_CONTAINMENT_SCP_017
 	desc = "SCP-017 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) //list(ACCESS_SCIENCE_LVL3)
+
+/datum/access/containment_scp035
+	id = ACCESS_CONTAINMENT_SCP_035
+	desc = "SCP-035 Containment"
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) //list(ACCESS_SCIENCE_LVL3)
 
@@ -94,6 +106,12 @@
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL2, ACCESS_SECURITY_LVL2)
 
+/datum/access/containment_scp_216
+	id = ACCESS_CONTAINMENT_SCP_216
+	desc = "SCP-216 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL2, ACCESS_SECURITY_LVL2)
+
 /datum/access/containment_scp_247
 	id = ACCESS_CONTAINMENT_SCP_247
 	desc = "SCP-247 Containment"
@@ -124,6 +142,12 @@
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL1, ACCESS_SECURITY_LVL1)
 
+/datum/access/containment_scp_347
+	id = ACCESS_CONTAINMENT_SCP_347
+	desc = "SCP-347 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL1, ACCESS_SECURITY_LVL1)
+
 /datum/access/containment_scp_399
 	id = ACCESS_CONTAINMENT_SCP_399
 	desc = "SCP-399 Containment"
@@ -136,11 +160,29 @@
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) // list(ACCESS_SCIENCE_LVL3)
 
+/datum/access/containment_scp_457
+	id = ACCESS_CONTAINMENT_SCP_457
+	desc = "SCP-457 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL3, ACCESS_SECURITY_LVL3)
+
+/datum/access/containment_scp_500
+	id = ACCESS_CONTAINMENT_SCP_500
+	desc = "SCP-500 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL3, ACCESS_SECURITY_LVL3)
+
 /datum/access/containment_scp_513
 	id = ACCESS_CONTAINMENT_SCP_513
 	desc = "SCP-513 Containment"
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL3, ACCESS_SECURITY_LVL3)
+
+/datum/access/containment_scp_527
+	id = ACCESS_CONTAINMENT_SCP_527
+	desc = "SCP-527 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_SCIENCE_LVL1, ACCESS_SECURITY_LVL1)
 
 /datum/access/containment_scp_529
 	id = ACCESS_CONTAINMENT_SCP_529
@@ -154,11 +196,29 @@
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) // list(ACCESS_SCIENCE_LVL3)
 
+/datum/access/containment_scp_895
+	id = ACCESS_CONTAINMENT_SCP_895
+	desc = "SCP-895 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) // list(ACCESS_SCIENCE_LVL3)
+
 /datum/access/containment_scp_896
 	id = ACCESS_CONTAINMENT_SCP_896
 	desc = "SCP-896 Containment"
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) // list(ACCESS_SCIENCE_LVL3)
+
+/datum/access/containment_scp_912
+	id = ACCESS_CONTAINMENT_SCP_912
+	desc = "SCP-912 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)
+
+/datum/access/containment_scp_914
+	id = ACCESS_CONTAINMENT_SCP_914
+	desc = "SCP-914 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)
 
 /datum/access/containment_scp_953
 	id = ACCESS_CONTAINMENT_SCP_953
@@ -202,3 +262,20 @@
 	access_type = ACCESS_TYPE_CONTAINMENT
 	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS) // list(ACCESS_SCIENCE_LVL3)
 
+/datum/access/containment_scp_1507
+	id = ACCESS_CONTAINMENT_SCP_1507
+	desc = "SCP-1507 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)
+
+/datum/access/containment_scp_2398
+	id = ACCESS_CONTAINMENT_SCP_2398
+	desc = "SCP-2398 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)
+
+/datum/access/containment_scp_5295
+	id = ACCESS_CONTAINMENT_SCP_5295
+	desc = "SCP-5295 Containment"
+	access_type = ACCESS_TYPE_CONTAINMENT
+	guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)

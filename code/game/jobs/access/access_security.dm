@@ -32,6 +32,24 @@
 
 // Station
 
+/datum/access/securitylcz
+	id = ACCESS_SECURITY_LCZ
+	desc = "Light Containment Zone access"
+	region = ACCESS_REGION_SECURITY
+	access_type = ACCESS_TYPE_INNATE
+
+/datum/access/securityhcz
+	id = ACCESS_SECURITY_HCZ
+	desc = "Heavy Containment Zone access"
+	region = ACCESS_REGION_SECURITY
+	access_type = ACCESS_TYPE_INNATE
+
+/datum/access/securityecz
+	id = ACCESS_SECURITY_ECZ
+	desc = "Entrance Containment Zone access"
+	region = ACCESS_REGION_SECURITY
+	access_type = ACCESS_TYPE_INNATE
+
 /datum/access/security
 	id = ACCESS_SECURITY
 	desc = "Security Equipment"
