@@ -167,7 +167,6 @@ FLOOR SAFES
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/safe/lcz/LateInitialize()
-	. = ..()
 	var/obj/item/paper/P
 	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
 
@@ -181,7 +180,6 @@ FLOOR SAFES
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/safe/hcz/LateInitialize()
-	. = ..()
 	var/obj/item/paper/P
 	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
 
