@@ -1151,6 +1151,11 @@
 	icon_state = "engineering_locker"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/engineering/assistant_engineering_director
+	name = "\improper Assistant Engineering Director Office"
+	icon_state = "engineering_locker"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/site53/engineering/sleeproom
 	name = "\improper Engineering Sleep Room"
 	icon_state = "engineering_locker"

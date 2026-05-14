@@ -4,6 +4,8 @@ SAFES
 FLOOR SAFES
 */
 
+GLOBAL_LIST_EMPTY(safes)
+
 //SAFES
 /obj/structure/safe
 	name = "safe"
@@ -20,20 +22,33 @@ FLOOR SAFES
 	var/dial = 0		//where is the dial pointing?
 	var/space = 0		//the combined w_class of everything in the safe
 	var/maxspace = 24	//the maximum combined w_class of stuff in the safe
+	var/known_by = list()
 
 /obj/structure/safe/Initialize()
 	for(var/obj/item/I in loc)
+		if(istype(I, /obj/item/paper/safe_codes))
+			return
 		if(space >= maxspace)
 			return
 		if(I.w_class + space <= maxspace) //todo replace with internal storage or something
 			space += I.w_class
 			I.forceMove(src)
 	. = ..()
-	tumbler_1_pos = rand(0, 72)
-	tumbler_1_open = rand(0, 72)
+	GLOB.safes += src
+	tumbler_1_pos = rand(0, 99)
+	tumbler_1_open = rand(0, 99)
 
-	tumbler_2_pos = rand(0, 72)
-	tumbler_2_open = rand(0, 72)
+	tumbler_2_pos = rand(0, 99)
+	tumbler_2_open = rand(0, 99)
+
+/obj/structure/safe/Destroy()
+	. = ..()
+	GLOB.safes -= src
+
+/obj/structure/safe/examine(mob/user)
+	. = ..()
+	if(open)
+		. += "<span class='notice'>The inside of the the door has numbers written on it:  <b>[tumbler_1_open]</b> and <b>[tumbler_2_open]</b></span>"
 
 /obj/structure/safe/proc/check_unlocked(mob/user as mob, canhear)
 	if(user && canhear)
@@ -50,13 +65,13 @@ FLOOR SAFES
 /obj/structure/safe/proc/decrement(num)
 	num -= 1
 	if(num < 0)
-		num = 71
+		num = 99
 	return num
 
 
 /obj/structure/safe/proc/increment(num)
 	num += 1
-	if(num > 71)
+	if(num > 99)
 		num = 0
 	return num
 
@@ -70,7 +85,7 @@ FLOOR SAFES
 
 /obj/structure/safe/attack_hand(mob/user as mob)
 	var/dat = "<center>"
-	dat += "<a href='byond://?src=\ref[src];open=1'>[open ? "Close" : "Open"] [src]</a> | <a href='byond://?src=\ref[src];decrement=1'>-</a> [dial * 5] <a href='byond://?src=\ref[src];increment=1'>+</a>"
+	dat += "<a href='byond://?src=\ref[src];open=1'>[open ? "Close" : "Open"] [src]</a> | <a href='byond://?src=\ref[src];decrement=1'>-</a> [dial] <a href='byond://?src=\ref[src];increment=1'>+</a>"
 	if(open)
 		dat += "<table>"
 		for(var/i = contents.len, i>=1, i--)
@@ -87,6 +102,7 @@ FLOOR SAFES
 
 	var/canhear = 0
 	if(istype(user.l_hand, /obj/item/clothing/accessory/stethoscope) || istype(user.r_hand, /obj/item/clothing/accessory/stethoscope))
+		to_chat(user, SPAN_NOTICE("You start listening safe's internal mechanism"))
 		canhear = 1
 
 	if(href_list["open"])
@@ -116,11 +132,11 @@ FLOOR SAFES
 
 	if(href_list["increment"])
 		dial = increment(dial)
-		if(dial == tumbler_1_pos - 1 || dial == tumbler_1_pos + 71)
+		if(dial == tumbler_1_pos - 1 || dial == tumbler_1_pos + 98)
 			tumbler_1_pos = increment(tumbler_1_pos)
 			if(canhear)
 				to_chat(user, SPAN_NOTICE("You hear a [pick("clack", "scrape", "clank")] from [src]."))
-			if(tumbler_1_pos == tumbler_2_pos - 37 || tumbler_1_pos == tumbler_2_pos + 35)
+			if(tumbler_1_pos == tumbler_2_pos - 49 || tumbler_1_pos == tumbler_2_pos + 49)
 				tumbler_2_pos = increment(tumbler_2_pos)
 				if(canhear)
 					to_chat(user, SPAN_NOTICE("You hear a [pick("click", "chink", "clink")] from [src]."))
@@ -167,7 +183,7 @@ FLOOR SAFES
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/safe/lcz/LateInitialize()
-	var/obj/item/paper/P
+	var/obj/item/paper/safe_codes/P
 	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
 
 /obj/structure/safe/hcz
@@ -180,7 +196,7 @@ FLOOR SAFES
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/safe/hcz/LateInitialize()
-	var/obj/item/paper/P
+	var/obj/item/paper/safe_codes/P
 	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
 
 //FLOOR SAFES
@@ -203,3 +219,20 @@ FLOOR SAFES
 
 /obj/structure/safe/floor/hides_under_flooring()
 	return 1
+
+/obj/item/paper/safe_codes
+	name = "safe codes"
+	var/owner
+	info = "<div style='text-align:center;'><img src = scplogo.png><center><h3>Safe Codes</h3></center>"
+
+/obj/item/paper/safe_codes/Initialize(mapload)
+	. = ..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/item/paper/safe_codes/LateInitialize()
+	. = ..()
+	for(var/safe in GLOB.safes)
+		var/obj/structure/safe/S = safe
+		if(owner in S.known_by)
+			info += "<br> The combination for the safe located in the [get_area(S)] is: [S.tumbler_1_open] and [S.tumbler_2_open]]<br>"
+			info_links = info
