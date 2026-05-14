@@ -16758,6 +16758,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/assistant_engineering_director)
 "drr" = (
@@ -26479,6 +26484,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/site53/engineering/primaryhallway)
@@ -44716,6 +44726,11 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/site53/engineering/primaryhallway)
 "iVR" = (
@@ -57595,9 +57610,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/ulcz/scp999)
 "lyn" = (
-/obj/structure/safe{
-	known_by = list("CONT_ENGI_LCZ")
-	},
 /obj/item/paper/safe_codes{
 	info_links = "CONT_ENGI_LCZ"
 	},
@@ -57613,6 +57625,9 @@
 /obj/item/card/id/lcz/scp_513,
 /obj/item/card/id/lcz/scp_529,
 /obj/item/card/id/lcz/scp_999,
+/obj/structure/safe{
+	known_by = list("CONT_ENGI_HCZ")
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/engineering/containment_engineer)
 "lyq" = (
@@ -71048,9 +71063,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/site53/logistics/logistics)
 "olT" = (
-/obj/structure/safe{
-	known_by = list("CONT_ENGI_HCZ")
-	},
 /obj/item/paper/safe_codes{
 	info_links = "CONT_ENGI_HCZ"
 	},
@@ -71060,6 +71072,9 @@
 /obj/item/card/id/hcz/scp_1102_ru,
 /obj/item/card/id/hcz/scp_247,
 /obj/item/card/id/hcz/scp_343,
+/obj/structure/safe{
+	known_by = list("CONT_ENGI_HCZ")
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/engineering/containment_engineer)
 "olX" = (
@@ -71916,6 +71931,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/assistant_engineering_director)
@@ -74872,6 +74892,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/site53/engineering/primaryhallway)
@@ -79846,6 +79871,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/site53/engineering/primaryhallway)
 "qao" = (
@@ -82288,6 +82318,18 @@
 	},
 /turf/simulated/floor/tiled/dark/horizontal,
 /area/site53/uhcz/hallways)
+"qyL" = (
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/site53/engineering/assistant_engineering_director)
 "qyQ" = (
 /obj/structure/plasticflaps,
 /obj/machinery/conveyor{
@@ -88870,6 +88912,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/assistant_engineering_director)
@@ -104115,6 +104162,11 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/assistant_engineering_director)
 "uKy" = (
@@ -106850,6 +106902,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/site53/engineering/assistant_engineering_director)
@@ -119795,6 +119852,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/site53/engineering/primaryhallway)
@@ -197968,7 +198030,7 @@ mpg
 fZy
 vwi
 rTR
-rTR
+qyL
 uKs
 rTR
 hBB

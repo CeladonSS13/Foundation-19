@@ -25,6 +25,16 @@ GLOBAL_LIST_EMPTY(safes)
 	var/known_by = list()
 
 /obj/structure/safe/Initialize()
+	. = ..()
+	GLOB.safes += src
+	tumbler_1_pos = rand(0, 99)
+	tumbler_1_open = rand(0, 99)
+
+	tumbler_2_pos = rand(0, 99)
+	tumbler_2_open = rand(0, 99)
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/safe/LateInitialize()
 	for(var/obj/item/I in loc)
 		if(istype(I, /obj/item/paper/safe_codes))
 			return
@@ -34,12 +44,6 @@ GLOBAL_LIST_EMPTY(safes)
 			space += I.w_class
 			I.forceMove(src)
 	. = ..()
-	GLOB.safes += src
-	tumbler_1_pos = rand(0, 99)
-	tumbler_1_open = rand(0, 99)
-
-	tumbler_2_pos = rand(0, 99)
-	tumbler_2_open = rand(0, 99)
 
 /obj/structure/safe/Destroy()
 	. = ..()
@@ -179,12 +183,7 @@ GLOBAL_LIST_EMPTY(safes)
 /obj/structure/safe/lcz/Initialize()
 	for (var/subtype in subtypesof(/obj/item/card/id/lcz))
 		new subtype(src.loc)
-	..()
-	return INITIALIZE_HINT_LATELOAD
-
-/obj/structure/safe/lcz/LateInitialize()
-	var/obj/item/paper/safe_codes/P
-	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
+	. = ..()
 
 /obj/structure/safe/hcz
 	maxspace = 80
@@ -192,12 +191,7 @@ GLOBAL_LIST_EMPTY(safes)
 /obj/structure/safe/hcz/Initialize()
 	for (var/subtype in subtypesof(/obj/item/card/id/hcz))
 		new subtype(src.loc)
-	..()
-	return INITIALIZE_HINT_LATELOAD
-
-/obj/structure/safe/hcz/LateInitialize()
-	var/obj/item/paper/safe_codes/P
-	P = new P(src.loc, "<tt>Safe combination is first tumbler at [tumbler_1_open] position <br>And second tumbler at [tumbler_2_open] position.</tt>", "Safe Combination")
+	. = ..()
 
 //FLOOR SAFES
 /obj/structure/safe/floor
