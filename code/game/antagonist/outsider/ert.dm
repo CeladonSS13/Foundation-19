@@ -16,7 +16,7 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	id_type = /obj/item/card/id/mtf
 
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
-	antaghud_indicator = "hudloyalist"
+	antaghud_indicator = "hud_loyal"
 	faction_indicator = "hud_loyal"
 	faction_invisible = 1
 
@@ -26,6 +26,7 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	initial_spawn_target = 7
 	show_objectives_on_creation = 0 //we are not antagonists, we do not need the antagonist shpiel/objectives
 	var/reason = ""
+	faction = "ert"
 
 /datum/antagonist/ert/create_default(mob/source)
 	var/mob/living/carbon/human/M = ..()
