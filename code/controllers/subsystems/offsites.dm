@@ -270,7 +270,7 @@ SUBSYSTEM_DEF(offsites)
 	else if (istype(fax, /obj/item/paper_bundle))
 		//having multiple people turning pages on a paper_bundle can cause issues
 		//open a browse window listing the contents instead
-		var/data = ""
+		var/data = "<meta charset='utf-8'>"
 		var/obj/item/paper_bundle/B = fax
 
 		for (var/page = 1, page <= B.pages.len, page++)
