@@ -258,9 +258,9 @@
 		.["special_access"] = special_access
 
 /obj/machinery/computer/guestpass/scp
-	name = " SCP Zone temporary access terminal"
-	machine_name = "SCP Zone temporary access terminal"
-	machine_desc = "SCP Zone Temporary access passes are limited-time access passes that can be used to enter scp areas that would otherwise be inaccessible."
+	name = " SCP temporary access terminal"
+	machine_name = "SCP temporary access terminal"
+	machine_desc = "SCP temporary access passes are limited-time access passes that can be used to enter scp areas that would otherwise be inaccessible."
 	operating_access_types = ACCESS_TYPE_CONTAINMENT
 	special_access_types = ACCESS_TYPE_NONE
 

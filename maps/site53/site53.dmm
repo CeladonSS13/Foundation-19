@@ -45041,36 +45041,32 @@
 /obj/structure/table/woodentable_reinforced/mahogany,
 /obj/item/folder/blue,
 /obj/item/paper/safe_codes{
-	info_links = "CONT_ENGI_LCZ";
 	pixel_y = -12;
-	pixel_x = -9
+	pixel_x = -9;
+	owner = "ENG_LCZ"
 	},
 /obj/item/paper/safe_codes{
-	info_links = "CONT_ENGI_HCZ";
-	pixel_x = -9
+	pixel_x = -9;
+	owner = "ENG_HCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 2;
 	pixel_y = -9;
-	owner = "LCZ";
-	info_links = "HCZ"
+	owner = "LCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
 	pixel_y = -9;
-	owner = "HCZ";
-	info_links = "LCZ"
+	owner = "HCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
-	owner = "EZ_LCZ";
-	info_links = "EZ_LCZ"
+	owner = "EZ_LCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
 	pixel_y = 9;
-	owner = "EZ_HCZ";
-	info_links = "EZ_HCZ"
+	owner = "EZ_HCZ"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/site53/uez/hallway)
@@ -57611,7 +57607,8 @@
 /area/site53/ulcz/scp999)
 "lyn" = (
 /obj/item/paper/safe_codes{
-	info_links = "CONT_ENGI_LCZ"
+	info_links = "ENG_LCZ";
+	owner = "ENG_LCZ"
 	},
 /obj/item/card/id/lcz/scp_012,
 /obj/item/card/id/lcz/scp_013,
@@ -57626,7 +57623,7 @@
 /obj/item/card/id/lcz/scp_529,
 /obj/item/card/id/lcz/scp_999,
 /obj/structure/safe{
-	known_by = list("CONT_ENGI_HCZ")
+	known_by = list("ENG_LCZ")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/engineering/containment_engineer)
@@ -62601,25 +62598,21 @@
 /obj/item/paper/safe_codes{
 	pixel_x = 2;
 	pixel_y = -9;
-	owner = "LCZ";
-	info_links = "HCZ"
+	owner = "LCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
 	pixel_y = -9;
-	owner = "HCZ";
-	info_links = "LCZ"
+	owner = "HCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
-	owner = "EZ_LCZ";
-	info_links = "EZ_LCZ"
+	owner = "EZ_LCZ"
 	},
 /obj/item/paper/safe_codes{
 	pixel_x = 10;
 	pixel_y = 9;
-	owner = "EZ_HCZ";
-	info_links = "EZ_HCZ"
+	owner = "EZ_HCZ"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/site53/uez/equipmentroom)
@@ -66558,6 +66551,9 @@
 /obj/structure/filingcabinet,
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/computer/guestpass/scp{
+	pixel_y = 18
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/site53/uhcz/commanderoffice)
@@ -71064,7 +71060,8 @@
 /area/site53/logistics/logistics)
 "olT" = (
 /obj/item/paper/safe_codes{
-	info_links = "CONT_ENGI_HCZ"
+	info_links = "ENG_HCZ";
+	owner = "ENG_HCZ"
 	},
 /obj/item/card/id/hcz/scp_049,
 /obj/item/card/id/hcz/scp_096,
@@ -71073,7 +71070,7 @@
 /obj/item/card/id/hcz/scp_247,
 /obj/item/card/id/hcz/scp_343,
 /obj/structure/safe{
-	known_by = list("CONT_ENGI_HCZ")
+	known_by = list("ENG_HCZ")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/site53/engineering/containment_engineer)
