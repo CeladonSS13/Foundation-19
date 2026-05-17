@@ -16,7 +16,7 @@
 	var/mob/living/carbon/human/H = user
 	if(user.mind.special_role == "MTF Nine-Tailed Fox - Epsilon-11 Agent") //only for MTF
 		var/list/ert_kits_options = list("Pointman", "Breacher", "Medic")
-		var/ert_kit = tgui_input_list(H, "Please select a class kit!", "Skills not included", "Pointman", ert_kits_options, 0)
+		var/ert_kit = tgui_input_list(H, "Please select a class kit!", "Skills not included", ert_kits_options, "Pointman", 0)
 		if(!ert_kit)
 			return
 		if(!istype(user.loc.loc, /area/centcom)) //if not at base

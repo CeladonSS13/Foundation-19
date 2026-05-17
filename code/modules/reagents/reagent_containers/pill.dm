@@ -78,6 +78,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 //We lied - it's pills all the way down
+/obj/item/reagent_containers/pill/adrenaline
+	name = "Adrenaline (10u)"
+	desc = "Heart reanimation reagent."
+	icon_state = "pill1"
+/obj/item/reagent_containers/pill/adrenaline/New()
+	..()
+	reagents.add_reagent(/datum/reagent/medicine/adrenaline, 10)
+	color = reagents.get_color()
+
+
 /obj/item/reagent_containers/pill/antitox
 	name = "Dylovene (25u)"
 	desc = "Neutralizes many common toxins."
@@ -158,6 +168,16 @@
 	color = reagents.get_color()
 
 
+/obj/item/reagent_containers/pill/oxycodone
+	name = "Oxycodone (10u)"
+	desc = "A strong painkiller."
+	icon_state = "pill3"
+/obj/item/reagent_containers/pill/oxycodone/New()
+	..()
+	reagents.add_reagent(/datum/reagent/medicine/painkiller/oxycodone, 10)
+	color = reagents.get_color()
+
+
 /obj/item/reagent_containers/pill/inaprovaline
 	name = "Inaprovaline (30u)"
 	desc = "Used to stabilize patients."
@@ -165,6 +185,15 @@
 /obj/item/reagent_containers/pill/inaprovaline/New()
 	..()
 	reagents.add_reagent(/datum/reagent/medicine/inaprovaline, 30)
+	color = reagents.get_color()
+
+/obj/item/reagent_containers/pill/imidazoline
+	name = "Imidazoline (10u)"
+	desc = "Used to heal eyes."
+	icon_state = "pill1"
+/obj/item/reagent_containers/pill/imidazoline/New()
+	..()
+	reagents.add_reagent(/datum/reagent/medicine/imidazoline, 10)
 	color = reagents.get_color()
 
 
@@ -268,6 +297,16 @@
 /obj/item/reagent_containers/pill/penicillin/New()
 	..()
 	reagents.add_reagent(/datum/reagent/medicine/penicillin, 10)
+	color = reagents.get_color()
+
+/obj/item/reagent_containers/pill/peridaxon
+	name = "peridaxon (10u)"
+	desc = "Contains organ-restoring agents."
+	icon_state = "pill3"
+
+/obj/item/reagent_containers/pill/peridaxon/New()
+	..()
+	reagents.add_reagent(/datum/reagent/medicine/peridaxon, 10)
 	color = reagents.get_color()
 
 /obj/item/reagent_containers/pill/diet

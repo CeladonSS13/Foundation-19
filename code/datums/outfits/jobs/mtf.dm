@@ -70,11 +70,12 @@
 	shoes = /obj/item/clothing/shoes/swat
 	suit_store = /obj/item/gun/projectile/automatic/scp/p90
 	r_hand = /obj/item/storage/firstaid/surgery
+	l_hand = /obj/item/roller
 	l_pocket = /obj/item/grenade/smokebomb
 	r_pocket = null
 	id_type = /obj/item/card/id/mtf/ninetail
 	belt = /obj/item/defibrillator/compact/combat/loaded
-	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/storage/firstaid/combat = 1)
+	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/storage/firstaid/combat = 1,/obj/item/storage/firstaid/special = 1)
 
 /decl/hierarchy/outfit/mtf/epsilon_11/pointman
 	name = OUTFIT_JOB_NAME("MTF Epsilon-11 Pointman")
@@ -87,11 +88,12 @@
 	shoes = /obj/item/clothing/shoes/swat
 	suit_store = null
 	r_hand = /obj/item/shield/riot/metal
+	l_hand = /obj/item/gun/projectile/automatic/scp/ierichon
 	l_pocket = /obj/item/grenade/flashbang
 	r_pocket = /obj/item/grenade/flashbang
 	id_type = /obj/item/card/id/mtf/ninetail
-	belt = /obj/item/storage/belt/holster/security/fullmk9
-	backpack_contents = list(/obj/item/storage/box/ifak = 1,/obj/item/grenade/frag = 2)
+	belt = /obj/item/storage/belt/holster/security/fullmateba
+	backpack_contents = list(/obj/item/storage/box/ifak = 1,/obj/item/grenade/frag = 2, /obj/item/ammo_magazine/scp/ierichon = 4)
 
 /decl/hierarchy/outfit/mtf/eta_10 // See No Evil
 	name = OUTFIT_JOB_NAME("MTF Eta-10 Operative")

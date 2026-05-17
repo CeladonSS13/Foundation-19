@@ -17,17 +17,12 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
 
-	antaghud_indicator = "hud_loyal"
-	faction_indicator = "hud_loyal"
-	faction_invisible = 1
-
 	hard_cap = 5
 	hard_cap_round = 7
 	initial_spawn_req = 5
 	initial_spawn_target = 7
 	show_objectives_on_creation = 0 //we are not antagonists, we do not need the antagonist shpiel/objectives
 	var/reason = ""
-	faction = "ert"
 
 /datum/antagonist/ert/create_default(mob/source)
 	var/mob/living/carbon/human/M = ..()
