@@ -141,7 +141,7 @@
 // LCZ - Cadet
 /obj/structure/closet/secure_closet/cadet/lcz
 	name = "LCZ Cadet's Locker"
-	req_access = list(ACCESS_SECURITY_LVL1)
+	req_access = list(ACCESS_SECURITY_LVL1, ACCESS_SECURITY_LCZ)
 	icon_state = "lczcadet1"
 	icon_closed = "lczcadet"
 	icon_locked = "lczcadet1"
@@ -159,7 +159,7 @@
 // LCZ - Guard
 /obj/structure/closet/secure_closet/guard/lcz
 	name = "LCZ Guard's Locker"
-	req_access = list(ACCESS_SECURITY_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL2, ACCESS_SECURITY_LCZ)
 	icon_state = "lczjunior1"
 	icon_closed = "lczjunior"
 	icon_locked = "lczjunior1"
@@ -177,7 +177,7 @@
 // LCZ - Sergeant
 /obj/structure/closet/secure_closet/guard/lcz/sergeant
 	name = "LCZ Sergeant's Locker"
-	req_access = list(ACCESS_SECURITY_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL3, ACCESS_SECURITY_LCZ)
 	icon_state = "lczguard1"
 	icon_closed = "lczguard"
 	icon_locked = "lczguard1"
@@ -203,7 +203,7 @@
 // HCZ - Cadet
 /obj/structure/closet/secure_closet/cadet/hcz
 	name = "HCZ Private's Locker"
-	req_access = list(ACCESS_SECURITY_LVL3)
+	req_access = list(ACCESS_SECURITY_LVL1, ACCESS_SECURITY_HCZ)
 	icon_state = "hczcadet1"
 	icon_closed = "hczcadet"
 	icon_locked = "hczcadet1"
@@ -226,7 +226,7 @@
 // HCZ - Guard
 /obj/structure/closet/secure_closet/guard/hcz
 	name = "HCZ Guard's Locker"
-	req_access = list(ACCESS_SECURITY_LVL3, ACCESS_SCIENCE_LVL3)
+	req_access = list(ACCESS_SECURITY_LVL2, ACCESS_SECURITY_HCZ)
 	icon_state = "hczjunior1"
 	icon_closed = "hczjunior"
 	icon_locked = "hczjunior1"
@@ -251,6 +251,7 @@
 // HCZ - Sergeant
 /obj/structure/closet/secure_closet/guard/hcz/sergeant
 	name = "HCZ Sergeant's Locker"
+	req_access = list(ACCESS_SECURITY_LVL3, ACCESS_SECURITY_HCZ)
 	icon_state = "hczguard1"
 	icon_closed = "hczguard"
 	icon_locked = "hczguard1"
@@ -283,7 +284,7 @@
 // EZ - Cadet
 /obj/structure/closet/secure_closet/cadet/ez
 	name = "EZ Probationary Agent's Locker"
-	req_access = list(ACCESS_SECURITY_LVL2, ACCESS_ADMIN_LVL1)
+	req_access = list(ACCESS_SECURITY_LVL1, ACCESS_SECURITY_ECZ)
 	icon_state = "ezcadet1"
 	icon_closed = "ezcadet"
 	icon_locked = "ezcadet1"
@@ -304,7 +305,7 @@
 // EZ - Guard
 /obj/structure/closet/secure_closet/guard/ez
 	name = "EZ Agent's Locker"
-	req_access = list(ACCESS_SECURITY_LVL3, ACCESS_ADMIN_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL2, ACCESS_SECURITY_ECZ)
 	icon_state = "ezjunior1"
 	icon_closed = "ezjunior"
 	icon_locked = "ezjunior1"
@@ -324,6 +325,7 @@
 // EZ - Sergeant
 /obj/structure/closet/secure_closet/guard/ez/sergeant
 	name = "EZ Senior Agent's Locker"
+	req_access = list(ACCESS_SECURITY_LVL3, ACCESS_SECURITY_ECZ)
 	icon_state = "ezguard1"
 	icon_closed = "ezguard"
 	icon_locked = "ezguard1"
@@ -383,7 +385,7 @@
 // Zone Commander
 /obj/structure/closet/secure_closet/guard/zone_commander
 	name = "LCZ Zone Lieutenant's Locker"
-	req_access = list(ACCESS_SECURITY_LVL4)
+	req_access = list(ACCESS_SECURITY_LVL4, ACCESS_SECURITY_LCZ)
 	icon_state = "lczcomm1"
 	icon_closed = "lczcomm"
 	icon_locked = "lczcomm1"
@@ -414,7 +416,7 @@
 
 /obj/structure/closet/secure_closet/guard/zone_commander/hcz
 	name = "HCZ Zone Lieutenant's Locker"
-	req_access = list(ACCESS_SECURITY_LVL4)
+	req_access = list(ACCESS_SECURITY_LVL4, ACCESS_SECURITY_HCZ)
 	icon_state = "hczcomm1"
 	icon_closed = "hczcomm"
 	icon_locked = "hczcomm1"
@@ -423,7 +425,7 @@
 
 /obj/structure/closet/secure_closet/guard/zone_commander/ez
 	name = "EZ Zone Supervisor's Locker"
-	req_access = list(ACCESS_SECURITY_LVL4)
+	req_access = list(ACCESS_SECURITY_LVL4, ACCESS_SECURITY_ECZ)
 	icon_state = "ezcomm1"
 	icon_closed = "ezcomm"
 	icon_locked = "ezcomm1"
@@ -432,7 +434,7 @@
 
 /obj/structure/closet/secure_closet/guard/breachautomatics
 	name = "Assault rifle locker"
-	req_access = list(ACCESS_SECURITY_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL3)
 	icon_state = "tactical1"
 	icon_closed = "tactical"
 	icon_locked = "tactical1"
@@ -452,7 +454,7 @@
 
 /obj/structure/closet/secure_closet/guard/breachshotguns
 	name = "Tactical Shotgun Locker"
-	req_access = list(ACCESS_SECURITY_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL3)
 	icon_state = "gun1"
 	icon_closed = "gun"
 	icon_locked = "gun1"
@@ -511,7 +513,7 @@
 
 /obj/structure/closet/secure_closet/guard/lethalshotgunammunitionbuckshot
 	name = "Buckshot Storage Locker"
-	req_access = list(ACCESS_SECURITY_LVL2)
+	req_access = list(ACCESS_SECURITY_LVL3)
 	icon_state = "gun1"
 	icon_closed = "gun"
 	icon_locked = "gun1"

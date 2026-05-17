@@ -1081,6 +1081,8 @@
 #include "code\game\objects\items\weapons\beachball.dm"
 #include "code\game\objects\items\weapons\cane.dm"
 #include "code\game\objects\items\weapons\cards_ids.dm"
+#include "code\game\objects\items\weapons\cards_ids_hcz_scps.dm"
+#include "code\game\objects\items\weapons\cards_ids_lcz_scps.dm"
 #include "code\game\objects\items\weapons\cards_ids_syndicate.dm"
 #include "code\game\objects\items\weapons\clothingbag.dm"
 #include "code\game\objects\items\weapons\clown_items.dm"

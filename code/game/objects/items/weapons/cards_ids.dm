@@ -1014,6 +1014,14 @@ GLOBAL_LIST_EMPTY(conversion_cards)
 	job_access_type = /datum/job/classd
 	class = CLASS_D
 
+/obj/item/card/id/classe
+	name = "Class-E ID"
+	desc = "An ID card issued to Class-E Foundation personnel."
+	icon_state = "classe"
+	item_state = "card-id"
+	job_access_type = /datum/job/classe
+	class = CLASS_E
+
 // LOGISTICS
 
 /obj/item/card/id/logoff

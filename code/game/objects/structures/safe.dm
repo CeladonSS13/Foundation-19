@@ -4,36 +4,53 @@ SAFES
 FLOOR SAFES
 */
 
+GLOBAL_LIST_EMPTY(safes)
+
 //SAFES
 /obj/structure/safe
 	name = "safe"
-	desc = "A huge chunk of metal with a dial embedded in it. Fine print on the dial reads \"Scarborough Arms - 2 tumbler safe, guaranteed thermite resistant, explosion resistant, and Class D resistant.\"."
+	desc = "A huge chunk of metal with a dial embedded in it. Up until first lock,down until second lock. Fine print on the dial reads \"Scarborough Arms - 2 tumbler safe, guaranteed thermite resistant, explosion resistant, and Class D resistant.\"."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "safe"
 	anchored = TRUE
 	density = TRUE
 	var/open = 0		//is the safe open?
-	var/tumbler_1_pos	//the tumbler position- from 0 to 72
-	var/tumbler_1_open	//the tumbler position to open at- 0 to 72
+	var/tumbler_1_pos	//the tumbler position TRUE/FALSE
+	var/tumbler_1_open	//the tumbler position to open at- 0 to 99
 	var/tumbler_2_pos
 	var/tumbler_2_open
 	var/dial = 0		//where is the dial pointing?
 	var/space = 0		//the combined w_class of everything in the safe
 	var/maxspace = 24	//the maximum combined w_class of stuff in the safe
+	var/known_by = list()
 
 /obj/structure/safe/Initialize()
+	. = ..()
+	GLOB.safes += src
+	tumbler_1_open = rand(0, 99)
+
+	tumbler_2_open = rand(0, 99)
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/safe/LateInitialize()
 	for(var/obj/item/I in loc)
+		if(istype(I, /obj/item/paper/safe_codes))
+			continue
 		if(space >= maxspace)
 			return
 		if(I.w_class + space <= maxspace) //todo replace with internal storage or something
 			space += I.w_class
 			I.forceMove(src)
 	. = ..()
-	tumbler_1_pos = rand(0, 72)
-	tumbler_1_open = rand(0, 72)
 
-	tumbler_2_pos = rand(0, 72)
-	tumbler_2_open = rand(0, 72)
+/obj/structure/safe/Destroy()
+	. = ..()
+	GLOB.safes -= src
+
+/obj/structure/safe/examine(mob/user)
+	. = ..()
+	if(open)
+		. += "<span class='notice'>The inside of the the door has numbers written on it:  <b>[tumbler_1_open]</b> and <b>[tumbler_2_open]</b></span>"
 
 /obj/structure/safe/proc/check_unlocked(mob/user as mob, canhear)
 	if(user && canhear)
@@ -50,15 +67,28 @@ FLOOR SAFES
 /obj/structure/safe/proc/decrement(num)
 	num -= 1
 	if(num < 0)
-		num = 71
+		num = 99
+	return num
+
+/obj/structure/safe/proc/decrement_ten(num)
+	num -= 10
+	if(num < 0)
+		num = 98 + num
 	return num
 
 
 /obj/structure/safe/proc/increment(num)
 	num += 1
-	if(num > 71)
+	if(num > 99)
 		num = 0
 	return num
+
+/obj/structure/safe/proc/increment_ten(num)
+	num += 10
+	if(num > 99)
+		num = num - 100
+	return num
+
 
 
 /obj/structure/safe/on_update_icon()
@@ -69,8 +99,12 @@ FLOOR SAFES
 
 
 /obj/structure/safe/attack_hand(mob/user as mob)
+	if(ishuman(usr))
+		var/mob/living/carbon/human/Human = usr
+		if(istype(Human.l_hand, /obj/item/clothing/accessory/stethoscope) || istype(Human.r_hand, /obj/item/clothing/accessory/stethoscope))
+			to_chat(user, SPAN_NOTICE("You start listening safe's internal mechanism"))
 	var/dat = "<center>"
-	dat += "<a href='byond://?src=\ref[src];open=1'>[open ? "Close" : "Open"] [src]</a> | <a href='byond://?src=\ref[src];decrement=1'>-</a> [dial * 5] <a href='byond://?src=\ref[src];increment=1'>+</a>"
+	dat += "<a href='byond://?src=\ref[src];open=1'>[open ? "Close" : "Open"] [src]</a> | <a href='byond://?src=\ref[src];decrement_ten=1'>--</a> <a href='byond://?src=\ref[src];decrement=1'>-</a> [dial] <a href='byond://?src=\ref[src];increment=1'>+</a><a href='byond://?src=\ref[src];increment_ten=1'>++</a>"
 	if(open)
 		dat += "<table>"
 		for(var/i = contents.len, i>=1, i--)
@@ -102,29 +136,47 @@ FLOOR SAFES
 
 	if(href_list["decrement"])
 		dial = decrement(dial)
-		if(dial == tumbler_1_pos + 1 || dial == tumbler_1_pos - 71)
-			tumbler_1_pos = decrement(tumbler_1_pos)
-			if(canhear)
-				to_chat(user, SPAN_NOTICE("You hear a [pick("clack", "scrape", "clank")] from [src]."))
-			if(tumbler_1_pos == tumbler_2_pos + 37 || tumbler_1_pos == tumbler_2_pos - 35)
-				tumbler_2_pos = decrement(tumbler_2_pos)
-				if(canhear)
-					to_chat(user, SPAN_NOTICE("You hear a [pick("click", "chink", "clink")] from [src]."))
+		if(!tumbler_1_pos == tumbler_1_open)
+			tumbler_1_pos = -1 //no way to lucky trigger
+			tumbler_2_pos = dial
+		if(tumbler_1_pos == tumbler_1_open)
+			tumbler_2_pos = dial
+			if((tumbler_2_pos != tumbler_2_open) && canhear)
+				to_chat(user, SPAN_NOTICE("You hear a [pick("click", "chink", "clink")] from [src]."))
+			check_unlocked(user, canhear)
+		attack_hand(user)
+		return
+
+	if(href_list["decrement_ten"])
+		dial = decrement_ten(dial)
+		if(!tumbler_1_pos == tumbler_1_open)
+			tumbler_1_pos = -1 //no way to lucky trigger
+			tumbler_2_pos = dial
+		if(tumbler_1_pos == tumbler_1_open)
+			tumbler_2_pos = dial
+			if((tumbler_2_pos != tumbler_2_open) && canhear)
+				to_chat(user, SPAN_NOTICE("You hear a [pick("click", "chink", "clink")] from [src]."))
 			check_unlocked(user, canhear)
 		attack_hand(user)
 		return
 
 	if(href_list["increment"])
-		dial = increment(dial)
-		if(dial == tumbler_1_pos - 1 || dial == tumbler_1_pos + 71)
-			tumbler_1_pos = increment(tumbler_1_pos)
-			if(canhear)
-				to_chat(user, SPAN_NOTICE("You hear a [pick("clack", "scrape", "clank")] from [src]."))
-			if(tumbler_1_pos == tumbler_2_pos - 37 || tumbler_1_pos == tumbler_2_pos + 35)
-				tumbler_2_pos = increment(tumbler_2_pos)
-				if(canhear)
-					to_chat(user, SPAN_NOTICE("You hear a [pick("click", "chink", "clink")] from [src]."))
-			check_unlocked(user, canhear)
+		dial = increment(dial) //если не в 1 позиции-сброс второй
+		tumbler_1_pos = dial
+		tumbler_2_pos = -1 //no way to activate
+		if((tumbler_1_pos != tumbler_1_open) && canhear)
+			to_chat(user, SPAN_NOTICE("You hear a [pick("clack", "scrape", "clank")] from [src]."))
+		check_unlocked(user, canhear)
+		attack_hand(user)
+		return
+
+	if(href_list["increment_ten"])
+		dial = increment_ten(dial)
+		tumbler_1_pos = dial
+		tumbler_2_pos = -1 //no way to trigger
+		if((tumbler_1_pos != tumbler_1_open) &&canhear)
+			to_chat(user, SPAN_NOTICE("You hear a [pick("clack", "scrape", "clank")] from [src]."))
+		check_unlocked(user, canhear)
 		attack_hand(user)
 		return
 
@@ -157,6 +209,22 @@ FLOOR SAFES
 /obj/structure/safe/ex_act(severity)
 	return
 
+/obj/structure/safe/lcz
+	maxspace = 80
+
+/obj/structure/safe/lcz/Initialize()
+	for (var/subtype in subtypesof(/obj/item/card/id/lcz))
+		new subtype(src.loc)
+	. = ..()
+
+/obj/structure/safe/hcz
+	maxspace = 80
+
+/obj/structure/safe/hcz/Initialize()
+	for (var/subtype in subtypesof(/obj/item/card/id/hcz))
+		new subtype(src.loc)
+	. = ..()
+
 //FLOOR SAFES
 /obj/structure/safe/floor
 	name = "floor safe"
@@ -177,3 +245,20 @@ FLOOR SAFES
 
 /obj/structure/safe/floor/hides_under_flooring()
 	return 1
+
+/obj/item/paper/safe_codes
+	name = "safe codes"
+	var/owner
+	info = "<div style='text-align:center;'><img src = scplogo.png><center><h3>Safe Codes</h3></center>"
+
+/obj/item/paper/safe_codes/Initialize(mapload)
+	. = ..()
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/item/paper/safe_codes/LateInitialize()
+	. = ..()
+	for(var/safe in GLOB.safes)
+		var/obj/structure/safe/S = safe
+		if(owner in S.known_by)
+			info += "<br> The combination for the safe located in the [get_area(S)] is: turn right until dial is [S.tumbler_1_open] and turn left until dial is [S.tumbler_2_open]]<br>"
+			info_links = info

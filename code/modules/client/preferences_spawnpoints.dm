@@ -125,3 +125,12 @@ GLOBAL_VAR(spawntypes)
 /datum/spawnpoint/dclass/New()
 	..()
 	turfs = GLOB.latejoin_dclass
+
+/datum/spawnpoint/eclass
+	display_name = "E-Cells"
+	msg = "has been delivered to the Class E Area"
+	restrict_job = list("Class E")
+
+/datum/spawnpoint/eclass/New()
+	..()
+	turfs = GLOB.latejoin_eclass

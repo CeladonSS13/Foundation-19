@@ -1005,6 +1005,11 @@
 	icon_state = "head_quarters"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/entrancezone/ecz_E_class_zone
+	name = "\improper Entrance Zone E-class Zone"
+	icon_state = "head_quarters"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/site53/entrancezone/hallway
 	name = "\improper Entrance Zone Hallway"
 	icon_state = "hallC1"
@@ -1097,6 +1102,12 @@
 	sound_env = SMALL_ENCLOSED
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/engineering/ecz_atmos
+	name = "\improper Entrance Zone atmosphere supplies"
+	icon_state = "engine_smes"
+	sound_env = SMALL_ENCLOSED
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/site53/engineering/bathrooms
 	name = "\improper Engineering Bathrooms"
 	icon_state = "engine_smes"
@@ -1135,6 +1146,11 @@
 
 /area/site53/engineering/containment_engineer
 	name = "\improper Containment Engineer Office"
+	icon_state = "engineering_locker"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/engineering/assistant_engineering_director
+	name = "\improper Assistant Engineering Director Office"
 	icon_state = "engineering_locker"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 

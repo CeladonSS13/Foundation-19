@@ -38,7 +38,9 @@
 	duties = "Communicate with your site's department heads. Delegate high-level responsibilities. Manage the site during on-going threats."
 
 /datum/job/captain/get_access()
-	return get_all_site_access()
+	var/list/listy = list()
+	listy = get_all_site_access()
+	return listy
 
 /datum/job/hop
 	title = "Site Manager"
@@ -129,6 +131,9 @@
 		ACCESS_ENGINEERING_LVL3,
 		ACCESS_NETWORK,
 		ACCESS_SECURITY_LVL1,
+		ACCESS_SECURITY_ECZ,
+		ACCESS_SECURITY_LCZ,
+		ACCESS_SECURITY_HCZ,
 		ACCESS_SCIENCE_LVL1,
 		ACCESS_SCIENCE_LVL2,
 		ACCESS_SCIENCE_LVL3,
