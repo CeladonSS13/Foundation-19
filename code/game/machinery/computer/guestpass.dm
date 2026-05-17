@@ -78,7 +78,7 @@
 	uid = "[random_id("guestpass_serial_number",100,999)]-G[rand(10,99)]"
 
 /obj/machinery/computer/guestpass/proc/guestpass_access_check(acc)
-	var/datum/access/acc_datum = get_access_by_id(acc)
+	var/datum/access/acc_datum = acc
 
 	// See if they meet any of the access prerequisite requirements
 	for(var/prereq_acc in acc_datum?.guestpass_access_prerequisites)
@@ -257,12 +257,6 @@
 		.["area_access"] = operating_access
 		.["special_access"] = special_access
 
-/obj/machinery/computer/guestpass/scp
-	name = " SCP temporary access terminal"
-	machine_name = "SCP temporary access terminal"
-	machine_desc = "SCP temporary access passes are limited-time access passes that can be used to enter scp areas that would otherwise be inaccessible."
-	operating_access_types = ACCESS_TYPE_CONTAINMENT
-	special_access_types = ACCESS_TYPE_NONE
 
 #undef GUESTPASS_MIN_DURATION
 #undef GUESTPASS_MAX_DURATION

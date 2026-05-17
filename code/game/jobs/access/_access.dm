@@ -7,7 +7,7 @@
 
 	// person with ANY ACCESS in guestpass_access_prerequisites can give out a guestpass
 	// for this access despite not having this access
-	var/list/guestpass_access_prerequisites = list()
+	var/list/guestpass_access_prerequisites = list(ACCESS_PLACEHOLDER_YOU_SHOULDNT_HAVE_THIS)
 
 /datum/access/dd_SortValue()
 	return "[access_type][desc]"
@@ -208,6 +208,8 @@
 			return "Supply"
 		if(ACCESS_REGION_SERVICE) //nt
 			return "Service"
+		if(ACCESS_REGION_CONTAINMENT)
+			return "Containment"
 
 /proc/get_access_desc(id)
 	var/list/AS = priv_all_access_datums_id || get_all_access_datums_by_id()

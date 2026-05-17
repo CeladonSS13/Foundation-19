@@ -38,7 +38,9 @@
 	duties = "Communicate with your site's department heads. Delegate high-level responsibilities. Manage the site during on-going threats."
 
 /datum/job/captain/get_access()
-	return get_all_site_access()
+	var/list/listy = list()
+	listy = get_all_site_access()
+	return listy
 
 /datum/job/hop
 	title = "Site Manager"

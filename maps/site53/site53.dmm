@@ -5330,7 +5330,7 @@
 	req_access = list("ACCESS_SECURITY_LEVEL1","ACCESS_LCZ")
 	},
 /obj/machinery/computer/guestpass{
-	pixel_x = -25
+	pixel_x = -26
 	},
 /obj/machinery/button/blast_door{
 	dir = 1;
@@ -24499,6 +24499,9 @@
 	pixel_y = -25;
 	dir = 1
 	},
+/obj/machinery/computer/guestpass{
+	pixel_x = -25
+	},
 /turf/simulated/floor/carpet/blue3,
 /area/site53/uez/hallway)
 "eUz" = (
@@ -27586,6 +27589,9 @@
 	name = "Privacy Shutters Control";
 	pixel_y = -25;
 	dir = 1
+	},
+/obj/machinery/computer/guestpass{
+	pixel_x = -25
 	},
 /turf/simulated/floor/carpet/purple,
 /area/site53/uez/hallway)
@@ -32707,6 +32713,9 @@
 	},
 /obj/structure/window/phoronreinforced{
 	dir = 1
+	},
+/obj/machinery/computer/guestpass{
+	pixel_x = -25
 	},
 /turf/simulated/floor/carpet/blue,
 /area/site53/uez/hallway)
@@ -47874,6 +47883,9 @@
 	name = "Privacy Shutters Control";
 	pixel_y = -25;
 	dir = 1
+	},
+/obj/machinery/computer/guestpass{
+	pixel_x = -25
 	},
 /turf/simulated/floor/carpet/orange,
 /area/site53/uez/hallway)
@@ -63904,8 +63916,8 @@
 /turf/simulated/floor/tiled/freezer,
 /area/site53/uez/bridge)
 "mMi" = (
-/obj/machinery/computer/guestpass/scp{
-	pixel_y = 17
+/obj/machinery/computer/guestpass{
+	pixel_y = 28
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/site53/zonecommanderoffice)
@@ -64049,6 +64061,9 @@
 "mNw" = (
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/computer/guestpass{
+	pixel_x = 25
 	},
 /turf/simulated/floor/carpet/blue,
 /area/site53/uez/equipmentroom)
@@ -66552,8 +66567,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/computer/guestpass/scp{
-	pixel_y = 18
+/obj/machinery/computer/guestpass{
+	pixel_y = 28
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/site53/uhcz/commanderoffice)
@@ -82785,6 +82800,21 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/tiled/white/monotile,
 /area/site53/uhcz/scp8containment)
+"qEA" = (
+/obj/effect/floor_decal/corner/blue/border{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/vertical,
+/area/site53/uez/hallway)
 "qEJ" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Escape Train"
@@ -351191,7 +351221,7 @@ vtI
 vtI
 dFi
 uST
-uST
+qEA
 uST
 taj
 sKH
