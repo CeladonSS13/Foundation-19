@@ -16,9 +16,6 @@ GLOBAL_DATUM_INIT(ert, /datum/antagonist/ert, new)
 	id_type = /obj/item/card/id/mtf
 
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_HAS_LEADER | ANTAG_CHOOSE_NAME | ANTAG_RANDOM_EXCEPTED
-	antaghud_indicator = "hudloyalist"
-	faction_indicator = "hud_loyal"
-	faction_invisible = 1
 
 	hard_cap = 5
 	hard_cap_round = 7

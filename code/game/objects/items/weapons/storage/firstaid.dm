@@ -128,6 +128,22 @@
 		/obj/item/storage/med_pouch/radiation,
 		)
 
+/obj/item/storage/firstaid/special
+	name = "specialised first aid"
+	desc = "Stocked with medical pouches."
+	icon_state = "stabfirstaid"
+	item_state = "firstaid-advanced"
+
+	startswith = list(
+		/obj/item/storage/pill_bottle/peridaxon,
+		/obj/item/storage/pill_bottle/oxycodone,
+		/obj/item/storage/pill_bottle/imidazoline,
+		/obj/item/storage/pill_bottle/adrenaline,
+		/obj/item/storage/pill_bottle/hyronalin,
+		/obj/item/storage/pill_bottle/sugariron,
+		/obj/item/stack/medical/splint,
+		)
+
 /obj/item/storage/firstaid/surgery
 	name = "surgery kit"
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport and automatically sterilizes the content between uses."
@@ -251,6 +267,13 @@
 		I.color = wrapper_color
 		add_overlay(I)
 
+/obj/item/storage/pill_bottle/imidazoline
+	name = "pill bottle (imidazoline)"
+	desc = "Contains pills used to restore vision."
+
+	startswith = list(/obj/item/reagent_containers/pill/imidazoline = 14)
+	wrapper_color = COLOR_DARK_ORANGE
+
 /obj/item/storage/pill_bottle/antitox
 	name = "pill bottle (Dylovene)"
 	desc = "Contains pills used to counter toxins."
@@ -314,12 +337,26 @@
 	startswith = list(/obj/item/reagent_containers/pill/penicillin = 14)
 	wrapper_color = COLOR_PALE_GREEN_GRAY
 
+/obj/item/storage/pill_bottle/peridaxon
+	name = "pill bottle (Peridaxon)"
+	desc = "A organ-restoring reagent container."
+
+	startswith = list(/obj/item/reagent_containers/pill/peridaxon = 14)
+	wrapper_color = COLOR_PALE_GREEN_GRAY
+
 /obj/item/storage/pill_bottle/tramadol
 	name = "pill bottle (Tramadol)"
 	desc = "Contains pills used to relieve pain."
 
 	startswith = list(/obj/item/reagent_containers/pill/tramadol = 14)
 	wrapper_color = COLOR_PURPLE_GRAY
+
+/obj/item/storage/pill_bottle/oxycodone
+	name = "pill bottle (Oxycodone)"
+	desc = "Contains pills used to relieve pain."
+
+	startswith = list(/obj/item/reagent_containers/pill/oxycodone = 14)
+	wrapper_color = COLOR_BOTTLE_GREEN
 
 //Baycode specific Psychiatry pills.
 /obj/item/storage/pill_bottle/citalopram
@@ -328,6 +365,13 @@
 
 	startswith = list(/obj/item/reagent_containers/pill/citalopram = 21)
 	wrapper_color = COLOR_GRAY
+
+/obj/item/storage/pill_bottle/sugariron
+	name = "pill bottle (Citalopram)"
+	desc = "Contains pills used for Blood-restoring."
+
+	startswith = list(/obj/item/reagent_containers/pill/sugariron = 14)
+	wrapper_color = COLOR_WHITE
 
 /obj/item/storage/pill_bottle/methylphenidate
 	name = "pill bottle (Methylphenidate)"
@@ -342,6 +386,13 @@
 
 	startswith = list(/obj/item/reagent_containers/pill/paroxetine = 14)
 	wrapper_color = COLOR_GRAY
+
+/obj/item/storage/pill_bottle/hyronalin
+	name = "pill bottle (heronalin)"
+	desc = "Contains pills used against Radiation"
+
+	startswith = list(/obj/item/reagent_containers/pill/hyronalin = 14)
+	wrapper_color = COLOR_ISLAMIC_GREEN
 
 /obj/item/storage/pill_bottle/antidexafen
 	name = "pill bottle (cold medicine)"
